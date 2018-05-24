@@ -3,7 +3,7 @@ WORKDIR /usr/src
 COPY package.json yarn.lock /usr/src/
 RUN yarn
 COPY . .
-RUN yarn --production && yarn pkg
+RUN yarn && yarn pkg
 
 FROM alpine
 RUN apk add --no-cache libstdc++ libgcc
