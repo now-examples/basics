@@ -1,4 +1,6 @@
+const bootup = Date.now();
 const os = require('os');
+const ms = require('ms');
 const env = {};
 for (const key of Object.keys(process.env).sort()) {
   if (key === 'AUTH_TOKEN') continue;
@@ -6,10 +8,19 @@ for (const key of Object.keys(process.env).sort()) {
   env[key] = process.env[key];
 }
 module.exports = async function(req, res) {
+  const now = Date.now();
+  const uptime = now - bootup;
   return {
-    url: req.url,
-    method: req.method,
-    headers: req.headers,
+    now,
+    bootup,
+    bootupHuman: new Date(bootup).toUTCString(),
+    uptime,
+    uptimeHuman: ms(uptime),
+    request: {
+      url: req.url,
+      method: req.method,
+      headers: req.headers,
+    },
     process: {
       pid: process.pid,
       ppid: process.ppid,
