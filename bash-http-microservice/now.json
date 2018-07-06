@@ -1,0 +1,9 @@
+{
+  "type": "docker",
+  "features": {
+    "cloud": "v2"
+  },
+  "env": {
+    "ALWAYS": "this env var should always be present"
+  }
+}
