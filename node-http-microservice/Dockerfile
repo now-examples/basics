@@ -4,7 +4,7 @@ COPY package.json yarn.lock /usr/src/
 RUN yarn
 RUN yarn global add pkg
 COPY . .
-RUN pkg -t node9 . -o bin
+RUN pkg -t node10-alpine . -o bin
 
 FROM alpine
 RUN apk add --no-cache libstdc++ libgcc
