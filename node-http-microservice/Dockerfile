@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:9 as base
+FROM mhart/alpine-node:10 as base
 WORKDIR /usr/src
 COPY package.json yarn.lock /usr/src/
 RUN yarn
