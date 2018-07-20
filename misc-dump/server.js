@@ -1,6 +1,7 @@
 const bootup = Date.now();
 const os = require('os');
 const ms = require('ms');
+const rawBody = require('raw-body');
 const env = {};
 for (const key of Object.keys(process.env).sort()) {
   if (key === 'AUTH_TOKEN') continue;
@@ -20,6 +21,7 @@ module.exports = async function(req, res) {
       url: req.url,
       method: req.method,
       headers: req.headers,
+      body: String(await rawBody(req))
     },
     process: {
       pid: process.pid,
