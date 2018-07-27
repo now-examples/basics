@@ -1,6 +1,7 @@
 const bootup = Date.now();
 const os = require('os');
 const ms = require('ms');
+const {inspect} = require('util');
 const rawBody = require('raw-body');
 const env = {};
 for (const key of Object.keys(process.env).sort()) {
@@ -11,7 +12,7 @@ for (const key of Object.keys(process.env).sort()) {
 module.exports = async function(req, res) {
   const now = Date.now();
   const uptime = now - bootup;
-  return {
+  const data = {
     now,
     bootup,
     bootupHuman: new Date(bootup).toUTCString(),
@@ -38,5 +39,7 @@ module.exports = async function(req, res) {
       cpus: os.cpus(),
       userInfo: os.userInfo()
     }
-  }
+  };
+  console.log(inspect(data, {colors: true, depth: 5}));
+  return data;
 };
