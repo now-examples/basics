@@ -2,9 +2,5 @@
   "type": "docker",
   "features": {
     "cloud": "v2"
-  },
-  "limits": {
-    "maxConcurrentReqs": 2,
-    "duration": 60000
   }
 }
