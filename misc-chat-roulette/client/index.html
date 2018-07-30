@@ -22,7 +22,7 @@
         ;(ws && ws.close && ws.close());
         post('Joining a new room');
         await sleep(delay);
-        ws = new WebSocket('wss://misc-chat-roulette.v2.zeit.sh');
+        ws = new WebSocket('wss://misc-chat-roulette-server.v2.zeit.sh');
         ws.addEventListener('connect', () => post('Found a room'))
         ws.addEventListener('error', connect);
         ws.addEventListener('close', connect);
