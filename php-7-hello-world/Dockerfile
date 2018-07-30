@@ -1,7 +1,6 @@
 FROM alpine:edge
 WORKDIR /www
-RUN apk add --no-cache nginx php7-fpm supervisor
+RUN apk add --no-cache nginx php7-fpm
 COPY conf/nginx.conf /etc/nginx/
-COPY conf/supervisord.conf /etc/
 COPY *.php ./
-CMD ["/usr/bin/supervisord"]
+CMD ["sh", "-c", "php-fpm7 -F -R & nginx & wait"]
