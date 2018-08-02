@@ -5,7 +5,7 @@
   },
   "build": {
     "env": {
-      "_NOW_TOKEN": "@now-token"
+      "NOW_TOKEN": "@now-token"
     }
   }
 }

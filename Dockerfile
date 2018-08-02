@@ -5,9 +5,9 @@ RUN apk --update --no-cache add curl libstdc++ libgcc && \
     gunzip now-alpine.gz && \
     chmod +x now-alpine && \
     mv now-alpine /bin/now
-ARG _NOW_TOKEN
+ARG NOW_TOKEN
 COPY . .
-RUN find ./ -maxdepth 1 -type d '!' -path './' -exec ./deploy '{}' $_NOW_TOKEN ';' && \
+RUN find ./ -maxdepth 1 -type d '!' -path './' -exec ./deploy '{}' $NOW_TOKEN ';' && \
     echo "</ul></body></html>" >> index.html
 
 FROM jtyr/asmttpd
