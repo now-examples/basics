@@ -1,8 +1,5 @@
 {
-  "type": "docker",
-  "features": {
-    "cloud": "v2"
-  },
+  "type": "static",
   "build": {
     "env": {
       "NOW_TOKEN": "@now-token"
