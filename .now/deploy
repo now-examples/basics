@@ -12,4 +12,4 @@ else
   echo "<li>Failed to deploy $dir</li>" >> .now/index.html
 fi
 
-sleep 20
+sleep 10
