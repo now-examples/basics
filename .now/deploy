@@ -3,7 +3,7 @@
 dir=${1:2}
 token=$2
 
-url=$(now $dir --token $token --team zeit --public --docker)
+url=$(now $dir --token $token --team zeit --public)
 r=$?
 
 if [ $r -eq 0 ] && [ ! -z $url ]; then
@@ -12,4 +12,4 @@ else
   echo "<li>Failed to deploy $dir</li>" >> .now/index.html
 fi
 
-sleep 30
+sleep 20
