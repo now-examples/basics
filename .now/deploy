@@ -7,9 +7,9 @@ url=$(now $dir --token $token --team zeit --public --docker)
 r=$?
 
 if [ $r -eq 0 ] && [ ! -z $url ]; then
-  echo "<li><a href='$url'>$dir</a></li>" >> index.html
+  echo "<li><a href='$url'>$dir</a></li>" >> .now/index.html
 else
-  echo "<li>Failed to deploy $dir</li>" >> index.html
+  echo "<li>Failed to deploy $dir</li>" >> .now/index.html
 fi
 
 sleep 30
