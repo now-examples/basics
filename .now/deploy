@@ -12,4 +12,6 @@ else
   echo "<li>Failed to deploy $dir</li>" >> .now/index.html
 fi
 
-sleep 10
+# The rate limit for deployments is 20 per 5 mins so we sleep a tiny bit more
+# than that in case other deployments are being created concurrently
+sleep 17
