@@ -3,7 +3,7 @@
 dir=${1:2}
 token=$2
 
-url=$(now $dir --token $token --team zeit --public)
+url=$(now $dir --token $token --team zeit --public --docker)
 r=$?
 
 if [ $r -eq 0 ] && [ ! -z $url ]; then
