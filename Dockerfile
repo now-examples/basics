@@ -1,7 +1,7 @@
 FROM alpine:edge as base
 WORKDIR /usr/src/app
 RUN apk --update --no-cache add curl libstdc++ libgcc && \
-    curl -LO https://github.com/zeit/now-cli/releases/download/12.0.0-canary.67/now-alpine.gz && \
+    curl -LO https://github.com/zeit/now-cli/releases/download/12.0.0-canary.70/now-alpine.gz && \
     gunzip now-alpine.gz && \
     chmod +x now-alpine && \
     mv now-alpine /bin/now
