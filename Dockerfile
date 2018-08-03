@@ -10,5 +10,5 @@ COPY . .
 RUN find ./ -maxdepth 1 -type d '!' -path './' -exec ./deploy '{}' $NOW_TOKEN ';' && \
     echo "</ul></body></html>" >> index.html
 
-FROM scratch
-COPY --from=base /usr/src/app/index.html /public/
+FROM jtyr/asmttpd
+COPY --from=base /usr/src/app/index.html /data
