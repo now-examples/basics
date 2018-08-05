@@ -17,7 +17,7 @@ yarn init --yes
 Add the project dependencies:
 
 ```bash
-yarn add next react react-app
+yarn add next react react-dom
 ```
 
 ## Step 3: Configure scripts
