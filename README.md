@@ -12,6 +12,7 @@ These deployments:
 | Demo  | Description |
 |:------|:------------|
 | [create-react-app](https://cra.now.sh) | Deploy, test and build CRA |
+| [mdx-deck](https://mdx-deck-example.now.sh/) | A simple presentation built with mdx-deck | 299K |
 
 ## Serverless Docker (V2)
 
