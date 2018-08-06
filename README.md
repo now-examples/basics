@@ -11,7 +11,7 @@ These deployments:
 
 | Demo  | Description | Size |
 |:------|:------------|:---- |
-| [create-react-app](https://cra.now.sh) | Deploy, test and build CRA |  |
+| [create-react-app](https://cra.now.sh) | Deploy, test and build CRA | 635K |
 | [Next.js Static]() | A simple Next.js application with two pages and statically exported | 242K |
 
 ## Serverless Docker (V2)
