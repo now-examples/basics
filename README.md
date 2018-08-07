@@ -35,6 +35,7 @@ These deployments:
 | [java-spark-graal](https://java-spark-graal-v2.now.sh) | [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) | Uses the [`Spark`](http://sparkjava.com/) framework and packages with [GraalVM `native-image`](http://www.graalvm.org/) | 5.3M |
 | [misc-chat-roulette](https://misc-chat-roulette-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | Implements a [WebSocket](https://en.wikipedia.org/wiki/WebSocket) server with a max concurrency of `2` | 19.3M |
 | [misc-dump](https://misc-dump-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | An app that simply logs information about incoming requests and the system it's running on | 26.1M |
+| [misc-redirect](https://misc-redirect.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A simple microservice to setup a redirect | 44.1M |
 | [misc-socket.io-chat](https://misc-socketio-chat-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [chat demo](https://socket.io/demos/chat/) | 20.2M |
 | [misc-socket.io-whiteboard](https://misc-socketio-whiteboard-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [whiteboard demo](https://socket.io/demos/whiteboard/) | 20.2M |
 | [misc-web-tty](https://misc-web-tty-v2.now.sh) | [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) | A fully functional terminal in the browser powered by [gotty](https://github.com/yudai/gotty) | 6.1M |
@@ -43,7 +44,6 @@ These deployments:
 | [node-http-microservice-pkg](https://node-http-microservice-pkg-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A microservice in Node, packaged with [pkg](https://github.com/zeit/pkg) | 19.3M |
 | [node-micro](https://node-micro-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A microservice in Node written with [micro](https://github.com/zeit/micro) | 19.6M |
 | [node-react](https://node-react-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | Deploys a react app created using [create-react-app](https://github.com/facebook/create-react-app) | 700K |
-| [node-redirect](https://node-redirect.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A simple microservice to setup a redirect | 44.1M |
 | [php-7-hello-world](https://php-7-hello-world-v2.now.sh) | [PHP](https://en.wikipedia.org/wiki/PHP) | A tiny website served using [php-fpm](https://php-fpm.org/) | 6.4M |
 | php-wordpress\* | [PHP](https://en.wikipedia.org/wiki/PHP) | A [wordpress](https://wordpress.org/) | NaN |
 | [python-django](https://python-django-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A [Django](https://www.djangoproject.com/) app | 49.1M |
