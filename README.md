@@ -43,6 +43,7 @@ These deployments:
 | [node-http-microservice-pkg](https://node-http-microservice-pkg-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A microservice in Node, packaged with [pkg](https://github.com/zeit/pkg) | 19.3M |
 | [node-micro](https://node-micro-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A microservice in Node written with [micro](https://github.com/zeit/micro) | 19.6M |
 | [node-react](https://node-react-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | Deploys a react app created using [create-react-app](https://github.com/facebook/create-react-app) | 700K |
+| [node-redirect](https://node-redirect.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A simple microservice to setup a redirect | 44.1M |
 | [php-7-hello-world](https://php-7-hello-world-v2.now.sh) | [PHP](https://en.wikipedia.org/wiki/PHP) | A tiny website served using [php-fpm](https://php-fpm.org/) | 6.4M |
 | php-wordpress\* | [PHP](https://en.wikipedia.org/wiki/PHP) | A [wordpress](https://wordpress.org/) | NaN |
 | [python-django](https://python-django-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A [Django](https://www.djangoproject.com/) app | 49.1M |

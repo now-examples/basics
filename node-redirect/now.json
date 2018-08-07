@@ -1,0 +1,10 @@
+{
+  "type": "docker",
+  "features": {
+    "cloud": "v2"
+  },
+  "public": true,
+  "env": [
+    "REDIRECT_URL"
+  ]
+}
