@@ -1,4 +1,4 @@
 {
   "type": "static",
-  "type": "public"
+  "public": true
 }
