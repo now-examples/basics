@@ -13,7 +13,7 @@ These deployments:
 |:------|:------------|:---- |
 | [static-react](https://cra.now.sh) | Deploy, test and build CRA | 635K |
 | [static-next.js](https://static-nextjs.now.sh) | A simple statically exported Next.js application | 242K |
-| [mdx-deck](https://mdx-deck-example.now.sh/) | A simple presentation built with mdx-deck | 299K |
+| [static-mdx-deck](https://static-mdx-deck.now.sh/) | A simple presentation built with mdx-deck | 299K |
 
 ## Serverless Docker (V2)
 
