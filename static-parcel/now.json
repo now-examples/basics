@@ -1,4 +1,9 @@
 {
   "type": "static",
-  "public": true
+  "public": true,
+  "build": {
+    "env": {
+      "BUNDLER": "Parcel"
+    }
+  }
 }
