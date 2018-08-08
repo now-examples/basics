@@ -19,6 +19,5 @@ COPY src/wp-config.php /var/www/wordpress/
 
 # copy in the sqlite database
 COPY data /data
-RUN chmod 777 -R /data
 
 CMD ["./run.sh"]
