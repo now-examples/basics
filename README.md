@@ -14,6 +14,7 @@ These deployments:
 | [static-mdx-deck](https://static-mdx-deck.now.sh/) | A simple presentation built with mdx-deck | 299K |
 | [static-next.js](https://static-nextjs.now.sh) | A simple statically exported Next.js application | 242K |
 | [static-react](https://cra.now.sh) | Deploy, test and build CRA | 635K |
+| [static-webpack](https://static-webpack.now.sh) | A simple website built using [webpack](https://webpack.js.org) | 8K |
 
 ## Serverless Docker (V2)
 
