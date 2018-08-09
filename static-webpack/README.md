@@ -58,9 +58,9 @@ Add the following `.dockerignore` which will tell Docker to ignore all files exc
 ```
 *
 !src
-package.json
-webpack.config.js
-yarn.lock
+!package.json
+!webpack.config.js
+!yarn.lock
 ```
 
 ## Step 5: Add the application code
