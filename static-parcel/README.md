@@ -1,4 +1,4 @@
-# Parcel
+!# Parcel
 
 A simple website built using [Parcel](https://parceljs.org)
 
@@ -59,8 +59,8 @@ Add the following `.dockerignore` which will tell Docker to ignore all files exc
 ```
 *
 !src
-package.json
-yarn.lock
+!package.json
+!yarn.lock
 ```
 
 ## Step 5: Add the application code
