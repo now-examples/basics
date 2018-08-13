@@ -1,4 +1,4 @@
-!# Parcel
+# Parcel
 
 A simple website built using [Parcel](https://parceljs.org)
 
