@@ -9,7 +9,7 @@ ARG NOW_TOKEN
 COPY . .
 RUN find . -maxdepth 1 -type d '!' -path '.' '!' -path './.*' -print0 | \
     sort -z | \
-    xargs -0 -L 1 -I{} ./.now/deploy {} "$NOW_TOKEN" && \
+    xargs -0 -n 1 -I{} ./.now/deploy {} "$NOW_TOKEN" && \
     echo "</ul></body></html>" >> .now/index.html
 
 FROM jtyr/asmttpd
