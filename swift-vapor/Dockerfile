@@ -1,15 +1,17 @@
 FROM swift:4.1 as builder
-WORKDIR /app
+WORKDIR /build
 COPY . .
-RUN mkdir -p /build/lib && cp -R /usr/lib/swift/linux/*.so /build/lib
-RUN swift build -c release && mv `swift build -c release --show-bin-path` /build/bin
+RUN swift package resolve
+RUN swift build -c release
+RUN chmod +x pkg-swift-deps.sh
+RUN ./pkg-swift-deps.sh /build/.build/x86_64-unknown-linux/release/Run
 
-FROM ubuntu:16.04
-RUN apt-get -qq update && apt-get install -y \
-  libicu55 libxml2 libbsd0 libcurl3 libatomic1 \
-  tzdata \
-  && rm -r /var/lib/apt/lists/*
+FROM busybox:glibc
 WORKDIR /app
-COPY --from=builder /build/bin/Run .
-COPY --from=builder /build/lib/* /usr/lib/
+COPY --from=builder /build/swift_libs.tar.gz .
+COPY --from=builder /build/.build/x86_64-unknown-linux/release/Run .
+
+RUN tar -xzvf swift_libs.tar.gz -C /
+RUN rm -rf usr/lib lib lib64 swift_libs.tar.gz
+
 ENTRYPOINT ./Run serve -e prod -b 0.0.0.0
