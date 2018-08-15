@@ -8,7 +8,6 @@ let package = Package(
         .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
     ],
     targets: [
-        .target(name: "App", dependencies: ["Vapor"]),
-        .target(name: "Run", dependencies: ["App"]),
+        .target(name: "Run", dependencies: ["Vapor"]),
     ]
 )
