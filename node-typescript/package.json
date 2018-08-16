@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && node ./node_modules/.bin/micro"
+    "build": "tsc",
+    "start": "micro"
   },
   "devDependencies": {
     "typescript": "^3.0.1"
