@@ -3,6 +3,7 @@ WORKDIR /usr/src
 COPY . .
 RUN yarn
 RUN yarn build
+RUN yarn --production
 
 FROM mhart/alpine-node:base-10
 WORKDIR /usr/src
