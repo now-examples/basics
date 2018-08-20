@@ -23,7 +23,7 @@ ENV APP_DEBUG="false"
 
 COPY . .
 RUN mkdir -p storage/app storage/framework/cache storage/framework/sessions storage/framework/views storage/logs
-RUN composer dump-autoload && php artisan package:discover
+RUN composer dump-autoload -o
 RUN php artisan config:cache && php artisan route:cache
 RUN chown -R nobody:nobody /var/www/laravel
 
