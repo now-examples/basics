@@ -1,0 +1,14 @@
+{
+    "public": true,
+    "env": {
+        "MONGO_URL": "@mongodb-url",
+        "ROOT_URL": "https://meteor-example.now.sh"
+    },
+    "files": [
+        "bundle"
+    ],
+    "type": "docker",
+    "features": {
+        "cloud": "v2"
+    }
+}
