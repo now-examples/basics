@@ -1,8 +1,5 @@
 FROM mhart/alpine-node:8.11.4
 
-LABEL name="meteor-example"
-
-RUN mkdir /app
 COPY * /app/
 WORKDIR /app
 RUN cat app.* > app.tar.gz
