@@ -1,11 +1,6 @@
 FROM mhart/alpine-node:8.11.4
 
 LABEL name="meteor-example"
-ARG HOSTNAME
-ARG NOW
-ARG NOW_DC
-ARG NOW_REGION
-ARG NOW_URL
 
 RUN mkdir /app
 COPY * /app/
