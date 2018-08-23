@@ -1,16 +1,20 @@
+FROM geoffreybooth/meteor-base:1.7.0.3
+
+COPY src/ /app/
+WORKDIR /app
+RUN meteor npm install
+RUN meteor build --server-only --directory .
+
 FROM mhart/alpine-node:8.11.4
 
-COPY * /app/
-WORKDIR /app
-RUN cat app.* > app.tar.gz
-RUN tar zxf app.tar.gz
-RUN rm app.*
+COPY --from=0 /app/bundle/ /app/
 
-WORKDIR bundle/programs/server
+WORKDIR /app/programs/server
 RUN apk add --no-cache make g++ python
 RUN npm install --production
 RUN apk del make g++ python
 WORKDIR ../..
+RUN ls -l
 
 ENV PORT=3000
 EXPOSE 3000
