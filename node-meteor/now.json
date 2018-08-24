@@ -5,7 +5,7 @@
         "cloud": "v2"
     },
     "env": {
-        "MONGO_URL": "@mongodb-url",
+        "MONGO_URL": "@now-examples-mongodb-url",
         "ROOT_URL": "https://meteor-example.now.sh"
     }
 }
