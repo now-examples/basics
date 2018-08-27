@@ -1,27 +1,25 @@
-FROM bitwalker/alpine-elixir:1.7.2
+FROM elixir:1.7.2-alpine as builder
 
-ENV MIX_HOME=/opt/mix \
-    HEX_HOME=/opt/hex \
-    HOME=/opt/app
+ARG MIX_ENV="prod"
 
-# Install Hex+Rebar
-RUN mix local.hex --force && \
-    mix local.rebar --force
+RUN mix local.hex --force
+RUN mix local.rebar --force
+RUN mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phx_new.ez
 
-WORKDIR /opt/app
+WORKDIR /build
+COPY . .
+RUN mix do deps.get --only prod --force, deps.compile, compile
+RUN mix phx.digest
+RUN mix release
 
-ENV PORT=8080 MIX_ENV=prod
+FROM alpine:3.8
 
-# Cache elixir deps
-ADD mix.exs mix.lock ./
-RUN mix do deps.get, deps.compile
+RUN apk update && \
+    apk add --no-cache bash openssl-dev
 
-ADD . .
+WORKDIR /app
+COPY --from=builder /build/_build/prod/rel/app .
 
-RUN mix do compile, phx.digest
+ENV APP_PORT=4000
+CMD trap 'exit' INT; /app/bin/app foreground
 
-USER default
-
-EXPOSE 8080
-
-CMD ["mix", "phx.server"]
