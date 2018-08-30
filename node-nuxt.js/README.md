@@ -1,6 +1,6 @@
-# Next.js SSR
+# Nuxt.js SSR
 
-A simple Next.js application with two pages and SSR enabled.
+A simple Nuxt.js application with two pages and SSR enabled.
 
 To add new pages create files under `./pages`.
 
@@ -17,7 +17,7 @@ yarn init --yes
 Add the project dependencies:
 
 ```bash
-yarn add next react react-dom
+yarn add nuxt
 ```
 
 ## Step 3: Configure scripts
@@ -28,9 +28,9 @@ Set scripts to `package.json`:
 {
   ...
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
   }
   ...
 }
@@ -58,9 +58,10 @@ RUN yarn build && yarn --production
 FROM mhart/alpine-node:base-10
 WORKDIR /usr/src
 ENV NODE_ENV="production"
+ENV HOST 0.0.0.0
 COPY --from=base /usr/src .
 EXPOSE 3000
-CMD ["node", "./node_modules/.bin/next", "start"]
+CMD ["node", "./node_modules/.bin/nuxt", "start"]
 ```
 
 ## Step 5: Set files to ignore with Docker
@@ -70,6 +71,7 @@ Add the following `.dockerignore` which will tell Docker to ignore all files exc
 ```plain
 *
 !components
+!layouts
 !pages
 !package.json
 !yarn.lock
