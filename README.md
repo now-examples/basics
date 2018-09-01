@@ -23,6 +23,7 @@ These deployments:
 | [static-parcel](https://static-parcel.now.sh) | A simple website built using [Parcel](https://parceljs.org) | 20K |
 | [static-react](https://cra.now.sh) | Deploy, test and build [CRA](https://github.com/facebook/create-react-app) | 635K |
 | [static-vuepress](https://static-vuepress.now.sh) | A static website built using [vuepress](https://vuepress.vuejs.org/) | 272.0K |
+| [static-parcel-react](https://static-parcel-react.now.sh) | A simple React website built using [Parcel](https://parceljs.org) | 2.5M |
 | [static-webpack](https://static-webpack.now.sh) | A simple website built using [webpack](https://webpack.js.org) | 8K |
 
 ## Serverless Docker (V2)
