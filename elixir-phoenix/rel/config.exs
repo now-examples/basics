@@ -46,6 +46,7 @@ end
 # will be used by default
 
 release :app do
+  set vm_args: "rel/vm.args"
   set version: current_version(:app)
   set applications: [
     :runtime_tools
