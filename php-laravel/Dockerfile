@@ -1,4 +1,4 @@
-# Build deps
+# Build vendor deps
 FROM composer:latest as vendor
 
 COPY database/ database/
@@ -8,11 +8,25 @@ COPY composer.lock composer.lock
 RUN composer install --ignore-platform-reqs --no-interaction \
     --no-plugins --no-scripts --prefer-dist --no-dev
 
+# Build frontend deps
+FROM mhart/alpine-node:10 as frontend
+
+RUN mkdir -p /app/public
+COPY package.json webpack.mix.js yarn.lock /app/
+COPY resources/assets/ /app/resources/assets/
+
+WORKDIR /app
+RUN yarn install && yarn production
+
+# Build php-nginx image
 FROM zeit/wait-for:0.2 as wait
 
 FROM php:7-fpm-alpine
 COPY --from=wait /bin/wait-for /bin/wait-for
 COPY --from=vendor /app/vendor /var/www/laravel/vendor
+COPY --from=frontend /app/public/js/ /var/www/html/public/js/
+COPY --from=frontend /app/public/css/ /var/www/html/public/css/
+COPY --from=frontend /app/mix-manifest.json /var/www/html/mix-manifest.json
 RUN apk add --no-cache nginx curl bash
 
 # Ensure we only have one www.conf
