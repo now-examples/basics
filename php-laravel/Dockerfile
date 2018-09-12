@@ -25,7 +25,7 @@ COPY docker/nginx.conf /etc/nginx/
 WORKDIR /var/www/laravel
 COPY . .
 RUN mkdir -p bootstrap/cache storage/app storage/framework/cache storage/framework/sessions storage/framework/views storage/logs
-RUN php artisan route:cache
+RUN php artisan optimize
 RUN chown -R nobody:nobody /var/www/laravel
 
-CMD ["/bin/bash", "-c", "php /var/www/laravel/artisan config:cache && php-fpm -F & (wait-for /tmp/php7-fpm.sock && nginx) & wait -n"]
+CMD ["/bin/bash", "-c", "php-fpm -F & (wait-for /tmp/php7-fpm.sock && nginx) & wait -n"]
