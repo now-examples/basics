@@ -1,0 +1,6 @@
+[package]
+name = "rust-iron"
+version = "0.0.0"
+
+[dependencies]
+iron = "0.6.*"
