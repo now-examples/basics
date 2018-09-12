@@ -24,7 +24,7 @@ COPY docker/nginx.conf /etc/nginx/
 
 WORKDIR /var/www/laravel
 COPY . .
-RUN mkdir -p storage/app storage/framework/cache storage/framework/sessions storage/framework/views storage/logs
+RUN mkdir -p bootstrap/cache storage/app storage/framework/cache storage/framework/sessions storage/framework/views storage/logs
 RUN php artisan route:cache
 RUN chown -R nobody:nobody /var/www/laravel
 
