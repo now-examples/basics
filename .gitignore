@@ -1,6 +1,20 @@
-main.dwarf
-node_modules
+# build output
+.next
+out
+lib/data/now-examples.json
+
+# dependencies
 .bundle
+node_modules
+deploy-server/node_modules
+package-lock.json
 vendor
 target
+
+# logs
+npm-debug.log
+
+# other
+.DS_Store
+main.dwarf
 
