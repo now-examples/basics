@@ -6,6 +6,11 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <LinkerRootAssemblies Include="Microsoft.AspNetCore.Mvc.Razor.Extensions;Microsoft.Extensions.FileProviders.Composite;Microsoft.Extensions.Primitives;Microsoft.AspNetCore.Diagnostics.Abstractions" />
+  </ItemGroup> 
+
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
