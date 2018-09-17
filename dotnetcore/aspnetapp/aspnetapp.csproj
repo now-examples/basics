@@ -6,7 +6,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <LinkerRootAssemblies Include="Microsoft.AspNetCore.Mvc.Core;Microsoft.AspNetCore.Mvc.Razor.Extensions;Microsoft.Extensions.FileProviders.Composite;Microsoft.Extensions.Primitives;Microsoft.AspNetCore.Diagnostics.Abstractions" />
+    <LinkerRootAssemblies Include="Microsoft.AspNetCore.Razor.Runtime;Microsoft.AspNetCore.Mvc.Core;Microsoft.AspNetCore.Mvc.Razor.Extensions;Microsoft.Extensions.FileProviders.Composite;Microsoft.Extensions.Primitives;Microsoft.AspNetCore.Diagnostics.Abstractions" />
   </ItemGroup> 
 
 
