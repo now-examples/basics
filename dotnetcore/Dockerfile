@@ -1,36 +1,29 @@
 FROM microsoft/dotnet:2.1-sdk-alpine AS build
 WORKDIR /app
 
-# copy csproj and restore as distinct layers
+# layer and restore
 COPY *.sln .
 COPY nuget.config . 
 COPY aspnetapp/*.csproj ./aspnetapp/
 RUN dotnet restore
 
-# copy everything else and build app
+# layer and build
 COPY . .
 WORKDIR /app/aspnetapp
 RUN dotnet build
 
+# layer adding linker then publish after tree shaking
 FROM build AS publish
 WORKDIR /app/aspnetapp
-# add IL Linker package (optional, can make things smaller. Can also be here, or in the actual csproj)
 RUN dotnet add package ILLink.Tasks -v 0.1.5-preview-1841731 -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
-# ALPINE SELF CONTAINED
 RUN dotnet publish -c Release -o out -r linux-musl-x64 /p:ShowLinkerSizeComparison=true 
-# NOT SELF CONTAINED
-#RUN dotnet publish -c Release -o out /p:ShowLinkerSizeComparison=true 
 
-# ALPINE SELF CONTAINED 
+# final layer using smallest runtime available
 FROM microsoft/dotnet:2.1-runtime-deps-alpine AS runtime
-# NOT SELF CONTAINED
-#FROM microsoft/dotnet:2.1-aspnetcore-runtime-alpine AS runtime
-
 ENV DOTNET_USE_POLLING_FILE_WATCHER=true
-#ENV ASPNETCORE_ENVIRONMENT=Development
 WORKDIR /app
 COPY --from=publish /app/aspnetapp/out ./
 
-#expose a port and run it!
+# expose port and execute aspnetcore app
 EXPOSE 80
 ENTRYPOINT ["./aspnetapp"]
