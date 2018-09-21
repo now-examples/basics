@@ -73,3 +73,11 @@ These deployments:
 | [swift-http-server](https://swift-http-server-v2.now.sh) | [Swift](https://swift.org/) | Example Swift hello world using [HTTP Server](https://swift-server.github.io/http/) | 33.0M |
 | [swift-kitura](https://swift-kitura-v2.now.sh) | [Swift](https://swift.org/) | Swift server written with IBM's [Kitura](https://github.com/IBM-Swift/Kitura) | 33.9M |
 | [swift-vapor](https://swift-vapor-v2.now.sh) | [Swift](https://swift.org/) | Server-side Swift example using [Vapor](https://vapor.codes/) | 35.7M |
+
+# Contributing
+
+1. Add a new folder with the name of the project
+2. Create the minimum files required to build the project
+3. Keep the example Docker image as small as possible
+4. Add a README.md file to the project based on this [template](.github/EXAMPLE_README_TEMPLATE.md)
+5. Add the example to the main README.md
