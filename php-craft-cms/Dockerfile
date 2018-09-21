@@ -55,13 +55,14 @@ COPY web/ ./web
 COPY --from=vendor /app/vendor ./vendor
 
 # Set permissions
-RUN chmod 777 .env
-RUN chmod 777 composer.json
-RUN chmod 777 composer.lock
+# https://docs.craftcms.com/v3/installation.html#step-2-set-the-file-permissions
+RUN chmod 744 .env
+RUN chmod 744 composer.json
+RUN chmod 744 composer.lock
 # RUN chmod 777 /www/config/license.key
-RUN chmod 777 -R ./storage
-RUN chmod 777 -R ./vendor
-RUN chmod 777 -R ./web/cpresources
+RUN chmod 744 -R ./storage
+RUN chmod 744 -R ./vendor
+RUN chmod 744 -R ./web/cpresources
 
 COPY nginx.conf /etc/nginx/
 COPY www.conf /etc/php7/php-fpm.d/
