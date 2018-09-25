@@ -73,4 +73,3 @@ These deployments:
 | [swift-http-server](https://swift-http-server-v2.now.sh) | [Swift](https://swift.org/) | Example Swift hello world using [HTTP Server](https://swift-server.github.io/http/) | 33.0M |
 | [swift-kitura](https://swift-kitura-v2.now.sh) | [Swift](https://swift.org/) | Swift server written with IBM's [Kitura](https://github.com/IBM-Swift/Kitura) | 33.9M |
 | [swift-vapor](https://swift-vapor-v2.now.sh) | [Swift](https://swift.org/) | Server-side Swift example using [Vapor](https://vapor.codes/) | 35.7M |
-
