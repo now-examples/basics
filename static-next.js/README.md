@@ -176,14 +176,11 @@ First we need to add a `now.json` file to specify we want to use our Cloud V2.
 touch now.json
 ```
 
-Add the type static key to notify Now that this is a static deployemnt and just adding the features key, we can specify the Now cloud to use.
+Add the type static key to notify Now that this is a static deployemnt.
 
 ```
 {
-  "type": "static",
-  "features": {
-    "cloud": "v2"
-  }
+  "type": "static"
 }
 ```
 
