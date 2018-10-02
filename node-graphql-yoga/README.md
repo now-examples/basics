@@ -17,6 +17,11 @@ After deploying to the demo server, it will add an endpoint to `database/datamod
 
 You then need to add a couple of secrets to Now - `APP_SECRET` and `PRISMA_SECRET`. The former is used for the JWT authentication, and the latter is used to authenticate between the hosted Prisma service, and the GraphQL server.
 
+```sh
+now secret add yoga-app-secret "jwtsecret"
+now secret add yoga-prisma-secret "mysecret"
+```
+
 Once you have finished that, you can go ahead and deploy the GraphQL server with `now`. Open the deploy url, and you should see the GraphQL Playground.
 You try running some of the queries/mutations below. Open the Schema tab in the playground to see what else you can do.
 
