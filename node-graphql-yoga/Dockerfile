@@ -10,4 +10,4 @@ ENV PATH="./node_modules/.bin:$PATH"
 ENV NODE_ENV="production"
 COPY --from=build /usr/src .
 EXPOSE 4000
-CMD ["node", "./node_modules/.bin/nodemon", "start"]
+CMD ["./node_modules/.bin/nodemon", "start"]
