@@ -1,4 +1,4 @@
-# GraphQL Server with Yoga
+# GraphQL Yoga Server
 
 This is a boilerplate for a GraphQL server built with [Yoga](https://github.com/prisma/graphql-yoga). It includes [prisma-bindings](https://github.com/prisma/prisma), using a [hosted service](https://app.prisma.io) as a database and Prisma server.
 
