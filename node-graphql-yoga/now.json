@@ -1,0 +1,14 @@
+{
+  "name": "graphql-yoga",
+  "public": true,
+  "type": "docker",
+  "features": {
+    "cloud": "v2"
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "PRISMA_ENDPOINT": "@yoga-prisma-endpoint",
+    "PRISMA_SECRET": "@yoga-prisma-secret",
+    "APP_SECRET": "@yoga-app-secret"
+  }
+}
