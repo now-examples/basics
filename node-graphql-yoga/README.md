@@ -1,11 +1,24 @@
+# GraphQL Server with Yoga
 
+This is a boilerplate for a GraphQL server built with [Yoga](https://github.com/prisma/graphql-yoga). It includes [prisma-bindings](https://github.com/prisma/prisma), using a [hosted service](https://app.prisma.io) as a Database and Prisma server.
+
+## How to use
+
+As we are using Prisma, we have a two stage setup. First - the database, second - the actual GraphQL server.
+
+You need to install all dependancies:
+
+```sh
+yarn
 ```
 
-## Getting started
+Then run `npx prisma deploy` (you will need to be authenticated with the hosted service). After deploying to the demo services, it will add an endpoint to `database/datamodel.graphql`.
 
+You then need to add a couple of secrets to now - `APP_SECRET` and `PRISMA_SECRET`. The former is used for the JWT authentication, and the latter is used to authenticate between the hosted prisma service, and the graphQL server.
 
+Once you have finished that, yo can go ahead and deploy with `now`.
 
-## Documentation
+## Documentation from Yoga
 
 ### Commands
 
