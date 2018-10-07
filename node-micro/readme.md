@@ -2,7 +2,7 @@
 
 A simple Node.js microservice that exposes a simple function.
 
-To edit your function, refer to `./src/index.js`.
+To edit your function, refer to `./server.js`.
 
 Optimized image that combines:
 
