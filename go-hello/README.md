@@ -50,7 +50,7 @@ We will create a `Dockerfile` with multi stage builds to:
 
 #### Dockerfile
 
-We will start buy using the official Go Docker image to install the dependencies and build the project, after that we will use the official scratch Docker image to have the minimum requirements and lower the Docker image size to run the app and copy all the files.
+We will start by using the official Go Docker image to install the dependencies and build the project, after that we will use the official scratch Docker image to have the minimum requirements and lower the Docker image size to run the app and copy all the files.
 
 Then using the Docker `CMD` we will start the app in production mode.
 
