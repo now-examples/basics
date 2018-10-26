@@ -1,17 +1,13 @@
 # go
 
-In this example we will be deploying a static html file and navigates to a GoLang function that displays the current date on the server.
+In this example we will be deploying a static html file that navigates to a GoLang function that displays the current date on the server.
 
 ### Getting started with GoLang
 
 - Create a `index.html` file
 
 ```
-touch index.html
-```
-
-```
-<a href="/date.go">Get date</a>
+echo "<a href="/date.go">Get date</a>" > index.html
 ```
 
 - Create a `date.go` file
@@ -42,7 +38,7 @@ First we need to add a `now.json` file to specify we want to use our Cloud V2.
 touch now.json
 ```
 
-By just adding the version key, we can specify which Now cloud to use. We also need to define each builders we would like to use, in this case we are going to use @now/go to build and deploy the date.go file. By default all other files will be statically served.
+By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use @now/go to build and deploy the date.go file. By default all other files will be statically served.
 
 ```
 {
