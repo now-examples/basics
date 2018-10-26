@@ -4,17 +4,13 @@ In this example we will be deploying a static html file that navigates to a GoLa
 
 ### Getting started with GoLang
 
-- Create a `index.html` file
+- Create a `index.html` file with the following HTML code:
 
 ```
-echo "<a href="/date.go">Get date</a>" > index.html
+<a href="/date.go">Get date</a>
 ```
 
-- Create a `date.go` file
-
-```
-touch date.go
-```
+- Create a `date.go` file with the following GoLang code:
 
 ```
 package main
@@ -32,7 +28,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 ### Deploy with Now
 
-First we need to add a `now.json` file to specify we want to use our Cloud V2.
+First we need to add a `now.json` file to specify we want to use our Platform V2.
 
 ```
 touch now.json
