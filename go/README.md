@@ -30,10 +30,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 First we need to add a `now.json` file to specify we want to use our Platform V2.
 
-```
-touch now.json
-```
-
 By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use @now/go to build and deploy the date.go file. By default all other files will be statically served.
 
 ```
