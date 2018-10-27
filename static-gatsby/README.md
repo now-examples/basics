@@ -35,10 +35,10 @@ Add the following `.dockerignore` which will tell Docker to ignore all files exc
 ```plain
 *
 !src
-!gastsby-browser.js
-!gastsby-config.js
-!gastsby-node.js
-!gastsby-ssr.js
+!gatsby-browser.js
+!gatsby-config.js
+!gatsby-node.js
+!gatsby-ssr.js
 !package.json
 !yarn.lock
 ```
