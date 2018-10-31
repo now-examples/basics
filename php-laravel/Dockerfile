@@ -6,7 +6,7 @@ COPY composer.json composer.json
 COPY composer.lock composer.lock
 
 RUN composer install --ignore-platform-reqs --no-interaction \
-    --no-plugins --no-scripts --prefer-dist --no-dev
+    --no-plugins --no-scripts --prefer-dist
 
 FROM zeit/wait-for:0.2 as wait
 
@@ -25,6 +25,8 @@ COPY docker/nginx.conf /etc/nginx/
 WORKDIR /var/www/laravel
 COPY . .
 RUN mkdir -p bootstrap/cache storage/app storage/framework/cache storage/framework/sessions storage/framework/views storage/logs
+# Only possible to clear route cache via `artisan` if your app has no closures in its routes:
+# https://github.com/laravel/framework/issues/22034
 RUN php artisan route:cache
 RUN chown -R nobody:nobody /var/www/laravel
 
