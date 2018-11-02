@@ -1,10 +1,10 @@
-# PHP 7 Hello World
+# PHP 7
 
 In this example we will be deploying a simple "Hello World" example with PHP.
 
 ### Getting started with PHP
 
-- Create a `index.php` file with the following HTML code:
+- Create a `index.php` file with the following code:
 
 ```
 <?php echo "Hi from Now Lambda"; ?>
@@ -19,7 +19,7 @@ By just adding the version key, we can specify which Now Platform to use. We als
 ```
 {
     "version": 2,
-    "name": "php-7-hello-world",
+    "name": "php-7",
     "builds": [
         { "src": "*.php", "use": "@now/php" }
     ]
