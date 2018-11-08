@@ -1,8 +1,8 @@
-# GoLang
+# Go
 
 In this example we will be deploying a simple "Hello World" example with GoLang.
 
-### Getting started with GoLang
+### Getting started with Go
 
 - Create a `index.go` file with the following code:
 
