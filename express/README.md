@@ -2,7 +2,7 @@
 
 In this example, we will create a simple server with express.
 
-### Getting started with Create React App
+### First steps for the creation of our server with express
 
 - Let's start with adding dependency:
 
