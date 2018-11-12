@@ -33,7 +33,3 @@ We are now ready to deploy the app.
 ```
 now
 ```
-
-This will be our result: 
-
-https://express-qz96arhoj.now.sh/
