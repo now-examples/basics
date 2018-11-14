@@ -5,8 +5,6 @@
     {"src": "package.json", "use": "@now/static-build"}
   ],
   "routes": [
-    {"src": "^/static/(.*)", "dest": "/static/$1"},
-    {"src": "^/service-worker.js", "dest": "/service-worker.js"},
-    {"src": ".*", "dest": "/index.html"}
+    {"src": "^/static/(.*)", "dest": "/static/$1"}
   ]
 }
