@@ -15,7 +15,7 @@ npx create-react-app <project name>
 First we need to add a command into the `package.json` file.
 ```json
 {
-    scripts: {
+    "scripts": {
         "now-build": "react-scripts build && mv build dist"
     }
 }
