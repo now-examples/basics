@@ -5,12 +5,10 @@ const server = new Hapi.server({
   port: 3000
 })
 
-const hello = () => 'Hello from hapi.js!'
-
 server.route({
   method: 'GET',
   path: '/',
-  handler: hello
+  handler: () => 'Hello from hapi.js!'
 })
 
 server.start()
