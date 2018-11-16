@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "now-examples-ghost",
+  "description": "Example deployment of a `ghost` blog to Now using npm",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zeit/now-examples.git"
+  },
+  "keywords": [
+    "now",
+    "deploy",
+    "zeit",
+    "ghost",
+    "blog"
+  ],
+  "author": "Antony Jones <antony@beyonk.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeit/now-examples/issues"
+  },
+  "homepage": "https://github.com/zeit/now-examples#readme",
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "ghost": "^2.6.0",
+    "ghost-storage-adapter-gcloud": "0.0.4",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "knex-migrator": "^3.1.6"
+  }
+}

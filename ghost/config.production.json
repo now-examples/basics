@@ -1,0 +1,30 @@
+{
+    "url": "https://now-examples-ghost.now.sh",
+    "auth": {
+        "type": "password"
+    },
+    "paths": {
+        "contentPath": "/home/nowuser/src/content/"
+    },
+    "logging": {
+      "transports": ["stdout"]
+    },
+    "storage": {
+      "active": "gcloud",
+      "gcloud": {
+        "projectID": "your-gcp-project-id",
+        "keyFilename": "gcloud-storage-account.json",
+        "bucket": "your-gcp-bucket-name"
+      }
+    },
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host": "your-mysql-hostname",
+            "port": 3306,
+            "user": "your-mysql-db-username",
+            "password": "your-mysql-db-password",
+            "database": "your-mysql-db-name"
+        }
+    }
+}
