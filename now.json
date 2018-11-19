@@ -15,6 +15,6 @@
         { "src": "mdx-deck/deck.mdx", "use": "@now/mdx-deck" },
         { "src": "node-server/index.js", "use": "@now/node-server" },
         { "src": "optipng/showcase.png", "use": "@now/optipng" },
-        { "src": "nodejs-/index.js", "use": "@now/node" }
+        { "src": "nodejs-koa/index.js", "use": "@now/node" }
     ]
 }
