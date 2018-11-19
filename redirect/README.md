@@ -29,7 +29,7 @@ We are now ready to deploy the redirect.
 now
 ```
 
-Once the deployment is fnished, you can alias by running:
+Once the deployment is created, you can alias by running:
 
 ```
 now alias
