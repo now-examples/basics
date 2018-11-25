@@ -1,0 +1,11 @@
+{
+    "name": "nodejs-express-multiple-routes",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "dev": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.16.4"
+    }
+}

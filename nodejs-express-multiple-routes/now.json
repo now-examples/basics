@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "nodejs-express-multiple-routes",
+    "builds": [
+        {
+            "src": "v1/**/index.js",
+            "use": "@now/node-server"
+        }
+    ]
+}
