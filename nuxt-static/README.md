@@ -4,6 +4,29 @@ In this example we will be deploying a simple "Hello World" example with Nuxt st
 
 ### Getting started with Nuxt
 
+- Let's start by adding a `package.json` with the following dependencies:
+
+```
+{
+  "name": "nuxt-static",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
+```
+
 - Create a `pages` folder with an `index.vue` file with the following code:
 
 ```
@@ -82,17 +105,13 @@ h1 {
 
 ```
 
-- Finally in order for Nuxt to be deployed staticaly we will use the `package.json` and define our build options for Nuxt on our a `nuxt.config.js` with the following code:
+- Finally in order for Nuxt to be deployed staticaly we will use the `package.json` and define our build options for Nuxt creating a `nuxt.config.js` with the following code:
 
 ```
 const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
-
-  /*
-  ** Headers of the page
-  */
   head: {
     title: pkg.name,
     meta: [
@@ -104,10 +123,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#fff' }
 }
 
@@ -120,6 +135,7 @@ First you need to tell Now how to build the app using the `now-build` script in 
 ```json
 {
   "scripts": {
+    ...
     "now-build": "nuxt generate"
   }
 }
@@ -133,7 +149,9 @@ By just adding the version key, we can specify which Now Platform to use. We als
 {
   "version": 2,
   "name": "nuxt-static",
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
 }
 ```
 
