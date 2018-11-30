@@ -3,6 +3,9 @@
   "name": "probot-now-v2",
   "alias": "probot-now-v2",
   "builds": [
-    { "src": "package.json", "use": "@now/node-server" }
-  ]
+    { "src": "index.js", "use": "@now/node-server" }
+  ],
+  "env": {
+    "PRIVATE_KEY": "eW91ci1iYXNlNjQtZW5jb2RlZC1wcml2YXRlLWtleQ=="
+  }
 }

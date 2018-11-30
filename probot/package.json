@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "start": "probot run ./index.js"
-  },
-  "dependencies": {
-    "probot": "^7.4.0"
-  }
-}
