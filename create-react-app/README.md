@@ -34,7 +34,13 @@ By just adding the version key, we can specify which Now Platform to use. We als
         { "src": "package.json", "use": "@now/static-build" }
     ],
     "routes": [
-      {"src": "^/(.*)", "dest": "/$1"}
+        {"src": "^/static/(.*)", "dest": "/static/$1"},
+        {"src": "^/favicon.ico", "dest": "/favicon.ico"},
+        {"src": "^/asset-manifest.json", "dest": "/asset-manifest.json"},
+        {"src": "^/manifest.json", "dest": "/manifest.json"},
+        {"src": "^/service-worker.js", "headers": {"cache-control": "s-maxage=0"}, "dest": "/service-worker.js"},
+        {"src": "^/precache-manifest.(.*)", "dest": "/precache-manifest.$1"},
+        {"src": "^/(.*)", "dest": "/index.html"}
     ]
 }
 ```
