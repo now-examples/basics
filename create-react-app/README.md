@@ -24,7 +24,7 @@ First we need to add a command into the `package.json` file.
 
 Then we need to add a `now.json` file to specify we want to use our Platform V2.
 
-By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use `@now/static-build` to build and deploy our React application selecting the `package.json` as our entry point. We will also define a name for our project (optional). The `routes` property makes sure requests like `/non-existent-page` are routed to the Create React App `index.html`.
+By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use `@now/static-build` to build and deploy our React application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
 
 ```json
 {
@@ -34,8 +34,7 @@ By just adding the version key, we can specify which Now Platform to use. We als
         { "src": "package.json", "use": "@now/static-build" }
     ],
     "routes": [
-      {"src": "^/static/(.*)", "dest": "/static/$1"},
-      {"src": ".*", "dest": "/index.html"}
+      {"src": "^/(.*)", "dest": "/$1"}
     ]
 }
 ```
