@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "/ssr/**/*.js",
+      "src": "/ssr/**/index.js",
       "use": "@now/node"
     },
     {
