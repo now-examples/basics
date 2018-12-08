@@ -1,0 +1,21 @@
+{
+  "name": "now-lambda-vue",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "now-build": "webpack --mode production"
+  },
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "vue-server-renderer": "^2.5.18"
+  },
+  "devDependencies": {
+    "vue": "^2.5.18",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.18",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
