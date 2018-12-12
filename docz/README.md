@@ -6,7 +6,7 @@ If you have already got a [docz project setup](https://www.docz.site/introductio
 
 ## Step 1: Getting Started with docz
 
-First, to [get up-and-running with docz](https://www.docz.site/introduction/getting-started), install it as a dependency in the project folder you're working in:
+First, to [get up-and-running with docz](https://www.docz.site/introduction/getting-started), install it as a dependency in the project folder you are working in:
 
 ```shell
 yarn add --dev docz
@@ -24,13 +24,13 @@ Once it is installed, open the `package.json` file and add the following scripts
 }
 ```
 
-Yo can now build and launch your docz project locally by running:
+You can now build and launch your docz project locally by running:
 
 ```shell
 yarn dev
 ```
 
-Initially, the project will not have any content, but you can add a file anywhere in the project that includes a `.mdx` file extension. Starting off; a simple file that has a name, some content, and tells docz that the route should be `/`:
+Initially, the project will not have any content, but you can add a file anywhere in the project that includes a `.mdx` file extension. You can create a simple file that has a name, some content, and tells docz that the route should be `/`:
 
 ```
 ---
@@ -58,12 +58,12 @@ To deploy to Now, you need to tell Now how to build our docz project. You can do
 }
 ```
 
-The above configues the project to:
+The above configures the project to:
 - Build on [Now 2.0](https://zeit.co/docs/v2/platform/overview/#versioning)
 - Have [a name](https://zeit.co/docs/v2/deployments/configuration/#name)
 - When deploying, use the [`@now/static-build` builder](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/) to build our app
 
-However, the `@now/static-build` builder requires that you pass it instructions on how to build it and that the subsequent build is placed in the `dist` directory, [unless otherwise specified](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/#configuring-the-dist-directory).
+However, the `@now/static-build` builder requires that you pass it instructions on how to build it and that the subsequent build is placed in the `dist` directory [unless otherwise specified](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/#configuring-the-dist-directory).
 
 To tell docz to place our build in the `dist` directory, you can create a `doczrc.js` file with the following contents:
 
@@ -97,5 +97,5 @@ now
 
 ## Resources
 - [Visit our documentation](https://zeit.co/docs/v2/getting-started/introduction-to-now/) for more information on using Now to deploy your projects.
-- [Visit the docz site](https://docz.site) to learn more about configurin your new documentation project ready to be [pushed to production](https://zeit.co/docs/v2/domains-and-aliases/aliasing-a-deployment/) on Now
+- [Visit the docz site](https://docz.site) to learn more about configuring your new documentation project ready to be [pushed to production](https://zeit.co/docs/v2/domains-and-aliases/aliasing-a-deployment/) on Now
 
