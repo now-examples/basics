@@ -56,6 +56,14 @@ We also need to include a script in `package.json` named `"now-build"` that spec
 }
 ```
 
+The routes section of the `now.json` configuration file is used to serve files present in the `dist` folder, as part of the `now-build` script.  The example `routes` array in the `now.json` configuration object above will serve files that create-react-app utilizes by default.  If there are any additional files or folders, you will need to add those to the `routes` array.  For example, if there is a `photos` subdirectory:
+
+```
+"routes": [
+        ...
+        {"src": "^/photos/(.*)", "dest": "/photos/$1"},
+```
+
 We are now ready to deploy the app.
 
 ```
