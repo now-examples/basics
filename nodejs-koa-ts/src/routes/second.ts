@@ -4,12 +4,11 @@ import { Context } from "koa";
 import { createApp } from "../common";
 
 async function main(ctx: Context, next: Function) {
-  if (ctx.method !== "POST") ctx.throw(405);
-
   ctx.status = 200;
   ctx.body = {
-    route: "second",
-    body: ctx.request.body
+    method: ctx.method,
+    body: ctx.request.body,
+    description: "Second route!",
   };
 }
 
