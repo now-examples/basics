@@ -7,13 +7,11 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## General Guidelines
 
-1. Make sure your example is deployable. 
-   Nothing brings more frustration than a minimum example failing, therefore please deploy your 
-   contribution if the change is significant.
-1. A good `README.md` is the best "welcome mat" for your example. This repository has many examples, 
+1. Make sure your example is deployable and works perfectly.
+2. A good `README.md` is the best "welcome mat" for your example. This repository has many examples, 
    it is advised to copy & paste a `README.md` from another example and adapt to your contribution, 
    for better navigation across examples.
-1. `now.json` should always be present. Developers expect the code to be as ready as possible, 
+3. `now.json` should always be present. Developers expect the code to be as ready as possible, 
    which means having a correct `now.json` is expected.
 
 ## Code of Conduct
