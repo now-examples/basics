@@ -1,0 +1,8 @@
+main.dwarf
+node_modules
+.bundle
+vendor
+target
+
+.DS_Store
+.next
