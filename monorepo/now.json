@@ -17,8 +17,7 @@
           "src": "/(.*)",
           "dest": "/www/$1",
           "headers": {
-            "x-request-path": "$1",
-            "cache-control": "max-age=86400"
+            "x-request-path": "$1"
           }
         },
         {
