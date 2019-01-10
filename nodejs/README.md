@@ -4,7 +4,7 @@ In this example we will be deploying a simple "Hello World" example with Node.js
 
 ### Getting started with Node.js
 
-- We can prepare our API design by creating the folder `api` and then `users` inside it.
+- We can prepare our API    design by creating the folder `api` and then `users` inside it.
 This will ensure that the route `/api/users` matches how our files are disposed.
 
 - Let's write how we would like to reply when a `GET` request is sent. For that, create
