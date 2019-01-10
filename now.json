@@ -3,7 +3,8 @@
     "name": "now-examples",
     "builds": [
         { "src": "go/*.go", "use": "@now/go" },
-        { "src": "nodejs/*.js", "use": "@now/node" },
+        { "src": "nodejs/api/users/index.js", "use": "@now/node" },
+        { "src": "nodejs/index.html", "use": "@now/static" },
         { "src": "php-7/*.php", "use": "@now/php" },
         { "src": "python/*.py", "use": "@now/python" },
         { "src": "vue/package.json", "use": "@now/static-build" },
