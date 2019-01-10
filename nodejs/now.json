@@ -2,6 +2,7 @@
   "version": 2,
   "name": "nodejs",
   "builds": [
-    { "src": "*.js", "use": "@now/node" }
+    { "src": "api/users/index.js", "use": "@now/node" }
+    { "src": "index.html", "use": "@now/static" }
   ]
 }
