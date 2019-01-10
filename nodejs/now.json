@@ -3,9 +3,5 @@
   "name": "nodejs",
   "builds": [
     { "src": "*.js", "use": "@now/node" }
-  ],
-  "routes": [
-    {"src": "/.*", "methods": ["POST"], "dest" "/post.js"},
-    {"src": "/.*", "methods": ["GET"], "dest" "/get.js"}
   ]
 }
