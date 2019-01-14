@@ -5,28 +5,13 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="user-zone">
-      <img class="user-image" alt="<%= screen_name %>" src="<%= avatar %>" />
-      <h1>Hello, <%= screen_name %>!</h1>
-      <p>Here's what your expanded name means. Hold your cursor over a word for a definition.</p>
-      <ul>
-        <% results.forEach(function(result){ %>
-        <li title="<%= result.definition %>"><%= result.word %></li>
-        <% }); %>
-      </ul>
-    </div>
-
-    <br /><br />
-
+    <img alt="<%= name %>" src="<%= dream %>" /><br /><br />
+    <h1><%= name %>, you've been dreamified!</h1>
     <div class="user-buttons">
       <a
         style="margin-right: 16px"
         class="button"
-        href="https://twitter.com/intent/tweet?text=My twitter handle expanded: 
-%0A%0A
-<%= tweet %>
-%0A%0A
-Find yours at https://serverless-express.now.sh/"
+        href="https://twitter.com/intent/tweet?text=I got dreamified. Get yours at https://serverless-express.now.sh/!%0A%0A<%= shareLink %>"
         >Share on Twitter</a
       >
       <a class="button button_outline" href="/">Go Back</a>

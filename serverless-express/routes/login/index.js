@@ -29,10 +29,12 @@ passport.deserializeUser(function(user, done) {
 
 app.get("*", passport.authenticate("twitter"), (req, res) => {
   delete req.session.passport; // This adds a lot of bloat to the cookie and causes it to not get persisted.
-  const { name, screen_name, profile_image_url_https } = req.user._json;
+  const { name, description, screen_name, profile_image_url_https, profile_link_color } = req.user._json;
   req.session["user-from-twitter"] = {
     name,
     screen_name,
+    description,
+    profile_link_color,
     profile_image_url_https,
   };
   res.redirect("/user-zone");
