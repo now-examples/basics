@@ -14,8 +14,8 @@ app.get("*", (req, res) => {
   <a class="button" href="/login">Login with Twitter</a>
   <br/>
   <small>To get dreamified</small>
-</div>`,
-      ),
+</div>`
+      )
     );
     return;
   }
@@ -29,8 +29,8 @@ app.get("*", (req, res) => {
 <h1>Welcome back, ${screen_name}.</h1>
 <a class="button" href="/user-zone">SHOW ME MY DREAMIFIED PICTURE</a>
 <a class="button button_outline" href="/logout">Logout</a>
-</div>`,
-    ),
+</div>`
+    )
   );
   return;
 });
