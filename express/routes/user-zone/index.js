@@ -28,7 +28,7 @@ app.get("*", async (req, res) => {
   res.render("userZone", {
     name: screen_name,
     dream: req.session.dreamified,
-    shareLink: "https://serverless-express.now.sh/result?id=" + req.session.dreamified.split("/")[4],
+    shareLink: "https://serverless-express.now.sh/pic/" + req.session.dreamified.split("/")[4],
   });
 });
 

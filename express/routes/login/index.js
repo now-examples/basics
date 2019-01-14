@@ -37,7 +37,7 @@ app.get("*", passport.authenticate("twitter"), (req, res) => {
     profile_link_color,
     profile_image_url_https,
   };
-  res.redirect("/user-zone");
+  res.redirect("/");
 });
 
 module.exports = app;
