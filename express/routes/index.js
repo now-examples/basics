@@ -12,10 +12,11 @@ app.get("*", (req, res) => {
   <h1>Dreamifier</h1>
   <h2>With Serverless Express</h2>
   <a class="button" href="/login">Login with Twitter</a>
+  <a href="https://zeit.co/blog/serverless-express-js-lambdas-with-now-2" target="_blank" class="button">How it Works</a>
   <br/>
   <small>To get dreamified</small>
-</div>`
-      )
+</div>`,
+      ),
     );
     return;
   }
@@ -28,9 +29,10 @@ app.get("*", (req, res) => {
 <img class="user-image" alt="${screen_name}" src="${profile_image_url_https}" />
 <h1>Welcome back, ${screen_name}.</h1>
 <a class="button" href="/user-zone">SHOW ME MY DREAMIFIED PICTURE</a>
+<a href="https://zeit.co/blog/serverless-express-js-lambdas-with-now-2" target="_blank" class="button">How it Works</a>
 <a class="button button_outline" href="/logout">Logout</a>
-</div>`
-    )
+</div>`,
+    ),
   );
   return;
 });
