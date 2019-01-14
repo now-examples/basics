@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "env": {
+    "TWITTER_TOKEN": "@twitter-token",
+    "TWITTER_SECRET": "@twitter-secret",
+    "DICTIONARY_API_KEY": "@dictionary-api-key",
+    "COOK_KEY": "@serverless-express-cook-key"
+  },
+  "routes": [{ "src": "/style.css", "dest": "/style.css" }, { "src": "/(.*)", "dest": "/routes/$1" }],
+  "builds": [{ "src": "routes/**/*.js", "use": "@now/node" }, { "src": "*.css", "use": "@now/static" }]
+}

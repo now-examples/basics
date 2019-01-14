@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <title>Serverless Express.js with Now v2</title>
+    <meta name="viewport" content="initial-scale=1,width=device-width,user-scalable=0" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="user-zone">
+      <img class="user-image" alt="<%= screen_name %>" src="<%= avatar %>" />
+      <h1>Hello, <%= screen_name %>!</h1>
+      <p>Here's what your expanded name means. Hold your cursor over a word for a definition.</p>
+      <ul>
+        <% results.forEach(function(result){ %>
+        <li title="<%= result.definition %>"><%= result.word %></li>
+        <% }); %>
+      </ul>
+    </div>
+
+    <br /><br />
+
+    <div class="user-buttons">
+      <a
+        style="margin-right: 16px"
+        class="button"
+        href="https://twitter.com/intent/tweet?text=My twitter handle expanded: 
+%0A%0A
+<%= tweet %>
+%0A%0A
+Find yours at https://serverless-express.now.sh/"
+        >Share on Twitter</a
+      >
+      <a class="button button_outline" href="/">Go Back</a>
+    </div>
+  </body>
+</html>
