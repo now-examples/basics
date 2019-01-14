@@ -1,5 +1,7 @@
 # Serverless Express.js
 
+**[Live Demo](https://serverless-express.now.sh/)**
+
 This repo is an example app featured in [this blog post](https://zeit.co/blog/serverless-express-js-lambdas-with-now-2). Please be sure to read the blog post to fully understand the concepts demonstrated here.
 
 ## Getting Started
