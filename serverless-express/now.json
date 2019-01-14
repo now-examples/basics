@@ -8,7 +8,7 @@
   },
   "routes": [{ "src": "/style.css", "dest": "/style.css" }, { "src": "/(.*)", "dest": "/routes/$1" }],
   "builds": [
-    { "src": "routes/**/*.js", "use": "@now/node", "config": { "maxLambdaSize": "40mb" } },
+    { "src": "routes/**/*.js", "use": "@now/node" },
     { "src": "*.css", "use": "@now/static" }
   ]
 }
