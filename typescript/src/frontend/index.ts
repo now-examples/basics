@@ -22,7 +22,7 @@ const handler = async (_: IncomingMessage, res: ServerResponse) => {
       ${sushiList.data.map(name => `<li><a class="button" href="/sushi/${name}">${name}</a></li>`).join("\n")}
   </ul><br>
   <br>
-  <small>Sushi animation by <a href="https://codepen.io/yumeeeei/">yumeeeei</a>.</small>`),
+  <small>Sushi animation by <a target="_blank" href="https://codepen.io/yumeeeei/">yumeeeei</a>.</small>`),
   );
 };
 
