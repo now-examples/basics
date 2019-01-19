@@ -1,9 +1,9 @@
 import { IncomingMessage, ServerResponse } from "http";
 
+// This could be a DB query.
 export const availableTypesOfSushi = ["maki", "temaki", "uramaki", "nigiri", "sashimi"];
 
 export default (_: IncomingMessage, res: ServerResponse) => {
-  // This could be a DB query.
 
   res.writeHead(200, { "Content-Type": "application/json" });
   res.end(
