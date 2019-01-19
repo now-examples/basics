@@ -1,0 +1,52 @@
+import { Sushi } from "../../../types";
+
+// Imagine this is a DB query.
+export const getSushi = (type: Sushi["type"]): Sushi => {
+  switch (type) {
+    case "maki":
+      return {
+        type,
+        description:
+          "Maki is a type of sushi roll that includes toasted seaweed nori rolled around vinegar-flavored rice and various fillings, including raw seafood and vegetables. The word maki means “roll.”",
+        pictureURL:
+          "data:image/jpeg;base64,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",
+        title: "Maki",
+      };
+    case "temaki":
+      return {
+        type,
+        description:
+          "Temaki sushi, also known as hand rolled sushi, is a popular casual Japanese food. The conelike form of temaki incorporates rice, specially prepared seaweed called nori, and a variety of fillings known as neta.",
+        pictureURL:
+          "data:image/jpeg;base64,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",
+        title: "Temaki",
+      };
+    case "uramaki":
+      return {
+        type,
+        description:
+          "Uramaki is a sushi roll made with rice on the outside and seaweed on the inside. Uramaki can be made with a number of fillings.",
+        pictureURL:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQerTxPbaBSD3hbJhw9OO-lR5bZVObNZlRdVGP0idYt2RE4xrL",
+        title: "Uramaki",
+      };
+    case "nigiri":
+      return {
+        type,
+        description:
+          "Nigiri is a hand-formed ball of rice, with a slice of fish over the top. If you take out the rice, you have Sashimi! Maki is a type of roll in which the seaweed wrap is on the outside of the roll.",
+        pictureURL:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVpFxwMF7xWzRKRiy-3zr0mzlyTpFg_Dlqsi6J1A-gOX69XmE",
+        title: "Nigiri",
+      };
+    case "sashimi":
+      return {
+        type,
+        description:
+          "Sashimi is a Japanese delicacy consisting of very fresh raw fish or meat sliced into thin pieces and often eaten with soy sauce.",
+        pictureURL:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0cYrma5pPMWUglgnTgbXYjdW582MwpDzdF5bP76gGdMbVFwl",
+        title: "Sashimi",
+      };
+  }
+};
