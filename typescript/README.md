@@ -1,6 +1,6 @@
 # Now + TypeScript
 
-This example, a sushi information application, uses TypeScript and shares a type definition across frontend and backend in this [majestic monorepo]().
+This example, a sushi information application, uses TypeScript and shares a type definition across frontend and backend in this [majestic monorepo](https://zeit.co/blog/now-2#the-majestic-monorepo).
 
 ## Getting Started
 
