@@ -4,7 +4,7 @@ In this example we will be deploying a simple redirect from a `www` domain to a 
 
 ### Deploy with Now
 
-Create a new folder on your local machine and create a new `now.json` file. To redirect, you only need to use the `routes` property of a `now.json` file (no need to have a `build` property in there, since it's just doing a redirect).
+Create a new folder on your local machine and create a new `now.json` file. To redirect, you only need to use the `routes` property of a `now.json` file (no need to have a `builds` property in there, since it's just doing a redirect).
 
 By adding the `version` key to the `now.json` file, we can specify to use the latest Now Platform version to use `routes`.
 
