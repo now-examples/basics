@@ -8,7 +8,7 @@ export const getSushi = (type: Sushi["type"]): Sushi => {
         type,
         description:
           "Maki is a type of sushi roll that includes toasted seaweed nori rolled around vinegar-flavored rice and various fillings, including raw seafood and vegetables. The word maki means “roll.”",
-        pictureURL: "https://cdn.pixabay.com/photo/2015/04/10/15/59/maki-716432_960_720.jpg",
+        pictureURL: "https://upload.wikimedia.org/wikipedia/commons/8/81/Maki_Sushi_Lunch_on_green_leaf_plate.jpg",
         title: "Maki",
       };
     case "temaki":
@@ -32,7 +32,8 @@ export const getSushi = (type: Sushi["type"]): Sushi => {
         type,
         description:
           "Nigiri is a hand-formed ball of rice, with a slice of fish over the top. If you take out the rice, you have Sashimi! Maki is a type of roll in which the seaweed wrap is on the outside of the roll.",
-        pictureURL: "https://cdn.pixabay.com/photo/2015/04/10/15/58/salmon-716430_960_720.jpg",
+        pictureURL:
+          "https://upload.wikimedia.org/wikipedia/commons/4/41/Salmon_Nigiri_Sushi_with_chopsticks%2C_2008.jpg",
         title: "Nigiri",
       };
     case "sashimi":
