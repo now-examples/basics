@@ -25,6 +25,6 @@ export default (req: IncomingMessage, res: ServerResponse) => {
     const { type } = validateQuery(url.parse(req.url || "", true).query);
     res.end(JSON.stringify(getSushi(type)));
   } catch (error) {
-    res.end(JSON.stringify({ error }));
+    res.end(error);
   }
 };

@@ -43,5 +43,7 @@ export const getSushi = (type: Sushi["type"]): Sushi => {
         pictureURL: "https://c1.staticflickr.com/3/2441/3537413421_cd7cff0b70_b.jpg",
         title: "Sashimi",
       };
+    default:
+      throw Error(JSON.stringify({ type: "404", title: "Not Found", description: "This sushi type does not exist." }));
   }
 };
