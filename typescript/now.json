@@ -4,6 +4,10 @@
     {
       "src": "./src/**/*.ts",
       "use": "@now/node@canary"
+    },
+    {
+      "src": "./src/static/*",
+      "use": "@now/static"
     }
   ],
   "env": {
@@ -12,6 +16,7 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "/src/backend/$1" },
     { "src": "/sushi/(.*)", "dest": "/src/frontend/sushi?type=$1" },
-    { "src": "/(.*)", "dest": "/src/frontend/$1" }
+    { "src": "/(.*)", "dest": "/src/frontend/$1" },
+    { "src": "/static/(.*)", "dest": "/src/static/$1" }
   ]
 }
