@@ -5,7 +5,7 @@ import { Sushi } from "../../types";
 import layout from "./layout";
 
 const handler = async (_: IncomingMessage, res: ServerResponse) => {
-  const sushiResponse = await fetch.default("https://typescript-sushi.now.sh/api/all");
+  const sushiResponse = await fetch.default("/api/all");
   const sushiList: { data: Array<Sushi["type"]> } = await sushiResponse.json();
 
   res.writeHead(200, { "Content-Type": "text/html" });
@@ -19,10 +19,14 @@ const handler = async (_: IncomingMessage, res: ServerResponse) => {
   </div>
   <h2>Learn more about...</h2>
   <ul>
-      ${sushiList.data.map(name => `<li><a class="button" href="/sushi/${name}">${name}</a></li>`).join("\n")}
+      ${sushiList.data
+        .map(
+          name => `<li><a class="button" href="/sushi/${name}">${name}</a></li>`
+        )
+        .join("\n")}
   </ul><br>
   <br>
-  <small>Sushi animation by <a target="_blank" href="https://codepen.io/yumeeeei/">yumeeeei</a>.</small>`),
+  <small>Sushi animation by <a target="_blank" href="https://codepen.io/yumeeeei/">yumeeeei</a>.</small>`)
   );
 };
 
