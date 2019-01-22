@@ -10,7 +10,9 @@ const handler = async (req: IncomingMessage, res: ServerResponse) => {
   res.writeHead(200, { "Content-Type": "text/html" });
 
   try {
-    const sushiResponse = await fetch.default("/api/get-sushi?type=" + type);
+    const sushiResponse = await fetch.default(
+      "https://typescript-sushi.now.sh/api/get-sushi?type=" + type
+    );
     const {
       description,
       pictureURL,

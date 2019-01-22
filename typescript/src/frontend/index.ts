@@ -5,7 +5,9 @@ import { Sushi } from "../../types";
 import layout from "./layout";
 
 const handler = async (_: IncomingMessage, res: ServerResponse) => {
-  const sushiResponse = await fetch.default("/api/all");
+  const sushiResponse = await fetch.default(
+    "https://typescript-sushi.now.sh/api/all"
+  );
   const sushiList: { data: Array<Sushi["type"]> } = await sushiResponse.json();
 
   res.writeHead(200, { "Content-Type": "text/html" });

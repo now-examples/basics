@@ -6,7 +6,7 @@
       "use": "@now/node@canary"
     },
     {
-      "src": "./src/static/*",
+      "src": "./public/*",
       "use": "@now/static"
     }
   ],
@@ -16,7 +16,7 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "/src/backend/$1" },
     { "src": "/sushi/(.*)", "dest": "/src/frontend/sushi?type=$1" },
-    { "src": "/(.*)", "dest": "/src/frontend/$1" },
-    { "src": "/static/(.*)", "dest": "/src/static/$1" }
+    { "src": "/public/(.*)", "dest": "/public/$1" },
+    { "src": "/(.*)", "dest": "/src/frontend/$1" }
   ]
 }
