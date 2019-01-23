@@ -9,9 +9,9 @@ app.use(passport.session());
 passport.use(
   new TwitterStrategy(
     {
-      consumerKey: process.env.TWITTER_TOKEN,
-      consumerSecret: process.env.TWITTER_SECRET,
-      callbackURL: "https://serverless-express.now.sh/login",
+      consumerKey: process.env.TWITTER_API_KEY,
+      consumerSecret: process.env.TWITTER_API_SECRET,
+      callbackURL:  process.env.TWITTER_CALLBACK_URL,
     },
     function(token, tokenSecret, profile, cb) {
       return cb(null, profile);
