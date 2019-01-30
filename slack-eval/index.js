@@ -16,10 +16,10 @@ module.exports = async (req, res) => {
     attachments = [{ text: error.stack }];
   }
 
-  const text = "`" + body.text + "`: " + result;
+  const message = "`" + body.text + "`: " + result;
   const response_type = "in_channel";
 
   res.writeHead(200, { "Content-Type": "application/json" });
   // Create response object and send result back to Slack
-  res.end(JSON.stringify({ response_type, text, attachments }));
+  res.end(JSON.stringify({ response_type, text: message, attachments }));
 };
