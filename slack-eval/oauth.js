@@ -3,7 +3,7 @@ const { parse, stringify } = require("querystring");
 
 module.exports = async (req, res) => {
   // Extract code received on the request url
-  const urlQueryString = req.url.replace(/^.*?/, '');
+  const urlQueryString = req.url.replace(/^.*\?/, '');
   const code = parse(urlQueryString).code;
 
   // Compose authHeader by encoding the string ${client_id}:${client_secret}
