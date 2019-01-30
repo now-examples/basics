@@ -10,6 +10,7 @@
         { "src": "create-react-app/package.json", "use": "@now/static-build" },
         { "src": "static/**", "use": "@now/static" },
         { "src": "nextjs/next.config.js", "use": "@now/next" },
+        { "src": "nextjs-express/**/*.js", "use": "@now/node" },
         { "src": "nextjs-static/package.json", "use": "@now/static-build" },
         { "src": "html-minifier/index.html", "use": "@now/html-minifier" },
         { "src": "mdx-deck/deck.mdx", "use": "@now/mdx-deck" },
