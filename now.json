@@ -10,7 +10,6 @@
         { "src": "create-react-app/package.json", "use": "@now/static-build" },
         { "src": "static/**", "use": "@now/static" },
         { "src": "nextjs/next.config.js", "use": "@now/next" },
-        { "src": "nextjs-express/**/*.js", "use": "@now/node" },
         { "src": "nextjs-static/package.json", "use": "@now/static-build" },
         { "src": "html-minifier/index.html", "use": "@now/html-minifier" },
         { "src": "mdx-deck/deck.mdx", "use": "@now/mdx-deck" },
@@ -19,6 +18,7 @@
         { "src": "nodejs-hapi/index.js", "use": "@now/node-server" },
         { "src": "nodejs-koa/index.js", "use": "@now/node" },
         { "src": "nodejs-coffee/app.js", "use": "@now/node" },
+        { "src": "nodejs-express/**/*.js", "use": "@now/node" },
         { "src": "gatsby/package.json", "use": "@now/static-build", "config": {"distDir": "public"} },
         { "src": "docz/package.json", "use": "@now/static-build" },
         { "src": "typescript/src/**/*.ts", "use": "@now/node@canary" }
