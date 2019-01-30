@@ -1,6 +1,5 @@
 const fetch = require("node-fetch");
-const querystring = require("querystring");
-const { parse } = querystring;
+const { parse, stringify } = require("querystring");
 
 module.exports = async (req, res) => {
   // Extract code received on the request url
@@ -15,7 +14,7 @@ module.exports = async (req, res) => {
   // Hit oauth.access for access_token
   const oauthAccess = await fetch('https://slack.com/api/oauth.access', {
     method: 'POST',
-    body: querystring.stringify({ code }),
+    body: stringify({ code }),
     headers: {
       Authorization,
       'Content-Type': 'application/x-www-form-urlencoded',
