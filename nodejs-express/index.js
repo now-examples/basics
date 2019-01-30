@@ -13,7 +13,4 @@ app.get('/about', (req, res) => {
     res.end()
 })
 
-app.listen(port, err => {
-    if (err) throw err
-    console.log(`> Ready On Server http://localhost:${port}`)
-})
+module.exports = app
