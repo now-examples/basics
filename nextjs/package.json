@@ -2,8 +2,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "now-build": "next build",
-    "start": "next start"
+    "now-build": "next build"
   },
   "dependencies": {
     "next": "^8.0.0-canary.2",
