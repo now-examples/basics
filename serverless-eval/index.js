@@ -1,12 +1,6 @@
-const micro = require("micro");
-const { text } = micro;
+const { text } = require("micro");
 const { parse } = require("querystring");
 const evaluateIncomingJS = require("./lib/eval");
-
-// Format results in the structure Slack expects
-const responseBody = function (response_type, text, attachments) {
-  return { response_type, text, attachments }
-}
 
 module.exports = async (req, res) => {
   // Parse code received through req
@@ -26,7 +20,5 @@ module.exports = async (req, res) => {
 
   res.writeHead(200, { "Content-Type": "application/json" });
   // Create response object and send result back to Slack
-  res.end(JSON.stringify(
-    responseBody("in_channel", message, attachment)
-  ));
+  res.end(JSON.stringify({ "in_channel", message, attachment }));
 };
