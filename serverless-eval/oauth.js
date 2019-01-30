@@ -10,15 +10,15 @@ module.exports = async (req, res) => {
   // Compose authHeader by encoding the string ${client_id}:${client_secret}
   const client_id = process.env.SLACK_CLIENT_ID;
   const client_secret = process.env.SLACK_CLIENT_SECRET;
-  const authHeader = 'Basic ' + Buffer.from(`${client_id}:${client_secret}`).toString('base64');
+  const Authorization = 'Basic ' + Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 
   // Hit oauth.access for access_token
   const oauthAccess = await fetch('https://slack.com/api/oauth.access', {
     method: 'POST',
     body: querystring.stringify({ code }),
     headers: {
+      Authorization,
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': authHeader
     }
   });
   const { access_token } = await oauthAccess.json();

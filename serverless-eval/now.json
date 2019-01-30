@@ -6,10 +6,7 @@
     "SLACK_CLIENT_SECRET": "@slack-client-secret"
   },
   "builds": [{
-    "src": "index.js",
-    "use": "@now/node",
-  }, {
-    "src": "validate.js",
+    "src": "*.js",
     "use": "@now/node",
   }]
 }
