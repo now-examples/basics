@@ -1,0 +1,12 @@
+{
+  "name": "now-rust",
+  "public": true,
+  "version": 2,
+  "builds": [
+    {
+      "src": "Cargo.toml",
+      "use": "@now/rust@canary",
+      "config": { "newPipeline": true }
+    }
+  ]
+}
