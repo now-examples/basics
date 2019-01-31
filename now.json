@@ -31,6 +31,7 @@
       "config": {
         "distDir": "./my_site/public"
       }
-    }
+    },
+    { "src": "rust/Cargo.toml", "use": "now-rust@github:anmonteiro/now-rust#anmonteiro/wip-rust-toolchain", "config": { "newPipeline": true } }
   ]
 }
