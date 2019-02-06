@@ -32,6 +32,6 @@
         "distDir": "./my_site/public"
       }
     },
-    { "src": "rust/Cargo.toml", "use": "@now/rust@canary" }
+    { "src": "rust/Cargo.toml", "use": "@now/rust" }
   ]
 }
