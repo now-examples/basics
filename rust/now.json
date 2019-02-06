@@ -5,8 +5,7 @@
   "builds": [
     {
       "src": "Cargo.toml",
-      "use": "@now/rust@canary",
-      "config": { "newPipeline": true }
+      "use": "@now/rust"
     }
   ]
 }
