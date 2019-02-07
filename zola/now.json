@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "public": true,
+  "alias": "now-example-zola.now.sh",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "./my_site/public"
+      }
+    }
+  ]
+}

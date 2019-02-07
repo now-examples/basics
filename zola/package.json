@@ -1,0 +1,10 @@
+{
+  "name": "now-example-zola",
+  "version": "1.0.0",
+  "description": "An example of building Zola on now",
+  "main": "index.js",
+  "scripts": {
+    "now-build": "./build.sh"
+  },
+  "license": "MIT"
+}
