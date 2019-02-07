@@ -2,7 +2,7 @@
 
 > 🚀 This is deployed with [Now 2](https://zeit.co/now). Please feel free to enjoy the [live demo](https://zola-fvswgh0m6.now.sh).
 
-This example, a static website, uses [Zola]() and builds a website **with Rust in the cloud**.
+This example, a static website, uses [Zola](https://getzola.org/) and builds a website **with Rust in the cloud**.
 
 ## Getting Started
 
