@@ -1,4 +1,4 @@
-https://now-example-jekyll.now.sh
+https://my-zola-site.now.sh/
 n
 n
 n
