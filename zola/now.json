@@ -4,7 +4,7 @@
   "alias": "now-example-zola.now.sh",
   "builds": [
     {
-      "src": "package.json",
+      "src": "./build.sh",
       "use": "@now/static-build",
       "config": {
         "distDir": "./my_site/public"
