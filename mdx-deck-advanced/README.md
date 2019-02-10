@@ -49,7 +49,7 @@ By default, MDX-deck will output the build to the `dist` directory. We also need
 {
     "scripts": {
         ...
-        "now-build": "rm -rf dist/ && mdx-deck build demo-advanced.mdx --no-html && cp -r images dist/ && cp -r snippets dist/"
+        "now-build": "mdx-deck build demo-advanced.mdx --no-html && cp -r images dist/ && cp -r snippets dist/"
     }
 }
 ```
