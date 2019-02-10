@@ -24,6 +24,33 @@ Then we need to add a `now.json` file to specify we want to use our Platform V2.
 
 In this case we are going to use `@now/static-build` to build and deploy our static application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
 
+If we take a look at our demo presentation `demo-advanced.mdx` we will see that we are loading images and code snippets.
+
+As an added bonus, if you look at line forty-three (43) of `demo-advanced.mdx` there is a custom React component that allows the presenter to identify and highlight specific lines from the example code snippet:
+
+```jsx
+<CodeSurfer
+  code={require("raw-loader!./snippets/example-dockerfile.snippet")} 
+  title="Dockerfile for photo-share-api"
+  showNumbers
+  steps={[
+    {}, // First step should be an overview of the snippet
+    {lines: [1], notes: "Specify the base Node.js image"},
+    {range: [6,7], notes: "Create the working directory on our process"},
+    {range: [9,11], notes: "Copy and install our dependencies just like we would locally"},
+    {range: [13,14], notes: "Copy our application code over"},
+    {lines: [15], notes: "What is this? It seems a little...unusual."},
+    {range: [17,19], notes: "We need to define ports for Docker to access"},
+    {range: [21,22], notes: "This is the command to start our back-end server"},
+    {}
+  ]}
+/>
+
+// Special thanks to https://elijahmanor.com/code-surfer/ for this custom component
+```
+
+We must update our `now.json` file by adding a routes key to handle this. Our default route `/` will serve up the `index.html` page generated through the mdx-deck build process. We are also adding additional routes `/images` and `/snippets` for additional assets we are including with the presentation.
+
 ```json
 {
   "version": 2,
