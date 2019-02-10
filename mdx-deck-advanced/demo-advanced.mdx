@@ -8,68 +8,70 @@ import { CodeSurfer } from 'mdx-deck-code-surfer' // https://elijahmanor.com/cod
 </Head>
 
 ---
-# Introduction
-
-```notes
-Who am I? Let's see!
-```
-
----
-<Image src='images/drummer.jpg' />
-
-```notes
-A drummer for a hard rock band in Seattle, WA
-```
+# Our goal
+Deploy a heavily customized mdx-deck presentation
 
 ---
 # What will we need?
 
 <ul style={{listStyle: 'none'}}>
   <Appear>
-    <li>A cool idea</li>
-    <li>Another cool idea</li>
-    <li>The ability to share our cool ideas</li>
+    <li>A sample MDX-deck presentation</li>
+    <li>A few changes to our configuration file</li>
+    <li>An ability to type three letters and deploy our presentation</li>
   </Appear>
 </ul>
 
 ```notes
 For this demo, there are three things that we are going to need.
 ```
+
 ---
-# Initial code demo
-Here is some sample code we can look at.
+# This demo contains...
+<ul style={{listStyle: 'none'}}>
+  <Appear>
+    <li>Custom layouts</li>
+    <li>Images and code snippets</li>
+    <li>A custom React component to look at a code snippet</li>
+  </Appear>
+</ul>
+
+---
+# Initial configuration
+Let's take a look at the `now.json` we need to create...
 
 ---
 <CodeSurfer
-  code={require("raw-loader!./snippets/example-dockerfile.snippet")} 
-  title="Dockerfile for photo-share-api"
+  code={require("raw-loader!./snippets/example-nowconfiguration.snippet")}
+  title="Zeit Now 2.0 - now.json"
   showNumbers
   steps={[
     {}, // First step should be an overview of the snippet
-    {lines: [1], notes: "Specify the base Node.js image"},
-    {range: [6,7], notes: "Create the working directory on our process"},
-    {range: [9,11], notes: "Copy and install our dependencies just like we would locally"},
-    {range: [13,14], notes: "Copy our application code over"},
-    {lines: [15], notes: "What is this? It seems a little...unusual."},
-    {range: [17,19], notes: "We need to define ports for Docker to access"},
-    {range: [21,22], notes: "This is the command to start our back-end server"},
+    {lines: [2], notes: "Specify version 2"},
+    {lines: [3], notes: "Give our project a name"},
+    {range: [4,6], notes: "Use @now/static-build when serving static content"},
+    {range: [7,11], notes: "Define custom routes for additional content"},
+    {lines: [8], notes: "Add a route for our images folder in the build directory"},
+    {lines: [9], notes: "Add a route for our code snippets folder in the build directory"},
+    {lines: [10], notes: "Add a route for our default page"},
     {}
   ]}
 />
 
-```notes
-Walkthrough the following:
-+ FROM
-+ Create the app on the base image
-+ Install dependencies on the image
-+ Copy our application code
-+ What is this wait for?
-+ Expose ports
-+ Start the process
-+ Zoom out
+---
+# One more thing
+Add a `now-build` script to `package.json` which
+<ul style={{listStyle: 'none'}}>
+  <Appear>
+    <li>Builds a static site containing our presentation</li>
+    <li>Recursively copies images to our new build directory</li>
+    <li>Recursively copies code snippets to our new build directory</li>
+  </Appear>
+</ul>
 
-OK. Show the demo.
-```
+---
+# Deploy to Zeit Now
+Simply type `now` and deploy your presentation...
 
 ---
 # Demo
@@ -77,3 +79,13 @@ export default Invert
 
 ---
 # Thank you
+
+Rob Brennan
+@therobbrennan
+
+---
+<Image src='images/drummer.jpg' />
+
+```notes
+The author of this presentation; a drummer for a hard rock band in Seattle, WA
+```
