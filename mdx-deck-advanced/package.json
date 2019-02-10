@@ -2,7 +2,7 @@
   "scripts": {
     "start": "mdx-deck demo-advanced.mdx",
     "build": "npm run now-build",
-    "now-build": "rm -rf dist/ && mdx-deck build demo-advanced.mdx --no-html && cp -r images dist/ && cp -r snippets dist/",
+    "now-build": "mdx-deck build demo-advanced.mdx --no-html && cp -r images dist/ && cp -r snippets dist/",
     "deploy": "now"
   },
   "devDependencies": {
