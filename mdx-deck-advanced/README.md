@@ -14,13 +14,13 @@ A sample presentation has been created at `demo-advanced.mdx`
 
 First we need to create a `now.json` configuration file to instruct Now how to build the project.
 
-For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
+For this example we will be using our newest version [Now 2.0](https://zeit.co/docs/v2/platform/upgrade-to-2-0/).
 
 By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
 
-We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+We also need to define how the project will be built. In this case, we will use the [@now/mdx-deck Builder](https://zeit.co/docs/v2/deployments/official-builders/mdx-deck-now-mdx-deck/).
 
-Then we need to add a `now.json` file to specify we want to use our Platform V2.
+[Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
 
 In this case we are going to use `@now/static-build` to build and deploy our static application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
 
