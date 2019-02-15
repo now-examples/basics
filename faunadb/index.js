@@ -11,7 +11,11 @@ const server = http.createServer((req, res) => {
   client.query({salutation : q.Concat(["Hello ", "world."])})
     .then((data) => {
       res.end('This is a Node.js server running on Now 2.0. This is a FaunaDB query result: <hr> '+JSON.stringify(data));
+  }).catch((err)=>{
+    console.error(err);
+    res.end("Error: "+JSON.stringify(err));
   });
 });
 
 server.listen();
+console.log('Listening on port '+server.address().port);
