@@ -8,7 +8,7 @@ In this example we will be deploying a simple "Hello World" example with Bash.
 
 ```bash
 handler() {
-  echo "Hello from \`@now/bash\`"
+  echo "Hello from \`@now/bash\` on Now 2.0!"
 }
 ```
 
