@@ -14,25 +14,25 @@
     },
     {
       "example": "PHP 7",
-      "path": "php-7",
+      "path": "/php-7",
       "demo": "https://php7-v2.now.sh",
       "description": "A simple PHP 7 example"
     },
     {
       "example": "Python",
-      "path": "python",
+      "path": "/python",
       "demo": "https://python-v2.now.sh",
       "description": "A simple Python example"
     },
     {
       "example": "Node.js",
-      "path": "nodejs",
+      "path": "/nodejs",
       "demo": "https://nodejs-v2.now.sh",
       "description": "A simple Node.js example"
     },
     {
       "example": "Static",
-      "path": "static",
+      "path": "/static",
       "demo": "https://static-v2.now.sh",
       "description": "A simple Static website example"
     }
