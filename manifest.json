@@ -48,7 +48,7 @@
       "example": "Next.js Static",
       "path": "/nextjs-static",
       "demo": "https://nextjs-static-v2.now.sh",
-      "description": "A Next.js Static exported example"
+      "description": "A Next.js Static exported website"
     },
     {
       "example": "React",
