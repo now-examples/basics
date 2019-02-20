@@ -2,7 +2,7 @@
 
 This example offers a pre-setup project for Apollo Server that allows you to get up and running in no time!
 
-You can run the following command `now init apollo` to fetch the example in your local machine.
+You can run the following command `now init apollo` to fetch the example to your local machine.
 
 This Apollo Server example features the [`now.json` configuration file](https://zeit.co/docs/v2/deployments/configuration) below.
 
