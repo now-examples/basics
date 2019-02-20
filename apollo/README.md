@@ -27,3 +27,5 @@ $ now
 ```
 
 Find out more information on deploying Apollo Server with Now, please refer to the [Deploying Apollo Server to Now](https://zeit.co/guides/deploying-apolloserver-to-now/) guide.
+
+Fetch this example to your local machine by using this Now CLI's command: `npm init apollo`.
