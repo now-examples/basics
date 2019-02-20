@@ -1,10 +1,10 @@
 # Apollo Server
 
-In this example, we will be deploying an Apollo GraphQL Server API with ZEIT Now.
+This example offers a pre-setup project for Apollo Server that allows you to get up and running in no time!
 
-### Deploying Apollo Server with Now
+You can run the following command `now init apollo` to fetch the example in your local machine.
 
-Create a [`now.json` configuration file](https://zeit.co/docs/v2/deployments/configuration) in the project directory and add the following content.
+This Apollo Server example features the [`now.json` configuration file](https://zeit.co/docs/v2/deployments/configuration) below.
 
 ```json
 {
@@ -13,19 +13,24 @@ Create a [`now.json` configuration file](https://zeit.co/docs/v2/deployments/con
   "routes": [{ "src": "/.*", "dest": "index.js" }]
 }
 ```
+_now.json_
 
 - The `version` property specifies [`Now 2.0`](https://zeit.co/now).
 - The [`routes` property](/docs/v2/deployments/configuration#routes) allows Now to route your deployment either by using a source and destination, or by way of a source, status, and headers.
 - The [`builds` property](https://zeit.co/docs/v2/deployments/builds) allows Now to use a [builder](https://zeit.co/docs/v2/deployments/builders/overview/) with a specific source target.
 
-We used the `@now/node-server` [builder](https://zeit.co/docs/v2/deployments/builders/overview) to enable a Node.js server deployment.
+The `@now/node-server` [builder](https://zeit.co/docs/v2/deployments/builders/overview) enables a Node.js server deployment.
 
-Next, deploy the app with the Now CLI.
+If you have not yet installed Now, you can do so by installing the [Now Desktop app](https://zeit.co/docs/v2/getting-started/installation/#now-desktop) which installs Now CLI automatically, or by [installing Now CLI](https://zeit.co/docs/v2/getting-started/installation/#now-cli) directly.
+
+Deploy the app with Now.
 
 ```shell
 $ now
 ```
 
-Find out more information on deploying Apollo Server with Now, please refer to the [Deploying Apollo Server to Now](https://zeit.co/guides/deploying-apolloserver-to-now/) guide.
+## Resources
 
-Fetch this example to your local machine by using this Now CLI's command: `npm init apollo`.
+- Find out more information on **Deploying Apollo Server with Now**, please refer to the [Deploying Apollo Server to Now](https://zeit.co/guides/deploying-apolloserver-to-now/) guide.
+
+- Check out how to [Deploy any of your applications with ZEIT Now.](https://zeit.co/docs/v2/deployments/basics)
