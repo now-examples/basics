@@ -21,8 +21,6 @@ _now.json_
 
 The `@now/node-server` [builder](https://zeit.co/docs/v2/deployments/builders/overview) enables a Node.js server deployment.
 
-If you have not yet installed Now, you can do so by installing the [Now Desktop app](https://zeit.co/docs/v2/getting-started/installation/#now-desktop) which installs Now CLI automatically, or by [installing Now CLI](https://zeit.co/docs/v2/getting-started/installation/#now-cli) directly.
-
 Deploy the app with Now.
 
 ```shell
