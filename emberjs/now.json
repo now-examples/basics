@@ -1,0 +1,24 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "name": "emberjs",
+  "routes": [
+    {
+      "src": "^/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "^/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "^/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "version": 2
+}
