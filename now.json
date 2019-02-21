@@ -31,6 +31,10 @@
       "config": {
         "distDir": "./my_site/public"
       }
+    },
+    {
+      "src": "emberjs/package.json",
+      "use": "@now/static-build"
     }
   ]
 }
