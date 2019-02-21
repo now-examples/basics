@@ -4,7 +4,7 @@ In this example we will be deploy a `Hello, world!` example with [Ember.js](http
 
 ### Getting started with Ember
 
-Start a new Gatsby project using:
+Start a new Ember project using:
 
 ```
 npx ember new hello-word
