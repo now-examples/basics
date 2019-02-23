@@ -4,6 +4,7 @@
   "builds": [
     { "src": "apollo/index.js", "use": "@now/node-server" },
     { "src": "go/*.go", "use": "@now/go" },
+    { "src": "bash/*.sh", "use": "@now/bash" },
     { "src": "nodejs/*.js", "use": "@now/node" },
     { "src": "php-7/*.php", "use": "@now/php" },
     { "src": "python/*.py", "use": "@now/python", "config": { "maxLambdaSize": "10mb" } },
@@ -20,6 +21,7 @@
     { "src": "nodejs-koa/index.js", "use": "@now/node" },
     { "src": "nodejs-coffee/app.js", "use": "@now/node" },
     { "src": "nodejs-express/**/*.js", "use": "@now/node" },
+    { "src": "nodejs-micro/index.js", "use":  "now-micro" },
     { "src": "gatsby/package.json", "use": "@now/static-build", "config": { "distDir": "public" } },
     { "src": "docz/package.json", "use": "@now/static-build" },
     { "src": "typescript/src/**/*.ts", "use": "@now/node@canary" },
