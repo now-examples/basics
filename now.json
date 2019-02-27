@@ -31,6 +31,8 @@
       "config": {
         "distDir": "./my_site/public"
       }
-    }
+    },
+    { "src": "rust-servo/src/main.rs", "use": "@now/rust@canary", "config": { "debug": true } }
+
   ]
 }
