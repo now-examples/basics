@@ -1,0 +1,15 @@
+[package]
+name = "now-rust-example"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+http = "0.1"
+lambda_runtime = "*"
+now_lambda = "*"
+scraper = "*"
+url = "*"
+reqwest = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
