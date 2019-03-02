@@ -43,7 +43,7 @@
 | [Puppeteer](/puppeteer-screenshot) | https://screenshot-v2.now.sh | A Puppeteer based screenshot example |
 | [Jekyll](/jekyll) | https://jekyll.now-examples.now.sh/ | A ready-to-deploy Jekyll site, presetup to pick up and go. |
 | [Flask](/python-flask) | https://python-flask.now-examples.now.sh | An example using Flask, a Python Microframework |
-
+| [Angular 7](/angular-7) | https://zeit-angular-app-gksnyrvbi.now.sh | Angular 7 app example |
 ---
 
 ### Fully Working Applications

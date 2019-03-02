@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  background-color: #1976d2;
+  height: 64px;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  li {
+    padding: 0px 8px;
+    float: left;
+    font-size: 20px;
+    width: 50px;
+  }
+  li>a {
+    color: #fff;
+    text-decoration: none
+  }
+}
