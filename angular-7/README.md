@@ -1,11 +1,11 @@
-# Angular.js
+# Angular 7
 
-In this example we will be deploying a simple example with Angular.js v7 with simple routing
+In this example we will be deploying a simple example with Angular v7 with simple routing
 
 ![App Sample](./sample/app-sample-safari.png)
 
 
-## Getting started with Angular.js
+## Getting started with Angular 7
 
 Install the Angular CLI globally.
 
