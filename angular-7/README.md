@@ -2,7 +2,7 @@
 
 In this example we will be deploying a simple example with Angular v7 with simple routing
 
-![App Sample](./sample/app-sample-safari.png)
+![https://zeit-angular-app-gksnyrvbi.now.sh](./sample/app-sample-safari.png)
 
 
 ## Getting started with Angular 7
@@ -107,7 +107,11 @@ By adding the version key to the now.json file, we can specify which Now Platfor
 Create `.nowignore` and add `node_modules`
 
 We are now ready to deploy the app.
+
 ```
 now
 ```
+
+App looks like this when you deploy https://zeit-angular-app-gksnyrvbi.now.sh
+
 Visit our [guide for more info ](https://zeit.co/guides/deploying-angular-with-now) how to deploy angular app with now.
