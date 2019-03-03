@@ -5,8 +5,11 @@ This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/
 Below you will find some information on how to perform basic tasks.
 You can find the most recent version of this guide [here](https://github.com/halfzebra/create-elm-app/blob/master/template/README.md).
 
+In this example we will be deploying a simple "Hello World" example with Create Elm App.
+
 ## Table of Contents
 
+* [create-elm-app and now](#create-elm-app-and-now)
 * [Sending feedback](#sending-feedback)
 * [Folder structure](#folder-structure)
 * [Installing Elm packages](#installing-elm-packages)
@@ -52,6 +55,65 @@ You can find the most recent version of this guide [here](https://github.com/hal
   * [Netlify](#netlify)
   * [GitHub Pages](#github-pages)
 * [IDE setup for Hot Module Replacement](#ide-setup-for-hot-module-replacement)
+
+## create-elm-app and now
+
+### Getting started with Create React App
+
+* Start a new Create Elm App project:
+
+```bash
+npx create-elm-app <project name>
+```
+
+### Deploy with Now
+
+First we need to create a `now.json` configuration file to instruct Now how to build the project.
+
+For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
+
+By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
+
+We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+
+Then we need to add a `now.json` file to specify we want to use our Platform V2.
+
+In this case we are going to use `@now/static-build` to build and deploy our React application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
+
+```json
+{
+  "version": 2,
+  "name": "create-elm-app",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ]
+}
+```
+
+Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
+
+We also need to include a script in `package.json` named `"now-build"` that specifies what command Now will run on the server to "build" your application. By default, Create React App will output the build to the `build` directory, which is configured in the above `now.json` file.
+
+```json
+{
+    "scripts": {
+        ...
+        "now-build": "NODE_ENV=production elm-app build"
+    }
+}
+```
+
+We are now ready to deploy the app.
+
+```
+now
+```
 
 ## Sending feedback
 
@@ -779,7 +841,7 @@ Mutate the configuration directly or use [webpack-merge](https://www.npmjs.com/p
 `env` variable will help you distinguish `"development"` from `"production"` for environment-specific overrides.
 
 ## Configuring the Proxy Manually
- 
+
 If the `proxy` option is not flexible enough for you, you can get direct access to the Express app instance and hook up your own proxy middleware.
 
 You can use this feature in conjunction with the `proxy` property in `elmapp.config.js`, but it is recommended you consolidate all of your logic into `setupProxy` property`.
