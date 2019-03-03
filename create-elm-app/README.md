@@ -58,7 +58,7 @@ In this example we will be deploying a simple "Hello World" example with Create 
 
 ## create-elm-app and now
 
-### Getting started with Create React App
+### Getting started with Create Elm App
 
 * Start a new Create Elm App project:
 
@@ -78,7 +78,7 @@ We also need to define each builders we would like to use. [Builders](https://ze
 
 Then we need to add a `now.json` file to specify we want to use our Platform V2.
 
-In this case we are going to use `@now/static-build` to build and deploy our React application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
+In this case we are going to use `@now/static-build` to build and deploy our Elm application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
 
 ```json
 {
@@ -98,7 +98,7 @@ In this case we are going to use `@now/static-build` to build and deploy our Rea
 
 Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
 
-We also need to include a script in `package.json` named `"now-build"` that specifies what command Now will run on the server to "build" your application. By default, Create React App will output the build to the `build` directory, which is configured in the above `now.json` file.
+We also need to include a script in `package.json` named `"now-build"` that specifies what command Now will run on the server to "build" your application. By default, Create Elm App will output the build to the `build` directory, which is configured in the above `now.json` file.
 
 ```json
 {
@@ -111,7 +111,7 @@ We also need to include a script in `package.json` named `"now-build"` that spec
 
 We are now ready to deploy the app.
 
-```
+```bash
 now
 ```
 
