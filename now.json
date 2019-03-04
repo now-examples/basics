@@ -31,6 +31,8 @@
       "config": {
         "distDir": "./my_site/public"
       }
-    }
+    },
+    { "src": "rust-servo/Cargo.toml", "use": "@now/rust", "config": { "debug": true } }
+
   ]
 }
