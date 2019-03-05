@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "name": "rust-servo",
-  "builds": [
-      { "src": "Cargo.toml", "use": "@now/rust@canary", "config": { "debug": true } }
-  ]
-}
