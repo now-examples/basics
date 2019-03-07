@@ -1,5 +1,5 @@
 use http::{self, StatusCode};
-use now_lambda::{error::NowError, lambda, IntoResponse, Request, Response};
+use now_lambda::{error::NowError, IntoResponse, Request, Response};
 use reqwest::{header, Client};
 use scraper::{Html, Selector};
 use serde_derive::Serialize;
@@ -71,8 +71,4 @@ fn handler(request: Request) -> Result<impl IntoResponse, NowError> {
             "`selector` and `url` are required query params",
         )),
     }
-}
-
-fn main() -> Result<(), Box<dyn Error>> {
-    Ok(lambda!(handler))
 }

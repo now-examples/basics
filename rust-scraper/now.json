@@ -2,10 +2,11 @@
   "version": 2,
   "name": "rust-scraper",
   "alias": "rust-scraper.now.sh",
+  "public": true,
   "builds": [
     {
-      "src": "Cargo.toml",
-      "use": "@now/rust@canary",
+      "src": "src/main.rs",
+      "use": "@now/rust@canary"
     }
   ]
 }
