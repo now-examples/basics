@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "name": "sinatra",
+    "builds": [
+        { "src": "*.rb", "use": "@now/ruby" }
+    ]
+}
