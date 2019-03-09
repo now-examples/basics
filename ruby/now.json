@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "name": "ruby",
+    "builds": [
+        { "src": "*.rb", "use": "@now/ruby" }
+    ]
+}
