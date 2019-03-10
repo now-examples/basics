@@ -3,7 +3,7 @@ require 'json'
 
 # Might not be efficient on Now due to frequent deployment
 # efficient on AWS tho
-# $app ||= Rack::Builder.parse_file("#{__dir__}/app/config.ru").first
+# $app ||= Rack::Builder.parse_file("#{__dir__}/config.ru").first
 $app = Rack::Builder.parse_file("#{__dir__}/config.ru").first
 
 def handler(event:, context:)
