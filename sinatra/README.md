@@ -1,8 +1,8 @@
 # Sinatra
 
-In this example we will be deploying a simple "Hello World" example with Ruby.
+In this example we will be deploying a simple "Hello World" API example with Sinatra.
 
-### Getting started with Ruby
+### Getting started with Sinatra
 
 - Create an `app` folder with an `app.rb` file with the following code:
 
