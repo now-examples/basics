@@ -1,4 +1,4 @@
-# Ruby
+# Sinatra
 
 In this example we will be deploying a simple "Hello World" example with Ruby.
 
