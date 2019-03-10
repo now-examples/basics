@@ -1,6 +1,5 @@
 require 'rack'
 require 'json'
-require "byebug"
 
 # Might not be efficient on Now due to frequent deployment
 # efficient on AWS tho
@@ -34,7 +33,6 @@ def handler(event:, context:)
     status, headers, body = $app.call(env)
 
     body_content = body.each(&:to_s).join(',')
-    byebug
     response = {
       'statusCode' => status,
       'headers' => headers,
