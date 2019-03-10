@@ -1,14 +1,6 @@
-# Create React App
+# Umijs
 
-In this example we will be deploying a simple "Hello World" example with Create React App.
-
-### Getting started with Create React App
-
-- Start a new Create React App project:
-
-```
-npx create-react-app <project name>
-```
+In this example we will be deploying a simple "Hello World" example with Umijs.
 
 ### Deploy with Now
 
@@ -26,32 +18,23 @@ In this case we are going to use `@now/static-build` to build and deploy our Rea
 
 ```json
 {
-    "version": 2,
-    "name": "my-react-app",
-    "builds": [
-        { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "build" } }
-    ],
-    "routes": [
-      { "src": "/static/(.*)", "headers": { "cache-control": "s-maxage=31536000,immutable" }, "dest": "/static/$1" },
-      { "src": "/favicon.ico", "dest": "/favicon.ico" },
-      { "src": "/asset-manifest.json", "dest": "/asset-manifest.json" },
-      { "src": "/manifest.json", "dest": "/manifest.json" },
-      { "src": "/precache-manifest.(.*)", "dest": "/precache-manifest.$1" },
-      { "src": "/service-worker.js", "headers": { "cache-control": "s-maxage=0" }, "dest": "/service-worker.js" },
-      { "src": "/(.*)", "headers": {"cache-control": "s-maxage=0"}, "dest": "/index.html" }
-    ]
+  "version": 2,
+  "name": "umi-antd-now",
+  "builds": [
+    {"src": "package.json", "use": "@now/static-build", "config": {"distDir": "dist"}}
+  ]
 }
 ```
 
 Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
 
-We also need to include a script in `package.json` named `"now-build"` that specifies what command Now will run on the server to "build" your application. By default, Create React App will output the build to the `build` directory, which is configured in the above `now.json` file.
+We also need to include a script in `package.json` named `"now-build"` that specifies what command Now will run on the server to "build" your application. By default, Umijs will output the build to the `build` directory, which is configured in the above `now.json` file.
 
 ```json
 {
     "scripts": {
         ...
-        "now-build": "react-scripts build"
+        "now-build": "umi build"
     }
 }
 ```
