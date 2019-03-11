@@ -4,7 +4,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/main.rs",
+      "src": "index.rs",
       "use": "@now/rust"
     }
   ]
