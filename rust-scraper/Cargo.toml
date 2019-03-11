@@ -12,3 +12,7 @@ reqwest = "*"
 serde = "*"
 serde_json = "*"
 serde_derive = "*"
+
+[[bin]]
+name = "index"
+path = "index.rs"
