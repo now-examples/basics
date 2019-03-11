@@ -33,6 +33,6 @@
         "distDir": "./my_site/public"
       }
     },
-    { "src": "rust/src/main.rs", "use": "@now/rust@canary" }
+    { "src": "rust/index.rs", "use": "@now/rust" }
   ]
 }
