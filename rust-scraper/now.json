@@ -5,7 +5,7 @@
   "builds": [
     {
       "src": "index.rs",
-      "use": "@now/rust@canary"
+      "use": "@now/rust"
     }
   ]
 }
