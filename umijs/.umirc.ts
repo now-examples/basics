@@ -1,4 +1,4 @@
-
+import { IConfig } from 'umi-types';
 // ref: https://umijs.org/config/
 export default {
   plugins: [
@@ -11,4 +11,4 @@ export default {
       dll: false
     }],
   ],
-}
+} as IConfig;

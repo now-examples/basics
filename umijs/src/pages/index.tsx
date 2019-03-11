@@ -3,8 +3,7 @@ import styles from './index.less';
 
 import { Button } from 'antd';
 
-
-export default function() {
+const App: React.SFC<{}> = () => {
   return (
     <div className={styles.normal}>
       <div className={styles.welcome} />
@@ -20,3 +19,5 @@ export default function() {
     </div>
   );
 }
+
+export default App;
