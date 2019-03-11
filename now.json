@@ -32,6 +32,6 @@
         "distDir": "./my_site/public"
       }
     },
-    { "src": "rust-scraper/index.rs", "use": "@now/rust@canary" }
+    { "src": "rust-scraper/index.rs", "use": "@now/rust" }
   ]
 }
