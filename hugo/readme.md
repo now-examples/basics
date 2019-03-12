@@ -6,7 +6,7 @@ The example is based on the [Hugo Quick Start guide](https://gohugo.io/getting-s
 
 ## See Live
 
-The Now deployed verion of this repository can be found [here](hugo-now-example.now.sh).
+The Now deployed verion of this repository can be found [here](https://hugo-now-example.now.sh).
 
 ## Resources
 
