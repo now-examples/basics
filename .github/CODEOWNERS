@@ -1,8 +1,12 @@
 # Learn how to add code owners here:
 # https://help.github.com/en/articles/about-code-owners
 
-*                        @timothyis
-/puppeteer-screenshot    @styfle
-/go                      @leo
-/nextjs                  @timneutkens
-/vue                     @timneutkens
+*                         @timothyis
+/go/                      @matheuss
+/html-minifier/           @leo
+/mdx-deck/                @timneutkens
+/nextjs/                  @timneutkens
+/nextjs-static/           @timneutkens
+/nextjs-news/             @timneutkens
+/puppeteer-screenshot/    @styfle
+/vue/                     @timneutkens
