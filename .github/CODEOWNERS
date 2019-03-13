@@ -2,6 +2,7 @@
 # https://help.github.com/en/articles/about-code-owners
 
 *                         @timothyis @unicodeveloper
+/create-react-app/        @Timer
 /go/                      @matheuss @timothyis @unicodeveloper
 /html-minifier/           @leo @timothyis @unicodeveloper
 /mdx-deck/                @timneutkens @timothyis @unicodeveloper
@@ -9,4 +10,5 @@
 /nextjs-static/           @timneutkens @timothyis @unicodeveloper
 /nextjs-news/             @timneutkens @timothyis @unicodeveloper
 /puppeteer-screenshot/    @styfle @timothyis @unicodeveloper
+/typescript/              @TejasQ @timothyis @unicodeveloper
 /zola/                    @TejasQ @timothyis @unicodeveloper
