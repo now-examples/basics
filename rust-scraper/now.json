@@ -1,7 +1,7 @@
 {
-  "name": "now-rust",
-  "public": true,
   "version": 2,
+  "name": "rust-scraper",
+  "public": true,
   "builds": [
     {
       "src": "index.rs",
