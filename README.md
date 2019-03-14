@@ -25,6 +25,7 @@
 | [Next.js Static](/nextjs-static)          | https://nextjs-static-v2.now.sh  | A Next.js Static exported example                                     |
 | [React](/create-react-app)                | https://cra-v2.now.sh            | An example created using Create React App                             |
 | [Gatsby](/gatsby)                         | https://gatsby-v2.now.sh         | Gatsby getting started example using Gatsby CLI                       |
+| [Hugo](/hugo)                             | https://hugo-v2.now.sh           | Hugo getting started example using Hugo CLI                           |
 | [Vue](/vue)                               | https://vue-v2.now.sh            | Vue example using Vue CLI                                             |
 | [Vue SSR](/vue-ssr)                       | https://vue-ssr-v2.now.sh        | Vue example using server side rendering                               |
 | [Vuepress](/vuepress)                     | https://vuepress-v2.now.sh       | A docs example using VuePress                                         |

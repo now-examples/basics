@@ -1,6 +1,6 @@
 # Hugo
 
-[Live Demo](https://hugo-now-example.now.sh)
+[Live Demo](https://hugo-v2.now.sh)
 
 In this example, we'll be deploying a static [Hugo](https://gohugo.io/) website to Now using the [@now/static-build Builder](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/).
 
