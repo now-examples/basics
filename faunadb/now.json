@@ -1,4 +1,7 @@
 {
   "version": 2,
+  "env": {
+    "FAUNADB_SECRET": "YOUR_FAUNADB_SECRET"
+  },
   "builds": [{ "src": "index.js", "use": "@now/node" }]
 }
