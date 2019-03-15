@@ -361,7 +361,7 @@ func Index(w http.ResponseWriter) {
 				<footer>
 					 <h2>What is this?</h2>
 					 <p>Image to ASCII is powered by <a href="https://zeit.co/docs/v2/deployments/official-builders/go-now-go">@now/go</a>, and helps you generate an ASCII image from a picture.</p>
-					 <p>Find out how it works on <a href="https://github.com/zeit/now-examples/go-image-to-ascii">GitHub</a></p>
+					 <p>Find out how it works on <a href="https://github.com/zeit/now-examples/tree/master/go-image-to-ascii">GitHub</a></p>
 					 <small>Proudly hosted on <a href="https://zeit.co/now">▲ZEIT Now</a></small>
 				</footer>
 
