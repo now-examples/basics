@@ -2,15 +2,15 @@
   <img src="https://raw.githubusercontent.com/sophearak/image-to-ascii/master/assets/image-2-ascii.png" height="500" />
 </p>
 
+Demo: [https://image-to-ascii.now.sh](https://image-to-ascii.now.sh)
+
 Image to ASCII is powered by `@now/go`, and helps you generate an ASCII image from a picture.
 
 ## Deploy your own
 
-You'll want to fork this repository and deploy your own Image to ASCII.
-
-1. Click the fork button at the top right of GitHub
-2. Clone the repo to your local machine with `git clone URL_OF_FORKED_REPO_HERE`
-4. Deploy by running `now` from the CLI (if you don't already have it, run `npm install -g now`)
+Run the following command `now init go-image-to-ascii` to fetch the example to your local machine. (if you don't already have it, run `npm install -g now`)
+ 
+Deploy by running `now` from the CLI.
 
 ### Credits
 
