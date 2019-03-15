@@ -47,6 +47,12 @@ func Index(w http.ResponseWriter) {
 					a:hover {
 						border-bottom: 1px solid #0076ff
 					}
+					p {
+						max-width: 500px;
+						line-height: 1.5;
+						margin-left: auto;
+						margin-right: auto;
+					}
 					button {
 						-webkit-appearance: none;
 						width: 100%;
