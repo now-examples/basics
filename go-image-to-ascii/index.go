@@ -13,7 +13,7 @@ import (
 
 	"github.com/mattes/go-asciibot"
 	ascii "github.com/sophearak/goasciiart"
-	ui "github.com/sophearak/image-to-ascii/ui"
+	ui "github.com/zeit/now-examples/go-image-to-ascii/ui"
 )
 
 type asciiText struct {

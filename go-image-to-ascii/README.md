@@ -6,7 +6,7 @@ Image to ASCII is powered by `@now/go`, and helps you generate an ASCII image fr
 
 ## Deploy your own
 
-You'll want to fork this repository and deploy your own image to primitive.
+You'll want to fork this repository and deploy your own Image to ASCII.
 
 1. Click the fork button at the top right of GitHub
 2. Clone the repo to your local machine with `git clone URL_OF_FORKED_REPO_HERE`
