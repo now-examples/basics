@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "name": "md",
+  "name": "markdown",
   "builds": [
-    { "src": "*.css", "use": "@now/static" },
+    {
+      "src": "*.css",
+      "use": "@now/static"
+    },
     {
       "src": "*.md",
       "use": "@now/md",
