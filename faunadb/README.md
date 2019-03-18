@@ -51,15 +51,14 @@ module.exports = (req, res) => {
       .query({salutation: q.Concat(["Hello ", "world."])})
       .then((data) => {
         // Include the query's result in the HTTP Response
-        res.end('This is a Node.js server running on Now 2.0. This is a FaunaDB query result: <hr> ' + JSON.stringify(data));
+        res.end('<p>This is a Node.js lambda function running on Now 2.0.</p><hr><p>This is a FaunaDB query result:</p><pre>' + JSON.stringify(data) + '</pre>');
       })
       .catch((err) => {
         // Log the response in case of error
         console.error(err);
-        res.end("Error: " + JSON.stringify(err));
+        res.end('<p>Error:</p><pre>' + JSON.stringify(err) + '</pre>');
       });
 }
-
 ```
 
 #### Obtaining a FaunaDB key secret
