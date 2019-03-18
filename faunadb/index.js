@@ -7,7 +7,7 @@ const q = faunadb.query;
 
 // Initiate the FaunaDB client with a valid secret key.
 // The FaunaDB client will be used for issuing the queries.
-const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
+const client = new faunadb.Client({ secret: process.env.FAUNADB_KEY_SECRET });
 
 module.exports = (req, res) => {
   res.writeHeader(200, {"Content-Type": "text/html"});
