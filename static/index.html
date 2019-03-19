@@ -2,7 +2,7 @@
 	<head>
     <!-- Meta page information -->
 		<title>ZEIT Now Static Example</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 
@@ -13,7 +13,9 @@
       <header>
         <h1>Welcome to a Static Deployment</h1>
         <h2>Hosted on <a href="https://zeit.co/now" target="_blank">ZEIT Now</a></h2>
-        <p>This example shows a static website loading posts from the Hacker News API.</p>
+        <p>This example shows a static website, hosted on ZEIT Now, which loads posts from the Hacker News API.</p>
+        <p>Now statically <a href="https://zeit.co/docs/v2/deployments/basics">deploys and serves files</a> without any extra configuration necessary.</p>
+        <p>This deployment consists of an <code>index.html</code>, <code>css/styles.css</code>, <code>js/main.js</code>, and an vendor script, <code>js/timeago.js</code>.</p>
         <p>To learn more about this example and how to deploy it or something similar yourself, see <a href="https://github.com/zeit/now-examples">the example on GitHub</a>.</p>
       </header>
 
@@ -36,7 +38,7 @@
             <!-- Post metadata-->
             <span class="post__metadata">
               <span class="js-post__points">36</span> points by <a href="#" class="post__link js-post__user">reverse</a> <a href="#" class="js-post__link">
-                <span class="js-post__time">9 hours ago</span> | 
+                <span class="js-post__time">9 hours ago</span> |
                 <span class="js-post__comments">1 comment</span>
               </a>
             </span>
@@ -49,9 +51,9 @@
         <p>Looking for more examples? <a href="https://zeit.co/examples">See all ZEIT Now deployment examples</a></p>
       </footer>
     </div>
-    
+
     <!-- JavaScript for loading and displaying Hacker News posts-->
-    <script src="./timeago.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="js/timeago.min.js"></script>
+    <script src="js/main.js"></script>
 	</body>
 </html>
