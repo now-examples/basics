@@ -4,7 +4,7 @@ Live Example: static-example.now.sh
 
 This example shows a project which is deployed with [ZEIT Now](https://zeit.co/now).
 
-By default, deployments with Now are static unless additional [configuration](https://zeit.co/docs/v2/deployments/configuration) is provided to instruct how to serve the [output](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+**By default, deployments with Now are static unless additional [configuration](https://zeit.co/docs/v2/deployments/configuration) is provided** to instruct how to serve the [output](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
 
 This project consists of static files (`index.html`, `css/styles.css`, `js/main.js`, and `js/timeago.js`) which make up a simple static website that shows 5 of the latest Hacker News posts.
 
