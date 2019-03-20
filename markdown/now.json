@@ -13,7 +13,7 @@
         "title": "Markdown Example",
         "language": "en",
         "meta": [{ "name": "description", "content": "Example markdown builder deployed to ZEIT NOW"}],
-        "css": "./style.css"
+        "css": "/style.css"
       }
     }
   ]
