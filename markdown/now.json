@@ -7,7 +7,7 @@
       "use": "@now/static"
     },
     {
-      "src": "*.md",
+      "src": "**/*.md",
       "use": "@now/md",
       "config": {
         "title": "Markdown Example",
@@ -16,9 +16,5 @@
         "css": "./style.css"
       }
     }
-  ],
-  "routes": [
-    { "src":"/(.*).css", "dest": "/$1.css" },
-    { "src":"/(.*)", "dest": "/$1.html" }
   ]
 }
