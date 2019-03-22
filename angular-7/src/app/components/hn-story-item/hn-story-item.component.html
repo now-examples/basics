@@ -1,0 +1,17 @@
+<tr>
+  <td>
+    <span class="rank">{{idx}}. </span>
+  </td>
+
+  <td class="title">
+    <a class="title" href={{url}}>{{ title }}</a><span class="by">{{" (" + getAuthor() +")"}}</span>
+  </td>
+
+</tr>
+<tr>
+  <td></td>
+  <td class="subtext">
+    <span>{{score + " points " + " "}} </span><span>{{" by "+ by }}</span><span>{{" "+getHours() }}</span> | <a
+      [routerLink]="['/item', id]">{{commentsCount}} coments</a>
+  </td>
+</tr>
