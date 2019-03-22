@@ -1,0 +1,5 @@
+<div id="spinner-hn" *ngIf="isCommentLoading">
+</div>
+<div class="comments" *ngIf="!isCommentLoading">
+  <span class="comment-text" [innerHTML]="text"></span>
+</div>
