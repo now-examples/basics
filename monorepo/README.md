@@ -10,7 +10,7 @@ We will start by creating two main folders `api` which will contain all our serv
 
 - Let's start by creating a file named `api/go/index.go` and add the following GoLang code:
 
-```
+```go
 package main
 
 import (
@@ -26,7 +26,7 @@ func Time(w http.ResponseWriter, r *http.Request) {
 
 - Now we will create a file named `api/node/index.js` and add the following JavaScript code:
 
-```
+```js
 module.exports = (req, res) => {
   res.end(new Date().toString());
 };
@@ -34,13 +34,13 @@ module.exports = (req, res) => {
 
 - We will do the same for PHP creating a file named `api/php/index.php` with the following code:
 
-```
+```php
 <?php echo date("r")?>
 ```
 
 - And lastly let's create a file named `api/python/index.py` with the following Python code:
 
-```
+```python
 import datetime
 from http.server import BaseHTTPRequestHandler
 
@@ -58,9 +58,9 @@ class handler(BaseHTTPRequestHandler):
 
 - First we will create our `www` folder and add a `package.json` file including `isomorphic-unfetch` in our dependencies:
 
-```
+```json
 {
-  "name": "monoremo",
+  "name": "monorepo",
   "dependencies": {
     "isomorphic-unfetch": "3.0.0"
   }
@@ -69,7 +69,7 @@ class handler(BaseHTTPRequestHandler):
 
 - Next inside the same folder let's create a `pages` folder with an `index.js` file with the following code:
 
-```
+```jsx
 import Time from '../components/time'
 import 'isomorphic-unfetch'
 
@@ -255,7 +255,7 @@ export default Page
 
 - As you might noticed we have a component called `time.js`, lets create that one now. Create a folder named `components` with a file named `time.js` on it and add the following code:
 
-```
+```jsx
 import React from 'react'
 import 'isomorphic-unfetch'
 
@@ -332,13 +332,19 @@ By now, your folder tree should look like this:
 
 ### Deploy with Now
 
-First we need to add a `now.json` file to specify we want to use our Platform V2.
+First we need to create a `now.json` configuration file to instruct Now how to build the project.
 
-By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use `@now/go` to build and deploy the all GoLang files, `@now/node` to build and deploy the all JavasScript files, `@now/php` to build and deploy the all PHP files, `@now/python` to build and deploy the all Python files, and finally `@now/next` to build and deploy the our Next.js application. We will also define a name for our project (optional).
+For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
 
-Next we will add a routes key, which will handle routing for our Monorepo poiting the contents from `www` to our webroot `/` and the contents from `api` to `/api`.
+By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
 
-```
+We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+
+In this case we are going to use `@now/go` to build and deploy the all GoLang files, `@now/node` to build and deploy the all JavasScript files, `@now/php` to build and deploy the all PHP files, `@now/python` to build and deploy the all Python files, and finally `@now/next` to build and deploy the our Next.js application. We will also define a name for our project (optional).
+
+Next, we will add a routes key, which will handle routing for our Monorepo; pointing the contents from `www` to our webroot `/` and the contents from `api` to `/api`.
+
+```json
 {
     "version": 2,
     "name": "monorepo",
@@ -355,6 +361,8 @@ Next we will add a routes key, which will handle routing for our Monorepo poitin
     ]
 }
 ```
+
+Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
 
 We are now ready to deploy the app.
 
