@@ -16,7 +16,7 @@
 title: Jekyll on ZEIT Now
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is an example of Jekyll on ZEIT Now. See the sole post on this example for more information, or see the source to learn how to deploy yourself at github.com/zeit/now-examples
+  This is an example of Jekyll deployed on ZEIT Now. See the sole post on this example for more information, or see the source to learn how to deploy yourself at github.com/zeit/now-examples
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zeithq

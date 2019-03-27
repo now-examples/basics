@@ -28,8 +28,8 @@ Alternatively, your new Jekyll site can be automatically deployed and aliased us
 
 This starter project includes:
 - A fresh Jekyll app using the [Jekyll CLI](https://jekyllrb.com/docs/usage/) (with a few edits to provide resources!)
-- A pre-defined `build.sh` shell script that installs Ruby through `rbenv`, installs the dependencies (including Jekyll), then builds the app to the default `_site` output directory.
-- A pre-configured `now.json` file that uses the aforementioned build shell script and deploy the `_site` directory when built.
+- A pre-defined `build.sh` shell script that installs Ruby through `rbenv`, the dependencies (including Jekyll), then builds the app to the default `_site` output directory.
+- A pre-configured `now.json` file that uses the aforementioned build shell script and deploys the `_site` directory when built.
 
 ## Resources
 
