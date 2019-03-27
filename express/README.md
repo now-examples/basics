@@ -53,6 +53,16 @@ module.exports = app
 
 The `req` and `res` objects passed to the callback of `app.get()` will then be [Express Request](http://expressjs.com/en/4x/api.html#req) and [Express Response](http://expressjs.com/en/4x/api.html#res) objects, instead of Node's standard http request and response objects.  So, you can use the Express [`res.send()` method](http://expressjs.com/en/4x/api.html#res.send) instead of the lower-level methods on the standard Node.js response object.
 
+In the actual example code - [`index.js`](index.js) - you'll also note usage of
+the [helmet package](https://npmjs.org/package/helmet) in the same way you'd
+use it in a typical express server:
+
+```js
+app.use(helmet())
+```
+
+The helmet package adds extra security-related HTTP headers to HTTP responses sent from the express app.
+
 ## Resources
 
 - To find more information on using the **Node.js Builder**, please refer to the [Node.js Builder (@now/node)](https://zeit.co/docs/v2/deployments/official-builders/node-js-now-node/) documentation.
