@@ -10,7 +10,7 @@ This example is based on the [Hugo Quick Start guide](https://gohugo.io/getting-
 
 ## Resources
 
-For more information on how you can deploy your own Hugo sites, see the following resources:
+For more information on how you can deploy your own Hugo sites with Now, see the following resources:
 
 - [Our Static-Build Builder (@now/static-build) documentation](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/)
 - [Our guide on your first Hugo deployment with Now](https://zeit.co/guides/deploying-hugo-with-now/)
