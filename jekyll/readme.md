@@ -22,7 +22,7 @@ To [deploy](https://zeit.co/docs/v2/deployments/basics) this application, with [
 $ now
 ```
 
-Alternatively, your new Jekyll site can be automatically deployed and aliased using [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab). Pushing these files to a new repository with the `now.json` in the root, and with either [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-github) configured for that repository, your site will be automatically deployed for every push and pull/merge request, and aliased for every push to the default branch!
+Alternatively, your new Jekyll site can be automatically deployed and aliased using [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab). Pushing these files to a new repository with a `now.json` file in the root, and with either [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-github) configured for that repository, your site will be automatically deployed for every push and pull/merge request, and aliased for every push to the default branch!
 
 ## Included In This Starter
 
