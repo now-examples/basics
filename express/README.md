@@ -15,7 +15,7 @@ This repo is an example app featured in [this blog post](https://zeit.co/blog/se
 1. Add the required [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets/) (found in `now.json`) to your Now account.
    - You'll need your Twitter **consumer API keys** and **DeepAI API key** you created above 
    - `COOK_KEY` can be any arbitrary string. It is used to sign the user's cookie.
-    The now.json file uses ``@secret-name`` so that the keys will be available to the deployment, but not saved in version control.
+    The now.json file uses `@secret-name` so that the keys will be available to the deployment, but not saved in version control.
 #### Configure cookie domain
 1. Update the [cookie domain](https://github.com/zeit/now-examples/blob/5616954f9a3875e30c97f9c9b58e3869ddf33c50/express/middlewares/cookieSession.js#L6) with a [`now` alias](https://zeit.co/docs/v2/domains-and-aliases/aliasing-a-deployment/) of your choosing.
 ### Deploy it on now.sh
