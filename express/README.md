@@ -9,7 +9,7 @@ This repo is an example app featured in [this blog post](https://zeit.co/blog/se
 1. Create an app on [Twitter for Developers](https://developer.twitter.com/).
 1. Update the callback URL (`routes/login/index.js`, line 14) to be one from your Twitter app.
 ### Setup DeepAPI Account for image processing
-1. Create an account on [DeepAI ](https://deepai.org/)
+1. Create an account on [DeepAI](https://deepai.org/).
 1. Get your deep api from the [Deep AI Dashboard](https://deepai.org/dashboard)
 ### Store the Tokens and Keys as now secrets
 1. Add the required [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets/) (found in `now.json`) to your Now account.
