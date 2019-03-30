@@ -2,6 +2,12 @@
 
 In this example we will be deploying a simple "Hello World" example with Umijs.
 
+### Development
+```
+$ npm install
+$ npm run start
+```
+
 ### Deploy with Now
 
 First we need to create a `now.json` configuration file to instruct Now how to build the project.

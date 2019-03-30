@@ -1,9 +1,10 @@
-import React from 'react';
+import * as React from 'react';
+import { RouterTypes } from 'umi';
 import styles from './index.less';
 
 import { Button } from 'antd';
 
-const App: React.SFC<{}> = () => {
+const App: React.SFC<RouterTypes> = () => {
   return (
     <div className={styles.normal}>
       <div className={styles.welcome} />
