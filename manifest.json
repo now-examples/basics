@@ -63,6 +63,12 @@
       "description": "Gatsby getting started example using Gatsby CLI"
     },
     {
+      "example": "Hugo",
+      "path": "/hugo",
+      "demo": "https://hugo-v2.now.sh",
+      "description": "Hugo quick start example using Hugo CLI"
+    },
+    {
       "example": "Vue",
       "path": "/vue",
       "demo": "https://vue-v2.now.sh",
