@@ -6,6 +6,17 @@
     { "src": "apollo/index.js", "use": "@now/node-server" },
     { "src": "go/*.go", "use": "@now/go" },
     { "src": "bash/*.sh", "use": "@now/bash" },
+    { "src": "markdown/*.css", "use": "@now/static" },
+    {
+      "src": "markdown/**/*.md",
+      "use": "@now/md",
+      "config": {
+        "title": "Markdown Example",
+        "language": "en",
+        "meta": [{ "name": "description", "content": "Example markdown builder deployed to ZEIT NOW"}],
+        "css": "/markdown/style.css"
+      }
+    },
     { "src": "nodejs/*.js", "use": "@now/node" },
     { "src": "php-7/*.php", "use": "@now/php" },
     {
@@ -28,7 +39,7 @@
     { "src": "optipng/showcase.png", "use": "@now/optipng" },
     { "src": "nodejs-hapi/index.js", "use": "@now/node-server" },
     { "src": "nodejs-koa/index.js", "use": "@now/node" },
-    { "src": "nodejs-coffee/app.js", "use": "@now/node" },
+    { "src": "nodejs-coffee/app.coffee", "use": "now-coffee", "config": { "dest": "app.coffee" } },
     { "src": "express/**/*.js", "use": "@now/node" },
     { "src": "nodejs-micro/index.js", "use": "now-micro" },
     {
@@ -51,6 +62,8 @@
       }
     },
     { "src": "rust-scraper/index.rs", "use": "@now/rust" },
-    { "src": "rust/index.rs", "use": "@now/rust" }
+    { "src": "rust/index.rs", "use": "@now/rust" },
+    { "src": "jekyll/build.sh", "use": "@now/static-build", "config": { "distDir": "_site" } },
+    { "src": "create-elm-app/package.json", "use": "@now/static-build", "config": { "distDir": "build" } }
   ]
 }
