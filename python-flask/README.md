@@ -12,9 +12,9 @@ $ now init python-flask
 
 > Alternatively, create a project, and Git repository, with this example template [using the ZEIT dashboard](https://zeit.co/new/python-flask).
 
-Once initialized locally, you will see the files `/index.py` and `/about/index.py` which each correspond to a route `/` and `/about`, respectively. Each file defines a [Flask wildcard catch-all](http://flask.pocoo.org/snippets/57/) so that we can utilize the routing layer in the Now Platform defined in `now.json`.
+Once initialized locally, you will see the files `/index.py` and `/about/index.py` which each correspond to a route, `/` and `/about`, respectively. Each file defines a [Flask wildcard catch-all](http://flask.pocoo.org/snippets/57/) so that we can utilize the routing layer in the Now Platform defined in `now.json`.
 
-In this case, no routes are defined in `now.json` so we can rely on the filesystem for routing.
+In this case, no routes are defined in `now.json`, so we can rely on the filesystem for routing.
 
 To [deploy](https://zeit.co/docs/v2/deployments/basics) this application, with [Now installed](https://zeit.co/docs/v2/getting-started/installation), run the following from your terminal:
 
@@ -22,7 +22,7 @@ To [deploy](https://zeit.co/docs/v2/deployments/basics) this application, with [
 $ now
 ```
 
-Alternatively, your new Flask app can be automatically deployed and aliased using [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab). Pushing these files to a new repository with a `now.json` file in the root, and with either [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-github) configured for that repository, your site will be automatically deployed for every push and pull/merge request, and aliased for every push to the default branch!
+Alternatively, your new Flask app can be automatically deployed and aliased using [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab). Pushing these files to a new repository with a `now.json` file in the root, and with either [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab) configured for that repository, means your site will be automatically deployed for every push and pull/merge request, and aliased for every push to the default branch!
 
 ## Included In This Starter
 
