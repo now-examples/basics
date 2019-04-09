@@ -1,5 +1,7 @@
 # Python Flask on ZEIT Now
 
+[Demo](https://python-flask.now-examples.now.sh)
+
 This directory is a brief example and starter app for [Flask](http://flask.pocoo.org), ready to deploy on [ZEIT Now](https://zeit.co/now).
 
 To get started with this project yourself, use the following command from [Now CLI](https://zeit.co/docs/v2/getting-started/installation#now-cli):
