@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "python-flask",
   "builds": [
     { "src": "**/*.py", "use": "@now/python@canary" }
   ]
