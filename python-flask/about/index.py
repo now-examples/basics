@@ -6,4 +6,4 @@ app = Flask(__name__)
 def catch_all(path):
     name = path.upper()
     v = __version__
-    return Response("<h1>%s on Flask v%s</h1><p>Visit the <a href='./'>home</a> page</p>" % (name, v), mimetype='text/html')
+    return Response("<link rel='stylesheet' href='/css/style.css' /><h1>%s</h1><p>WSGI Enabled</p><p>Flask version <em>%s</em></p><p>Visit the <a href='./'>home</a> page</p>" % (name, v), mimetype='text/html')
