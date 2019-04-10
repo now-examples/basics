@@ -4,9 +4,11 @@
 
 ## Quick Start
 
+To set up any of these examples as your own project, [install Now](https://zeit.co/docs/v2/getting-started/installation) and use the following command in your terminal.
+
 ```sh
-npm install -g now    # install Now CLI
-now init              # create a new project from an example
+now init <example>    # Create a new project from a specific <example>
+now init              # Pick an example in the CLI
 ```
 
 ---
