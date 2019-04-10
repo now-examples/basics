@@ -2,8 +2,6 @@
 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/zeit)
 
-## Quick Start
-
 To set up any of these examples as your own project, [install Now](https://zeit.co/docs/v2/getting-started/installation) and use the following command in your terminal.
 
 ```sh
