@@ -4,9 +4,9 @@
 
 ## Quick Start
 
-```
-npm install -g now    # install the Now CLI
-now init              # initialize a new project from an example
+```sh
+npm install -g now    # install Now CLI
+now init              # create a new project from an example
 ```
 
 ---
