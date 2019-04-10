@@ -2,6 +2,13 @@
 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/zeit)
 
+## Quick Start
+
+```
+npm install -g now    # install the Now CLI
+now init              # initialize a new project from an example
+```
+
 ---
 
 ### Programming Languages
