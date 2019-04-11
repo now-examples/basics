@@ -77,4 +77,4 @@ const server = new ApolloServer({
   playground: true,
 });
 
-module.exports = apolloServer.createHandler({ path: '*' });
+module.exports = server.createHandler();
