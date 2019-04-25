@@ -1,0 +1,9 @@
+*
+!archetypes
+!content
+!themes
+!.nowignore
+!build.sh
+!now.json
+!readme.md
+!.gitmodules
