@@ -1,9 +1,22 @@
 const db = require("../../lib/db");
+const url = require("url");
 
 module.exports = async (req, res) => {
+  const { query } = url.parse(req.url, true);
+  let page = parseInt(query.page) || 1;
+  const limit = parseInt(query.limit) || 9;
+  if (page < 1) page = 1;
   const profiles = await db.query(`
       SELECT *
-      FROM data
+      FROM profiles
+      LIMIT ${(page - 1) * limit}, ${limit}
     `);
-  res.end(JSON.stringify({ profiles }));
+  const count = await db.query(`
+      SELECT COUNT(*)
+      AS profilesCount
+      FROM profiles
+    `);
+  const { profilesCount } = count[0];
+  const pageCount = Math.ceil(profilesCount / limit);
+  res.end(JSON.stringify({ profiles, pageCount, page }));
 };
