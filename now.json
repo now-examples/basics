@@ -82,7 +82,7 @@
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     },
-    { "src": "next-mysql/api/**/*.js", "use": "@now/node" },
-    { "src": "next-mysql/next.config.js", "use": "@now/next" }
+    { "src": "nextjs-mysql/api/**/*.js", "use": "@now/node" },
+    { "src": "nextjs-mysql/next.config.js", "use": "@now/next" }
   ]
 }
