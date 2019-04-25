@@ -22,7 +22,7 @@ Lastly, the `next.config.js` is used to tell [Next.js](https://nextjs.org) that 
 
 ## How Serverless MySQL Works
 
-Serverless functions create multiple database connections for each user and can use up all available connections quickly, blocking access for others. This example resolves this issue by utilizing [Jeremy Daly's](http://www.jeremydaly.com) MySQL wrapper - [serverless-mysql](https://github.com/jeremydaly/serverless-mysql).
+Serverless functions will create multiple database connections as traffic increases and therefore all available connections can be consumed quickly, blocking access for others. This example resolves this issue by utilizing [Jeremy Daly's](http://www.jeremydaly.com) MySQL wrapper - [serverless-mysql](https://github.com/jeremydaly/serverless-mysql).
 
 The wrapper provides basic but important functionality that allows connections to be monitored, limited, retried and closed. This is vital for making serverless MySQL work and is explored further in `db.js` below:
 
