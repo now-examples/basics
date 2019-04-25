@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require('apollo-server');
+const { ApolloServer, gql } = require('apollo-server-micro');
 
 const books = [
   { id: 1, title: 'The Trials of Brother Jero', rating: 8, authorId: 1 },
@@ -77,6 +77,4 @@ const server = new ApolloServer({
   playground: true,
 });
 
-server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`);
-});
+module.exports = server.createHandler();

@@ -101,8 +101,8 @@
     {
       "example": "Apollo Server",
       "path": "/apollo",
-      "demo": "https://apollo-v2.now.sh",
-      "description": "An Apollo Server example using Express"
+      "demo": "https://apollo.now-examples.now.sh/",
+      "description": "An Apollo Server example using Serverless Micro"
     },
     {
       "example": "Markdown Static",
@@ -163,6 +163,12 @@
       "path": "/jekyll",
       "demo": "https://jekyll.now-examples.now.sh/",
       "description": "A fresh Jekyll application, ready to be built and served in the cloud with Now."
+    },
+    {
+      "example": "Flask",
+      "path": "/python-flask",
+      "demo": "https://python-flask.now-examples.now.sh",
+      "description": "An example using Flask, a Python Microframework"
     }
   ],
   "Fully Working Applications": [
