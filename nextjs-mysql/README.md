@@ -1,6 +1,6 @@
 # Next.js + MySQL Example
 
-This directory is an example of a [Next.js](https://nextjs.org) app connected to a [MySQL](https://www.mysql.com/) database using the [@now/next](https://zeit.co/docs/v2/deployments/official-builders/next-js-now-next/) and [@now/node](https://zeit.co/docs/v2/deployments/official-builders/node-js-now-node/) builders.
+This directory is an example of a [Next.js](https://nextjs.org) app connected to a [MySQL](https://www.mysql.com/) database using the [@now/next](https://zeit.co/docs/v2/deployments/official-builders/next-js-now-next/) and [@now/node](https://zeit.co/docs/v2/deployments/official-builders/node-js-now-node/) [Builders](https://zeit.co/docs/v2/deployments/builders/overview/).
 
 ## Example Purpose
 
@@ -27,7 +27,7 @@ Serverless functions create multiple database connections for each user and can 
 The wrapper provides basic but important functionality that allows connections to be monitored, limited, retried and closed. This is vital for making serverless MySQL work and is explored further in `db.js` below:
 
 ```js
-const mysql = require("serverless-mysql");
+const mysql = require('serverless-mysql');
 
 const db = mysql({
   config: {
@@ -64,9 +64,9 @@ As a result, it ensures that concurrent MySQL connections do not reach their lim
 Next, let's look at `/api/profiles/profile.js` to see what a serverless MySQL query looks like:
 
 ```js
-const db = require("../../lib/db");
-const sql = require("sql-template-strings");
-const url = require("url");
+const db = require('../../lib/db');
+const sql = require('sql-template-strings');
+const url = require('url');
 
 module.exports = async (req, res) => {
   const { query } = url.parse(req.url, true);
