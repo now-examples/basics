@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec \"ts-node $1\""
+    "dev": "nodemon --exec \"ts-node $1\"",
+    "now-dev": "nodemon --exec \"ts-node $1\""
   },
   "devDependencies": {
     "@types/node-fetch": "^2.1.4",
