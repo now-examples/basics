@@ -50,7 +50,7 @@ now init              # Pick an example in the CLI
 | [Puppeteer](/puppeteer-screenshot) | https://screenshot-v2.now.sh | A Puppeteer based screenshot example |
 | [Jekyll](/jekyll) | https://jekyll.now-examples.now.sh/ | A ready-to-deploy Jekyll site, presetup to pick up and go. |
 | [Flask](/python-flask) | https://python-flask.now-examples.now.sh | An example using Flask, a Python Microframework |
-| [Storybook](/storybook) | https://storybook.now.sh | Storybook is a user interface development environment and playground for UI components. [Storybook](https://storybook.js.org/)       |
+| [Storybook](/storybook) | https://storybook.now-examples.now.sh | Storybook is a user interface development environment and playground for UI components. [Storybook](https://storybook.js.org/)       |
 
 ---
 
