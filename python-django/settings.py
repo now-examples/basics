@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 """
 
 import os
@@ -16,24 +19,17 @@ APPEND_SLASH = False
 
 PREPEND_WWW = False
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
-
-# Assign this environment variable using Now Secrets and assign os.environ['SECRET_KEY']
+# Assign this environment variable using Now Secrets
 # See https://zeit.co/docs/v2/deployments/environment-variables-and-secrets
-SECRET_KEY = 'change-this-secret!'
+SECRET_KEY = os.environ.get('SECRET_KEY') or 'Fallback-Secret:Do-Not-Use'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
+# Add your domain name here
 ALLOWED_HOSTS = ['localhost', '.now.sh']
-
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -71,12 +67,10 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-# WARNING: sqlite does not support serverless, use a remote DB
+# WARNING: sqlite does not support serverless, use a remote DB instead
 
 DATABASES = {
     'default': {
