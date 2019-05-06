@@ -35,6 +35,11 @@
       "use": "@now/python@canary",
       "config": { "maxLambdaSize": "10mb" }
     },
+    {
+      "src": "python-django/app.py",
+      "use": "@now/python@canary",
+      "config": { "maxLambdaSize": "15mb" }
+    },
     { "src": "vue/package.json", "use": "@now/static-build" },
     {
       "src": "create-react-app/package.json",
