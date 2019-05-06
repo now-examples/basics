@@ -1,4 +1,4 @@
-# Python Flask on ZEIT Now
+# Flaskex on ZEIT Now
 
 [Demo](https://flaskex.now-examples.now.sh)
 
@@ -20,9 +20,21 @@ $ now init flaskex
 
 > Alternatively, create a project, and Git repository, with this example template [using the ZEIT dashboard](https://zeit.co/new/flaskex).
 
-Once initialized locally, you will see the files `/index.py` and `/about/index.py` which each correspond to a route, `/` and `/about`, respectively. Each file defines a [Flask wildcard catch-all](http://flask.pocoo.org/snippets/57/) so that we can utilize the routing layer in the Now Platform defined in `now.json`.
+Once initialized locally, you will see several `.py` files which each correspond to a route in defined in the `now.json` configuration file. Each `.py` file is an input to the [Python Builder](https://zeit.co/docs/v2/deployments/official-builders/python-now-python) which emits a corresponding Lambda for each file.
 
-In this case, no routes are defined in `now.json`, so we can rely on the filesystem for routing.
+You will need to add a couple [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets) before deploying.
+
+```shell
+$ now secrets add flaskex-db-uri 'postgresql+pg8000://username:password@pgsql.example.com/database' 
+```
+
+This example uses `postgresql` but you can use any[engine](https://docs.sqlalchemy.org/en/13/core/engines.html) supported by sqlalchemy.
+
+```shell
+$ now secrets add flaskex-secret-key '_5#y2LF4Q8z*Uz]' 
+```
+
+This [secret key](http://flask.pocoo.org/docs/1.0/quickstart/#sessions) is used by Flask when signing secrets. This can be a randomly generated string.
 
 To [deploy](https://zeit.co/docs/v2/deployments/basics) this application, with [Now installed](https://zeit.co/docs/v2/getting-started/installation), run the following from your terminal:
 
@@ -30,14 +42,14 @@ To [deploy](https://zeit.co/docs/v2/deployments/basics) this application, with [
 $ now
 ```
 
-Alternatively, your new Flask app can be automatically deployed and aliased using [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab). Pushing these files to a new repository with a `now.json` file in the root, and with either [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab) configured for that repository, means your site will be automatically deployed for every push and pull/merge request, and aliased for every push to the default branch!
+Alternatively, your new Flaskex app can be automatically deployed and aliased using [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab). Pushing these files to a new repository with a `now.json` file in the root, and with either [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github) or [Now for GitLab](https://zeit.co/docs/v2/integrations/now-for-gitlab) configured for that repository, means your site will be automatically deployed for every push and pull/merge request, and aliased for every push to the default branch!
 
 ## Included In This Starter
 
 This starter project includes:
 - A `/index.py` file that responds to the `/` route.
 - A `/about/index.py` file that responds to the `/about` route.
-- A pre-defined `Pipfile` that installs Flask as a dependency and defines the Python runtime version.
+- A `requirements.txt` file that installs dependencies such as Flask, SQLAlchemy, bcrypt, pg8000 (posgresql driver)
 - A generated `Pipfile.lock` that ensures exact versions of dependencies to avoid the risk of automatically upgrading packages that depend upon each other and breaking your project dependency tree.
 
 ## Resources
