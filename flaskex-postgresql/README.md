@@ -2,7 +2,7 @@
 
 [Demo](https://flaskex-postgresql.now-examples.now.sh)
 
-This directory a serverless example of [Flaskex](https://github.com/anfederico/Flaskex), ready to deploy on [ZEIT Now](https://zeit.co/now).
+This directory is a serverless example of [Flaskex](https://github.com/anfederico/Flaskex), ready to deploy on [ZEIT Now](https://zeit.co/now).
 
 ## Features
 - Encrypted user authorizaton
@@ -20,9 +20,9 @@ $ now init flaskex-postgresql
 
 > Alternatively, create a project, and Git repository, with this example template [using the ZEIT dashboard](https://zeit.co/new/flaskex-postgresql).
 
-Once initialized locally, you will see several `.py` files which each correspond to a route in defined in the `now.json` configuration file. Each `.py` file is an input to the [Python Builder](https://zeit.co/docs/v2/deployments/official-builders/python-now-python) which emits a corresponding Lambda for each file.
+Once initialized locally, you will see several `.py` files which each correspond to a route in defined in the `now.json` configuration file. Each `.py` file is an input to the [Python Builder](https://zeit.co/docs/v2/deployments/official-builders/python-now-python) which emits a corresponding [Lambda](https://zeit.co/docs/v2/deployments/concepts/lambdas/) for each file.
 
-You will need to add a couple [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets) before deploying.
+You will need to add a couple of [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets) before deploying.
 
 ```shell
 $ now secrets add flaskex-db-uri 'postgresql+pg8000://username:password@pgsql.example.com/database' 
