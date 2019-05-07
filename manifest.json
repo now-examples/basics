@@ -192,8 +192,8 @@
     },
     {
       "example": "Flaskex with PostgreSQL",
-      "path": "/flaskex",
-      "demo": "https://flaskex.now-examples.now.sh",
+      "path": "/flaskex-postgresql",
+      "demo": "https://flaskex-postgresql.now-examples.now.sh",
       "description": "A serverless Python app built with Flask, WTForms, bcrypt, PostgreSQL, and Bulma"
     }
   ]
