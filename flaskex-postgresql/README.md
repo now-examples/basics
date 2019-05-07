@@ -1,6 +1,6 @@
-# Flaskex on ZEIT Now
+# Flaskex with PostgreSQL on ZEIT Now
 
-[Demo](https://flaskex.now-examples.now.sh)
+[Demo](https://flaskex-postgresql.now-examples.now.sh)
 
 This directory a serverless example of [Flaskex](https://github.com/anfederico/Flaskex), ready to deploy on [ZEIT Now](https://zeit.co/now).
 
@@ -15,10 +15,10 @@ This directory a serverless example of [Flaskex](https://github.com/anfederico/F
 To get started with this project yourself, use the following command from [Now CLI](https://zeit.co/docs/v2/getting-started/installation#now-cli):
 
 ```shell
-$ now init flaskex
+$ now init flaskex-postgresql
 ```
 
-> Alternatively, create a project, and Git repository, with this example template [using the ZEIT dashboard](https://zeit.co/new/flaskex).
+> Alternatively, create a project, and Git repository, with this example template [using the ZEIT dashboard](https://zeit.co/new/flaskex-postresql).
 
 Once initialized locally, you will see several `.py` files which each correspond to a route in defined in the `now.json` configuration file. Each `.py` file is an input to the [Python Builder](https://zeit.co/docs/v2/deployments/official-builders/python-now-python) which emits a corresponding Lambda for each file.
 
@@ -48,7 +48,9 @@ Alternatively, your new Flaskex app can be automatically deployed and aliased us
 
 This starter project includes:
 - A `/index.py` file that responds to the `/` route.
-- A `/about/index.py` file that responds to the `/about` route.
+- A `/signup.py` file that responds to the `/signup` route.
+- A `/settings.py` file that responds to the `/settings` route.
+- A `/logout.py` file that responds to the `/logout` route.
 - A `requirements.txt` file that installs dependencies such as Flask, SQLAlchemy, bcrypt, pg8000 (posgresql driver)
 - A generated `Pipfile.lock` that ensures exact versions of dependencies to avoid the risk of automatically upgrading packages that depend upon each other and breaking your project dependency tree.
 
