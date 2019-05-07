@@ -28,7 +28,7 @@ You will need to add a couple [secrets](https://zeit.co/docs/v2/deployments/envi
 $ now secrets add flaskex-db-uri 'postgresql+pg8000://username:password@pgsql.example.com/database' 
 ```
 
-This example uses `postgresql` but you can use any[engine](https://docs.sqlalchemy.org/en/13/core/engines.html) supported by sqlalchemy.
+This example uses `postgresql` but you can use any [engine](https://docs.sqlalchemy.org/en/13/core/engines.html) supported by sqlalchemy.
 
 ```shell
 $ now secrets add flaskex-secret-key '_5#y2LF4Q8z*Uz]' 
