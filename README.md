@@ -2,6 +2,13 @@
 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/zeit)
 
+To set up any of these examples as your own project, [install Now](https://zeit.co/docs/v2/getting-started/installation) and use the following command in your terminal.
+
+```sh
+now init <example>    # Create a new project from a specific <example>
+now init              # Pick an example in the CLI
+```
+
 ---
 
 ### Programming Languages
@@ -31,7 +38,7 @@
 | [Vuepress](/vuepress) | https://vuepress-v2.now.sh | A docs example using VuePress        |
 | [Nuxt Static](/nuxt-static) | https://nuxt-static-v2.now.sh | A Nuxt Static exported example |
 | [Express](/express) | https://express-v2.now.sh | An example using Express        |
-| [Apollo Server](/apollo) | https://apollo-v2.now.sh | An Apollo Server example using Express        |
+| [Apollo Server](/apollo) | https://apollo.now-examples.now.sh/ | An Apollo Server example using Serverless Micro        |
 | [Markdown](/markdown) | https://markdown-v2.now.sh | A static website using Markdown and CSS        |
 | [MDX Deck](/mdx-deck) | https://mdx-deck-v2.now.sh | A presentation using MDX Deck        |
 | [MDX Deck - Advanced](/mdx-deck-advanced) | https://advanced-mdx-deck.now.sh | A presentation using MDX Deck with custom layout and React components        |
@@ -42,6 +49,8 @@
 | [Zola](/zola) | https://zola.now.sh | A static website uses [Zola](https://www.getzola.org) and builds a website with Rust in the cloud |
 | [Puppeteer](/puppeteer-screenshot) | https://screenshot-v2.now.sh | A Puppeteer based screenshot example |
 | [Jekyll](/jekyll) | https://jekyll.now-examples.now.sh/ | A ready-to-deploy Jekyll site, presetup to pick up and go. |
+| [Flask](/python-flask) | https://python-flask.now-examples.now.sh | An example using Flask, a Python Microframework |
+| [Django](/python-django) | https://python-django.now-examples.now.sh | An example using Django, a Python framework for perfectionists with deadlines |
 
 ---
 
@@ -51,5 +60,7 @@
 |:---------- |:---------|:----------------|
 | [Next News](/nextjs-news) | https://nextjs-news-v2.now.sh | A Hacker News clone created with Next.js deployed to Now 2.0 |
 | [Slack Eval](/slack-eval) | https://serverless-eval.now.sh | A serverless Slack app deployed to Now 2.0 |
+| [Next MySQL Robots](/nextjs-mysql) | https://nextjs-mysql.now.sh | A serverless Next.js app that uses a MySQL database |
 | [Node Canvas](/nodejs-canvas-partyparrot) | https://ppaas.now.sh | A Party Parrot generator built on node-canvas |
 | [Twitter Dreamify with Express](/express-twitter-dreamify) | https://serverless-express.now.sh | A serverless Express application that takes an authenticated Twitter user's avatar and dreamifies it. [Read the blog post on this example](https://zeit.co/blog/serverless-express-js-lambdas-with-now-2). |
+| [Flaskex with PostgreSQL](/flaskex-postgresql) | https://flaskex-postgresql.now-examples.now.sh | A serverless Python app built with Flask, WTForms, bcrypt, PostgreSQL, and Bulma. |

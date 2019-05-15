@@ -95,8 +95,8 @@
     {
       "example": "Apollo Server",
       "path": "/apollo",
-      "demo": "https://apollo-v2.now.sh",
-      "description": "An Apollo Server example using Express"
+      "demo": "https://apollo.now-examples.now.sh/",
+      "description": "An Apollo Server example using Serverless Micro"
     },
     {
       "example": "Markdown Static",
@@ -157,6 +157,18 @@
       "path": "/jekyll",
       "demo": "https://jekyll.now-examples.now.sh/",
       "description": "A fresh Jekyll application, ready to be built and served in the cloud with Now."
+    },
+    {
+      "example": "Flask",
+      "path": "/python-flask",
+      "demo": "https://python-flask.now-examples.now.sh",
+      "description": "An example using Flask, a Python Microframework"
+    },
+    {
+      "example": "Django",
+      "path": "/python-django",
+      "demo": "https://python-django.now-examples.now.sh",
+      "description": "An example using Django, a Python framework for perfectionists with deadlines"
     }
   ],
   "Fully Working Applications": [
@@ -177,6 +189,12 @@
       "path": "/nodejs-canvas-partyparrot",
       "demo": "https://ppaas.now.sh",
       "description": "A Party Parrot generator built on node-canvas"
+    },
+    {
+      "example": "Flaskex with PostgreSQL",
+      "path": "/flaskex-postgresql",
+      "demo": "https://flaskex-postgresql.now-examples.now.sh",
+      "description": "A serverless Python app built with Flask, WTForms, bcrypt, PostgreSQL, and Bulma"
     }
   ]
 }
