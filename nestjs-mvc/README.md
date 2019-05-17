@@ -2,6 +2,7 @@
 
 https://docs.nestjs.com/techniques/mvc
 
+See main.js line 15. To avoid "Error: Cannot find module 'hbs'"
 
 
 <p align="center">
