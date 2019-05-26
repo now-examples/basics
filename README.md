@@ -51,7 +51,7 @@ now init              # Pick an example in the CLI
 | [Jekyll](/jekyll) | https://jekyll.now-examples.now.sh/ | A ready-to-deploy Jekyll site, presetup to pick up and go. |
 | [Flask](/python-flask) | https://python-flask.now-examples.now.sh | An example using Flask, a Python Microframework |
 | [Django](/python-django) | https://python-django.now-examples.now.sh | An example using Django, a Python framework for perfectionists with deadlines |
-| [Svelte](/svelte-static) | https://svelte-static.now-examples.now.sh | An example using Svelte and Sapper, frameworkless framework that cybernetically enhances your web app |
+| [Sapper](/sapper-static) | https://svelte-static.now-examples.now.sh | An example using Svelte and Sapper, frameworkless framework that cybernetically enhances your web app |
 
 ---
 
