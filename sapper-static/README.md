@@ -15,5 +15,5 @@ These are all included in `now` cli, so you can do same with these:
 ```
 npm i -g now   # install development tools
 now dev        # run local development server
-npm            # deploy on zeit now
+now            # deploy on zeit now
 ```
