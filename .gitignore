@@ -4,5 +4,6 @@ node_modules
 vendor
 target
 yarn-error.log
+__sapper__
 
 .DS_Store
