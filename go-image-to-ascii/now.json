@@ -3,12 +3,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.go",
+      "src": "routes/index.go",
       "use": "@now/go"
     },
     {
       "src": "assets/**",
       "use": "@now/static"
     }
-  ]
+  ],
+  "routes": [{
+    "src": "/",
+    "dest": "/routes/index.go"
+  }]
 }
