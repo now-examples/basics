@@ -1,4 +1,4 @@
-# Serverless Go API with a Static Frontend on ZEIT Now
+# Go API with a Static Frontend on ZEIT Now
 
 **Live Demo**: https://go.now-examples.now.sh/
 
