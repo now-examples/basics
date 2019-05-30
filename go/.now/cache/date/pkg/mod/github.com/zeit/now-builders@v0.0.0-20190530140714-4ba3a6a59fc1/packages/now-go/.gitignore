@@ -1,6 +1,0 @@
-node_modules
-*.log
-/go
-/analyze
-*.js
-!util/install.js

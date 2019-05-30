@@ -1,6 +1,0 @@
-node_modules
-tmp
-target/
-.next
-coverage
-*.tgz
