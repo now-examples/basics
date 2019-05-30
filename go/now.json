@@ -2,7 +2,7 @@
   "version": 2,
   "name": "my-go-project",
   "builds": [
-    { "src": "www/**/*.{html,css}", "use": "@now/static" },
+    { "src": "www/**/*", "use": "@now/static" },
     { "src": "api/**/*.go", "use": "@now/go" }
   ],
   "routes": [
