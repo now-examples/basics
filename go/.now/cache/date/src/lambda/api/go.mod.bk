@@ -1,0 +1,6 @@
+module handler
+
+require (
+	github.com/aws/aws-lambda-go v1.11.0 // indirect
+	github.com/zeit/now-builders v0.0.0-20190530140714-4ba3a6a59fc1
+)

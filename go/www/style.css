@@ -1,0 +1,25 @@
+h1 {
+  margin-top: 70px; 
+  text-align: center; 
+  font-size: 45px; 
+} 
+
+h1, p {
+  font-family: Helvetica; 
+} 
+
+a {
+  color: #0076FF; 
+  text-decoration: none; 
+} 
+
+p {
+  text-align: center; 
+  font-size: 30px; 
+} 
+
+p:nth-child(3) { 
+  font-size: 25px; 
+  margin-left: 15%; 
+  margin-right: 15%; 
+}
