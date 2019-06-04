@@ -1,0 +1,14 @@
+{
+  "name": "now-fastify",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Fastify Node.js Server Example",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Ethan Arrowood <ethan.arrowood@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^2.4.1"
+  }
+}
