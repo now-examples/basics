@@ -1,7 +1,5 @@
 {
-    "version": 2,
-    "name": "nodejs-ts",
-    "builds": [
-        { "src": "*.ts", "use": "@now/node" }
-    ]
+  "version": 2,
+  "name": "nodejs-ts",
+  "builds": [{ "src": "*.ts", "use": "@now/node" }]
 }
