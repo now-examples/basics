@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@types/node-fetch": "^2.1.4",
+    "@types/node": "^8.10.49",
     "typescript": "^3.5.1"
   },
   "dependencies": {
