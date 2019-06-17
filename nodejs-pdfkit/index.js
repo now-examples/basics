@@ -22,4 +22,5 @@ module.exports = (req, res) => {
     .fillColor(text ? "#50E3C2" : "#FF0080")
     .text(text || "No `text` query!", 50, 130);
   res.status(200).send(doc);
+  doc.end();
 };
