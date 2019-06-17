@@ -4,8 +4,8 @@ import { NowRequest, NowResponse } from '@now/node'
 import { Sushi } from "../../types";
 import layout from "./layout";
 
-const handler = async (_: NowRequest, res: NowResponse) => {
-  const sushiResponse = await fetch.default("/api/all");
+export default async (_: NowRequest, res: NowResponse) => {
+  const sushiResponse = await fetch.default("https://typescript-sushi.now.sh/api/all");
   const sushiList: { data: Array<Sushi["type"]> } = await sushiResponse.json();
 
   res.setHeader("Content-Type", "text/html");
@@ -25,5 +25,3 @@ const handler = async (_: NowRequest, res: NowResponse) => {
   <small>Sushi animation by <a target="_blank" href="https://codepen.io/yumeeeei/">yumeeeei</a>.</small>`),
   );
 };
-
-export default handler;
