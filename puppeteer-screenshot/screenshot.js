@@ -19,6 +19,6 @@ module.exports = async function (req, res) {
     } catch (e) {
         console.error(e.message);
         res.setHeader('Content-Type', 'text/html');
-        res.status(500).send('<h1>Server Error</h1><p>Sorry, there was a problem</p>');
+        res.status(500).send('<h1>Unexpected Error</h1><p>Sorry, there was a problem</p>');
     }
 };
