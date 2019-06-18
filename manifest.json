@@ -9,7 +9,7 @@
     {
       "example": "Go",
       "path": "/go",
-      "demo": "https://go-v2.now.sh",
+      "demo": "https://go.now-examples.now.sh/",
       "description": "A simple GoLang example"
     },
     {
@@ -27,7 +27,7 @@
     {
       "example": "Node.js",
       "path": "/nodejs",
-      "demo": "https://nodejs-v2.now.sh",
+      "demo": "https://nodejs.now-examples.now.sh/",
       "description": "A simple Node.js example"
     },
     {
@@ -89,7 +89,7 @@
     {
       "example": "Express",
       "path": "/express",
-      "demo": "https://express-v2.now.sh",
+      "demo": "https://express.now-examples.now.sh/",
       "description": "An example using Express"
     },
     {
