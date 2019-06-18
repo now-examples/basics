@@ -9,7 +9,7 @@
     {
       "example": "Go",
       "path": "/go",
-      "demo": "https://go-v2.now.sh",
+      "demo": "https://go.now-examples.now.sh/",
       "description": "A simple GoLang example"
     },
     {
@@ -27,7 +27,7 @@
     {
       "example": "Node.js",
       "path": "/nodejs",
-      "demo": "https://nodejs-v2.now.sh",
+      "demo": "https://nodejs.now-examples.now.sh/",
       "description": "A simple Node.js example"
     },
     {
@@ -89,14 +89,14 @@
     {
       "example": "Express",
       "path": "/express",
-      "demo": "https://express-v2.now.sh",
+      "demo": "https://express.now-examples.now.sh/",
       "description": "An example using Express"
     },
     {
       "example": "Apollo Server",
       "path": "/apollo",
-      "demo": "https://apollo-v2.now.sh",
-      "description": "An Apollo Server example using Express"
+      "demo": "https://apollo.now-examples.now.sh/",
+      "description": "An Apollo Server example using Serverless Micro"
     },
     {
       "example": "Markdown Static",
@@ -163,6 +163,12 @@
       "path": "/python-flask",
       "demo": "https://python-flask.now-examples.now.sh",
       "description": "An example using Flask, a Python Microframework"
+    },
+    {
+      "example": "Django",
+      "path": "/python-django",
+      "demo": "https://python-django.now-examples.now.sh",
+      "description": "An example using Django, a Python framework for perfectionists with deadlines"
     }
   ],
   "Fully Working Applications": [
@@ -183,6 +189,12 @@
       "path": "/nodejs-canvas-partyparrot",
       "demo": "https://ppaas.now.sh",
       "description": "A Party Parrot generator built on node-canvas"
+    },
+    {
+      "example": "Flaskex with PostgreSQL",
+      "path": "/flaskex-postgresql",
+      "demo": "https://flaskex-postgresql.now-examples.now.sh",
+      "description": "A serverless Python app built with Flask, WTForms, bcrypt, PostgreSQL, and Bulma"
     }
   ]
 }
