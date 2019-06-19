@@ -2,6 +2,10 @@
   "version": 2,
   "name": "now-fastify",
   "builds": [
-    { "src": "index.js", "use": "@now/node-server" }
+    { "src": "www/**/*", "use": "@now/static" },
+    { "src": "api/**/*.js", "use": "@now/node-server" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "www/index.html" }
   ]
 }

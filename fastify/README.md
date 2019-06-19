@@ -11,7 +11,11 @@ This example uses [`@now/node-server`](https://zeit.co/docs/v2/deployments/offic
   "version": 2,
   "name": "now-fastify",
   "builds": [
-    { "src": "index.js", "use": "@now/node-server" }
+    { "src": "www/**/*", "use": "@now/static" },
+    { "src": "api/**/*.js", "use": "@now/node-server" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "www/index.html" }
   ]
 }
 ```
@@ -22,7 +26,7 @@ This example uses [`@now/node-server`](https://zeit.co/docs/v2/deployments/offic
 const fastify = require('fastify')({ logger: true })
 
 fastify.get('/', async (request, reply) => {
-  return { hello: 'world' }
+  return 'Yes, Fastify is awesome!'
 })
 
 fastify.listen()
