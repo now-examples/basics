@@ -1,0 +1,9 @@
+{
+  "name": "ruby",
+  "version": 2,
+  "builds": [{ "src": "*.rb", "use": "@now/ruby" }],
+  "routes": [
+    { "src": "/class", "dest": "class.rb" },
+    { "src": "/(.*)", "dest": "index.rb" }
+  ]
+}
