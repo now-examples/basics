@@ -1,6 +1,8 @@
 # json-server with Express on ZEIT Now
 
-Getting json-server to work on now.sh in 2019
+**Live Demo**:
+https://json-server.adriancaarolli.now.sh/
+https://json-server.adriancaarolli.now.sh/posts
 
 # Getting started.
 
