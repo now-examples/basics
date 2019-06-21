@@ -1,8 +1,7 @@
 # json-server with Express on ZEIT Now
 
-**Live Demo**:
-https://json-server.adriancaarolli.now.sh/
-https://json-server.adriancaarolli.now.sh/posts
+**Live Demo /**: https://json-server.adriancaarolli.now.sh/
+**Live Demo /posts**: https://json-server.adriancaarolli.now.sh/posts
 
 # Getting started.
 
