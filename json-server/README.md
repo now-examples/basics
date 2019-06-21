@@ -3,8 +3,6 @@
 **Live Demo /**: https://json-server.adriancaarolli.now.sh/
 **Live Demo /posts**: https://json-server.adriancaarolli.now.sh/posts
 
-# Getting started.
-
 ## Get Started with This Project
 
 To get started with this project yourself, you can use [Now CLI](https://zeit.co/download) to initialize it.
