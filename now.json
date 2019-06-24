@@ -4,7 +4,8 @@
   "public": true,
   "builds": [
     { "src": "apollo/index.js", "use": "@now/node-server" },
-    { "src": "go/*.go", "use": "@now/go" },
+    { "src": "go/api/**/*.go", "use": "@now/go" },
+    { "src": "go/www/**/*", "use": "@now/static" },
     { "src": "bash/*.sh", "use": "@now/bash" },
     { "src": "markdown/*.css", "use": "@now/static" },
     {
@@ -22,11 +23,13 @@
         "css": "/markdown/style.css"
       }
     },
-    { "src": "nodejs/*.js", "use": "@now/node" },
+    { "src": "nodejs/api/**/*.js", "use": "@now/node" },
+    { "src": "nodejs/www/**/*", "use": "@now/static" },
     { "src": "nodejs-ts/*.ts", "use": "@now/node" },
     { "src": "php-7/*.php", "use": "@now/php" },
+    { "src": "python/www/**/*", "use": "@now/static" },
     {
-      "src": "python/*.py",
+      "src": "python/api/**/*.py",
       "use": "@now/python",
       "config": { "maxLambdaSize": "10mb" }
     },
@@ -46,12 +49,15 @@
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     },
+    { "src": "express/www/**/*", "use": "@now/static" },
+    { "src": "express/api/**/*.js", "use": "@now/node" },
     { "src": "static/**", "use": "@now/static" },
     { "src": "nextjs/next.config.js", "use": "@now/next" },
     { "src": "nextjs-static/package.json", "use": "@now/static-build" },
     { "src": "html-minifier/index.html", "use": "@now/html-minifier" },
     { "src": "mdx-deck/deck.mdx", "use": "@now/mdx-deck" },
-    { "src": "node-server/index.js", "use": "@now/node-server" },
+    { "src": "node-server/static/**/*", "use": "@now/static" },
+    { "src": "node-server/api/**/*.js", "use": "@now/node-server" },
     { "src": "optipng/showcase.png", "use": "@now/optipng" },
     { "src": "nodejs-hapi/index.js", "use": "@now/node-server" },
     { "src": "nodejs-koa/index.js", "use": "@now/node" },
@@ -60,7 +66,6 @@
       "use": "now-coffee",
       "config": { "dest": "app.coffee" }
     },
-    { "src": "express/**/*.js", "use": "@now/node" },
     { "src": "nodejs-micro/index.js", "use": "now-micro" },
     {
       "src": "gatsby/package.json",
