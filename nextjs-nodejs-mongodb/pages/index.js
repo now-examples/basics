@@ -98,7 +98,7 @@ function Home({
     fetchData()
 
     if (router.query.page > pageCount) {
-      router.replace({pathname: router.pathname, query: Object.assign(router.query, {page: pageCount})}, { shallow: true})
+      router.replace({pathname: router.pathname, query: Object.assign({}, router.query, {page: pageCount})}, { shallow: true})
     }
   }, [page, signatures])
 
