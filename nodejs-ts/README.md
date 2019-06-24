@@ -76,7 +76,7 @@ This example contains a `now.json` file which instructs Now how to treat this pr
 }
 ```
 
-The above instructs Now with:
+The above provides Now with:
 
 - The [`version` property](https://zeit.co/docs/v2/deployments/configuration#version), specifying the latest Now 2.0 Platform version.
 - The [`name` property](https://zeit.co/docs/v2/deployments/configuration#name), setting the name for the deployment.
