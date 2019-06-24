@@ -100,7 +100,7 @@ function Home({
     if (router.query.page > pageCount) {
       router.replace({pathname: router.pathname, query: Object.assign(router.query, {page: pageCount})}, { shallow: true})
     }
-  }, [page])
+  }, [page, signatures])
 
   const handleSubmit = async e => {
     e.preventDefault()
