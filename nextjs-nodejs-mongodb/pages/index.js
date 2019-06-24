@@ -52,7 +52,7 @@ function Home({
   token,
   router
 }) {
-  const [signatures, setSignatures] = useState(undefined)
+  const [signatures, setSignatures] = useState(null)
   const [signatureSubmitted, setSignatureSubmitted] = useState({})
   const [pageCount, setPageCount] = useState(1)
   const [loaded, setLoaded] = useState(false)
@@ -84,12 +84,12 @@ function Home({
     }
 
     async function fetchData() {
-      console.log('test')
       const response = await fetch(
         `${baseURL}/api/guestbook/list.js?page=${page}&limit=${limit}`
       )
 
       const { guestbook, pageCount } = await response.json()
+
       setSignatures([...guestbook])
       setPageCount(pageCount)
       setLoaded(true)
@@ -100,7 +100,7 @@ function Home({
     if (router.query.page > pageCount) {
       router.replace({pathname: router.pathname, query: Object.assign(router.query, {page: pageCount})}, { shallow: true})
     }
-  }, [signatures])
+  }, [page])
 
   const handleSubmit = async e => {
     e.preventDefault()
