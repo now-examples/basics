@@ -1,10 +1,10 @@
 # Static UmiJS
 
-In this example we will be deploying a simple "Hello World" example with umi static.
+In this example we will be deploying a simple "Hello World" example with umi.
 
 ### Getting started with umi using create-umi
 
-- First, use yarn create umi in the new directory.
+- First, use `yarn create umi` in the new directory.
 
 ```shell
 $ mkdir myapp && cd myapp
@@ -35,7 +35,34 @@ In this case we are going to use `@now/static-build` to build and deploy our umi
 {
   "version": 2,
   "name": "umijs-static",
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000,immutable" },
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*).js",
+      "headers": { "cache-control": "s-maxage=31536000,immutable" },
+      "dest": "/$1.js"
+    },
+    {
+      "src": "/(.*).css",
+      "headers": { "cache-control": "s-maxage=31536000,immutable" },
+      "dest": "/$1.css"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html",
+      "headers": { "cache-control": "s-maxage=0" }
+    }
+  ]
 }
 ```
 
