@@ -25,23 +25,28 @@
     },
     { "src": "nodejs/api/**/*.js", "use": "@now/node" },
     { "src": "nodejs/www/**/*", "use": "@now/static" },
-    { "src": "nodejs-ts/*.ts", "use": "@now/node" },
-    { "src": "php-7/*.php", "use": "@now/php" },
+    { "src": "nodejs-ts/api/**/*.ts", "use": "@now/node" },
+    { "src": "nodejs-ts/www/**/*", "use": "@now/static" },
+    {
+      "src": "php-7/*.php",
+      "use": "@now/php",
+      "config": { "maxLambdaSize": "25mb" }
+    },
     { "src": "python/www/**/*", "use": "@now/static" },
     {
       "src": "python/api/**/*.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "10mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     {
       "src": "python-flask/**/*.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "10mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     {
       "src": "python-django/app.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "15mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     { "src": "vue/package.json", "use": "@now/static-build" },
     {
