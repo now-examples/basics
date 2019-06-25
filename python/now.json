@@ -5,8 +5,7 @@
     { "src": "www/**/*", "use": "@now/static" },
     {
       "src": "api/**/*.py",
-      "use": "@now/python",
-      "config": { "maxLambdaSize": "25mb" }
+      "use": "@now/python"
     }
   ],
   "routes": [{ "src": "/", "dest": "www/index.html" }]
