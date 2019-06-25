@@ -100,6 +100,7 @@
     },
     { "src": "nextjs-mysql/api/**/*.js", "use": "@now/node" },
     { "src": "nextjs-mysql/next.config.js", "use": "@now/next" },
-    { "src": "fastify/index.js", "use": "@now/node-server" }
+    { "src": "fastify/api/**/*.js", "use": "@now/node-server" },
+    { "src": "fastify/www/**/*", "use": "@now/static" }
   ]
 }
