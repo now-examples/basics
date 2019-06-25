@@ -1,12 +1,7 @@
 {
-  "name": "nodejs-express",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
-  },
-  "scripts": {
-    "start": "node ."
+    "express": "^4.16.4",
+    "helmet": "^3.18.0",
+    "moment": "^2.24.0"
   }
 }
