@@ -59,3 +59,8 @@ now --target production
 ```
 
 For more information on deploying, see the [Deployment Basics documentation](https://zeit.co/docs/v2/deployments/basics#introducing-a-build-step).
+
+## Troubleshooting Resources
+
+- [How do I upload a file to the /tmp directory on ZEIT now](https://spectrum.chat/zeit/general/how-do-i-upload-a-file-to-the-tmp-directory~a1548ae0-91b1-42f5-9388-c79673ba09e4)
+- [Why Lambda functions error for read-only files on ZEIT now](https://stackoverflow.com/questions/43389724/lambda-function-error-erofs-read-only-file-system-open-tmp-test-zip-proc)
