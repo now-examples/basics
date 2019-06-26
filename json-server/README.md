@@ -1,4 +1,6 @@
-# json-server with Express on ZEIT Now
+# json-server (fake REST API) on ZEIT Now
+
+Get a full fake REST API deployed with zero coding in less than 30 seconds (seriously) on ZEIT Now
 
 **Live Demo /**: https://json-server.adriancaarolli.now.sh/
 **Live Demo /posts**: https://json-server.adriancaarolli.now.sh/posts
