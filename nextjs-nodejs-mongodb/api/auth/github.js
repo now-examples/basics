@@ -24,7 +24,7 @@ module.exports = async (req, res) => {
   });
 
   res.writeHead(301, {
-    Location: `/?token=${access_token}&login=${login}&id=${id}`
+    Location: `/login?token=${access_token}&login=${login}&id=${id}`
   });
   res.end();
 };

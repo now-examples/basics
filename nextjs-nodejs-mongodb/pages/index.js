@@ -1,62 +1,24 @@
 // Dependencies
 import { useEffect, useState } from 'react'
 import fetch from 'isomorphic-unfetch'
-import { parseCookies, setCookie, destroyCookie } from 'nookies'
 import Head from 'next/head'
 import Link from 'next/link'
 import { withRouter } from 'next/router'
+import Cookies from 'js-cookie'
 
 // Components
 import Signature from '../components/Signature'
 import SignatureSkeleton from '../components/SignatureSkeleton'
 
-Home.getInitialProps = async ctx => {
-  const { req, query } = ctx
-  const protocol = req
-    ? `${req.headers['x-forwarded-proto']}:`
-    : location.protocol
-  const host = req ? req.headers['x-forwarded-host'] : location.host
-  const baseURL = `${protocol}//${host}`
-
-  const options = {
-    maxAge: 30 * 24 * 60 * 60,
-    path: '/'
-  }
-  let props = { baseURL }
-
-  if (query.token === 'logout') {
-    destroyCookie(ctx, 'token')
-    destroyCookie(ctx, 'id')
-    destroyCookie(ctx, 'name')
-    return props
-  }
-
-  if (query.id) {
-    await setCookie(ctx, 'id', query.id, options)
-    await setCookie(ctx, 'login', query.login, options)
-    await setCookie(ctx, 'token', query.token, options)
-    const { id, login, token } = query
-    props = { ...props, id, login, token }
-  } else {
-    const { id, login, token } = await parseCookies(ctx)
-    props = { ...props, id, login, token }
-  }
-
-  return props
-}
-
 function Home({
-  baseURL,
-  id,
-  login,
-  token,
   router
 }) {
   const [signatures, setSignatures] = useState(null)
   const [signatureSubmitted, setSignatureSubmitted] = useState({})
   const [pageCount, setPageCount] = useState(1)
   const [loaded, setLoaded] = useState(false)
-  const existing = signatures ? signatures.find(s => s.id == id) : null
+  const [authInfo, setAuthInfo] = useState({})
+  const existing = signatures ? signatures.find(s => s.id == authInfo.id) : null
   const page = parseInt(router.query.page) || 1
   const limit = parseInt(router.query.limit) || 5
 
@@ -79,13 +41,9 @@ function Home({
   const previousPageLink = `/?${buildParams(previousParams)}`
 
   useEffect(() => {
-    if (router.query.token) {
-      router.replace('/', '/', { shallow: true })
-    }
-
     async function fetchData() {
       const response = await fetch(
-        `${baseURL}/api/guestbook/list.js?page=${page}&limit=${limit}`
+        `/api/guestbook/list.js?page=${page}&limit=${limit}`
       )
 
       const { guestbook, pageCount } = await response.json()
@@ -100,7 +58,16 @@ function Home({
     if (router.query.page > pageCount) {
       router.replace({pathname: router.pathname, query: Object.assign({}, router.query, {page: pageCount})}, { shallow: true})
     }
-  }, [page, signatures])
+  }, [page])
+
+  useEffect(() => {
+    const token = Cookies.get('token')
+    const login = Cookies.get('login')
+    const id = Cookies.get('id')
+
+    setAuthInfo({token, login, id})
+    console.log('test')
+  }, [])
 
   const handleSubmit = async e => {
     e.preventDefault()
@@ -111,8 +78,8 @@ function Home({
       method: 'PATCH',
       body: JSON.stringify({
         signature,
-        id,
-        user: login
+        id: authInfo.id,
+        user: authInfo.login
       })
     })
 
@@ -138,7 +105,7 @@ function Home({
 
   const handleDelete = async () => {
     const res = await fetch(
-      `/api/guestbook/delete.js?id=${id}&page=${page}&limit=${limit}`,
+      `/api/guestbook/delete.js?id=${authInfo.id}&page=${page}&limit=${limit}`,
       {
         method: 'DELETE'
       }
@@ -165,20 +132,20 @@ function Home({
         <h1>GitHub Guestbook</h1>
         <Link
           href={
-            !token ? `${baseURL}/api/auth` : `/?token=logout`
+            !authInfo.token ? `/api/auth` : `/logout`
           }
         >
           <a>
             <button>
-              {token !== undefined ? 'Logout' : 'Login With GitHub'}
+              {authInfo.token !== undefined ? 'Logout' : 'Login With GitHub'}
             </button>
           </a>
         </Link>
       </header>
-      {token && (
+      {authInfo.token && (
         <>
           <h3>
-            Hello, {login},{' '}
+            Hello, {authInfo.login},{' '}
             {!!existing
               ? 'want to update your signature?'
               : 'want to sign the guestbook?'}
@@ -196,7 +163,7 @@ function Home({
         { loaded && signatures ? <>{ signatures.length ? signatures.map(g => (
           <Signature
             id={g.id}
-            loggedInId={id}
+            loggedInId={authInfo.id}
             signature={g.signature}
             user={g.user}
             updated={g.updated}
