@@ -25,29 +25,39 @@
     },
     { "src": "nodejs/api/**/*.js", "use": "@now/node" },
     { "src": "nodejs/www/**/*", "use": "@now/static" },
-    { "src": "nodejs-ts/*.ts", "use": "@now/node" },
-    { "src": "php-7/*.php", "use": "@now/php" },
+    { "src": "nodejs-ts/api/**/*.ts", "use": "@now/node" },
+    { "src": "nodejs-ts/www/**/*", "use": "@now/static" },
+    {
+      "src": "php-7/*.php",
+      "use": "@now/php",
+      "config": { "maxLambdaSize": "25mb" }
+    },
     { "src": "python/www/**/*", "use": "@now/static" },
     {
       "src": "python/api/**/*.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "10mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     {
       "src": "python-flask/**/*.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "10mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     {
       "src": "python-django/app.py",
       "use": "@now/python",
-      "config": { "maxLambdaSize": "15mb" }
+      "config": { "maxLambdaSize": "25mb" }
     },
     { "src": "vue/package.json", "use": "@now/static-build" },
     {
       "src": "create-react-app/package.json",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
+    },
+    {
+      "src": "umijs/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "dist" }
     },
     { "src": "express/www/**/*", "use": "@now/static" },
     { "src": "express/api/**/*.js", "use": "@now/node" },
@@ -94,6 +104,8 @@
       "config": { "distDir": "build" }
     },
     { "src": "nextjs-mysql/api/**/*.js", "use": "@now/node" },
-    { "src": "nextjs-mysql/next.config.js", "use": "@now/next" }
+    { "src": "nextjs-mysql/next.config.js", "use": "@now/next" },
+    { "src": "vanilla-json-api/api/**/*.js", "use": "@now/node" },
+    { "src": "vanilla-json-api/www/**/*", "use": "@now/static" }
   ]
 }
