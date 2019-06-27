@@ -1,5 +1,7 @@
+// Import Dependencies
 const request = require('request-promise')
 
+// This GitHub Authentication endpoint is redirected to from GitHub and then uses the code from the query string to retrieve user information and tokens, then directing the user to the `login` page which handles storing information.
 module.exports = async (req, res) => {
   const { code } = req.query
 
