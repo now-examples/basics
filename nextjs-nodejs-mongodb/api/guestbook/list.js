@@ -1,5 +1,4 @@
 // Import dependencies
-const url = require('url')
 const connect = require("../../lib/db");
 
 module.exports = async (req, res) => {
@@ -13,8 +12,8 @@ module.exports = async (req, res) => {
   // Select the "signatures" collection from the database
   const signaturesCollection = await database.collection('signatures')
 
-  // Parse queries
-  const { query } = url.parse(req.url, true);
+  // Get path queries
+  const query = req.query
 
   // Set defaults
   let limit = parseInt(query.limit) || 9
@@ -38,6 +37,6 @@ module.exports = async (req, res) => {
 
   // Return a JSON string containing signatures, total signatures count,
   // and amount of pages, for the UI
-  res.end(JSON.stringify({ guestbook, total: signaturesCount, pageCount }))
+  res.json({ guestbook, total: signaturesCount, pageCount })
   return
 }

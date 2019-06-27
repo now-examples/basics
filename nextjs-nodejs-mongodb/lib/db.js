@@ -5,7 +5,7 @@ const url = require('url')
 // Create cached connection variable
 let cachedDb = null
 
-module.exports = async (req, res) => {
+module.exports = async () => {
   // If the database connection is cached,
   // use it instead of creating a new connection
   if (cachedDb) {

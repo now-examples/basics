@@ -84,6 +84,9 @@ function Home({ router }) {
 
     const res = await fetch(`/api/guestbook/sign.js`, {
       method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         signature,
         id: authInfo.id,

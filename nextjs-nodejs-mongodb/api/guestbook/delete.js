@@ -1,4 +1,3 @@
-const url = require('url');
 const connect = require("../../lib/db");
 
 module.exports = async (req, res) => {
@@ -9,9 +8,9 @@ module.exports = async (req, res) => {
   const signaturesCollection = await database.collection('signatures')
 
   // Parse queries
-  const { query } = url.parse(req.url, true);
+  const { id } = req.query
 
-  await signaturesCollection.deleteOne({ id: query.id })
+  await signaturesCollection.deleteOne({ id })
 
-  return require('./list')(req, res);
+  return require('./list')(req, res)
 }

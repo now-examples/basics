@@ -1,15 +1,15 @@
-const url = require('url')
 const request = require('request-promise')
 
 module.exports = async (req, res) => {
-  const { query } = url.parse(req.url, true)
+  const { code } = req.query
+
   const { access_token } = await request({
     method: 'POST',
     uri: 'https://github.com/login/oauth/access_token',
     body: {
       client_id: process.env.GITHUB_CLIENT_ID,
       client_secret: process.env.GITHUB_CLIENT_SECRET,
-      code: query.code
+      code
     },
     json: true
   })
