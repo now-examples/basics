@@ -1,8 +1,8 @@
-const url = require('url');
-const request = require('request-promise');
+const url = require('url')
+const request = require('request-promise')
 
 module.exports = async (req, res) => {
-  const { query } = url.parse(req.url, true);
+  const { query } = url.parse(req.url, true)
   const { access_token } = await request({
     method: 'POST',
     uri: 'https://github.com/login/oauth/access_token',
@@ -21,10 +21,10 @@ module.exports = async (req, res) => {
       'User-Agent': 'Serverless Guestbook'
     },
     json: true
-  });
+  })
 
   res.writeHead(301, {
     Location: `/login?token=${access_token}&login=${login}&id=${id}`
-  });
-  res.end();
+  })
+  res.end()
 };

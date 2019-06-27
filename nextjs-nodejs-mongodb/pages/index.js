@@ -7,21 +7,25 @@ import { withRouter } from 'next/router'
 import Cookies from 'js-cookie'
 
 // Components
+import Header from '../components/Header'
 import Signature from '../components/Signature'
 import SignatureSkeleton from '../components/SignatureSkeleton'
 
-function Home({
-  router
-}) {
+// Create Home Page Functional Component
+function Home({ router }) {
+  // Define State
   const [signatures, setSignatures] = useState(null)
   const [signatureSubmitted, setSignatureSubmitted] = useState({})
   const [pageCount, setPageCount] = useState(1)
   const [loaded, setLoaded] = useState(false)
   const [authInfo, setAuthInfo] = useState({})
+
+  // Find existing signature if `id` exists and set default limits
   const existing = signatures ? signatures.find(s => s.id == authInfo.id) : null
   const page = parseInt(router.query.page) || 1
   const limit = parseInt(router.query.limit) || 5
 
+  // Set params for both previous and next pages
   const previousParams = {
     ...(router.query.limit && { limit: router.query.limit }),
     ...((page - 1 >= 1 && { page: page - 1}) || (page - 1 === 1 && null))
@@ -32,6 +36,8 @@ function Home({
     ...(page + 1 <= pageCount && { page: page + 1})
   }
 
+
+  // Build parameters for next and previous pages
   const esc = encodeURIComponent
   const buildParams = (params) => Object.keys(params)
       .map(k => esc(k) + '=' + esc(params[k]))
@@ -40,7 +46,16 @@ function Home({
   const nextPageLink = `/?${buildParams(nextParams)}`
   const previousPageLink = `/?${buildParams(previousParams)}`
 
+  // When the page loads or the `page` variable changes
   useEffect(() => {
+    // Set auth information in state based on cookies
+    const token = Cookies.get('token')
+    const login = Cookies.get('login')
+    const id = Cookies.get('id')
+
+    setAuthInfo({token, login, id})
+
+    // Fetch signatures from the API and set them in state
     async function fetchData() {
       const response = await fetch(
         `/api/guestbook/list.js?page=${page}&limit=${limit}`
@@ -55,20 +70,13 @@ function Home({
 
     fetchData()
 
+    // If the page query is larger than the available page count, get the maximum page available
     if (router.query.page > pageCount) {
       router.replace({pathname: router.pathname, query: Object.assign({}, router.query, {page: pageCount})}, { shallow: true})
     }
   }, [page])
 
-  useEffect(() => {
-    const token = Cookies.get('token')
-    const login = Cookies.get('login')
-    const id = Cookies.get('id')
-
-    setAuthInfo({token, login, id})
-    console.log('test')
-  }, [])
-
+  // Handle the submit event, sending a `PATCH` method to the `/sign.js` API endpoint to handle submitting to the database.
   const handleSubmit = async e => {
     e.preventDefault()
     let signature = e.target.signature.value
@@ -103,6 +111,7 @@ function Home({
     }
   }
 
+  // Handle the delete event, sending a `DELETE` method to the `/api/guestbook/delete.js` API endpoint.
   const handleDelete = async () => {
     const res = await fetch(
       `/api/guestbook/delete.js?id=${authInfo.id}&page=${page}&limit=${limit}`,
@@ -118,6 +127,7 @@ function Home({
   }
 
 
+  // Return the UI to render
   return (
     <>
       <Head>
@@ -128,20 +138,7 @@ function Home({
           type="text/css"
         />
       </Head>
-      <header>
-        <h1>GitHub Guestbook</h1>
-        <Link
-          href={
-            !authInfo.token ? `/api/auth` : `/logout`
-          }
-        >
-          <a>
-            <button>
-              {authInfo.token !== undefined ? 'Logout' : 'Login With GitHub'}
-            </button>
-          </a>
-        </Link>
-      </header>
+      <Header authInfo={authInfo} />
       {authInfo.token && (
         <>
           <h3>
@@ -185,13 +182,11 @@ function Home({
           </Link>
         )}
       </nav>
-      <style jsx>{`
-        header {
-          align-items: center;
-          display: flex;
-          justify-content: space-between;
-        }
 
+      {/*
+        Provide Styling for the Home page
+      */}
+      <style jsx>{`
         .signatures-list {
           margin-left: 0;
         }
@@ -223,4 +218,6 @@ function Home({
   )
 }
 
+// Export the Home page component using the HOC `withRouter` from Next.js.
+// More information on `withRouter`: https://nextjs.org/docs#using-a-higher-order-component
 export default withRouter(Home)

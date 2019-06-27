@@ -3,6 +3,6 @@ module.exports = async (req, res) => {
     Location: `https://github.com/login/oauth/authorize?client_id=${
       process.env.GITHUB_CLIENT_ID
     }`
-  });
-  res.end();
-};
+  })
+  res.end()
+}

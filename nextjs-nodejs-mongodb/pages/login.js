@@ -1,6 +1,7 @@
 // Dependencies
 import Router from 'next/router'
 import { setCookie } from 'nookies'
+import { useEffect } from 'react'
 
 Login.getInitialProps = async ctx => {
   const options = {
@@ -14,20 +15,15 @@ Login.getInitialProps = async ctx => {
     await setCookie(ctx, 'token', ctx.query.token, options)
   } 
 
-  if (ctx.res) {
-    ctx.res.writeHead(303, {
-      Location: '/'
-    })
-    ctx.res.end()
-  } else {
-    Router.push('/')
-  }
+  return {}
 }
 
 function Login() {
-  return (
-    <div>Logging in...</div>
-  )
+  useEffect(() => {
+    Router.push('/')
+  }, [])
+
+  return null
 }
 
 export default Login
