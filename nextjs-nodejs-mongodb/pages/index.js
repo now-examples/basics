@@ -114,7 +114,7 @@ function Home({ router }) {
     }
   }
 
-  // Handle the delete event, sending a `DELETE` method to the `/api/guestbook/delete.js` API endpoint.
+  // Handle the delete event, sending a `DELETE` method to the `/api/guestbook/delete.js` API endpoint
   const handleDelete = async () => {
     const res = await fetch(
       `/api/guestbook/delete.js?id=${authInfo.id}&page=${page}&limit=${limit}`,
@@ -221,6 +221,6 @@ function Home({ router }) {
   )
 }
 
-// Export the Home page component using the HOC `withRouter` from Next.js.
+// Export the Home page component using the HOC `withRouter` from Next.js
 // More information on `withRouter`: https://nextjs.org/docs#using-a-higher-order-component
 export default withRouter(Home)

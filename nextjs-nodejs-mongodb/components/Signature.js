@@ -1,6 +1,6 @@
 // Signature Component
 // ----
-// This file holds the functional component for each signature in the guestbook.
+// This file holds the functional component for each signature in the guestbook
 // The component takes multiple pieces of information, as seen in the functions parameters, and uses that information to display a signature
 
 

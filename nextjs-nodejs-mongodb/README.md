@@ -1,4 +1,4 @@
-# Next.js Front-End with a Node.js API, Using Data from MongoDB, on ZEIT Now
+# Next.js Frontend with a Node.js API, Using Data from MongoDB, on ZEIT Now
 
 **Live Demo**: https://nextjs-node-js-mongodb.now-examples.now.sh/
 

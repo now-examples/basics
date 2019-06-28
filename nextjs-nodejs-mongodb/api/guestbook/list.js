@@ -3,7 +3,7 @@ const connect = require("../../lib/db");
 
 module.exports = async (req, res) => {
   // Set caching headers to serve stale content (if over a second old)
-  // while revalidating fresh content in the background. 
+  // while revalidating fresh content in the background
   res.setHeader('cache-control', 's-maxage=1 maxage=0, stale-while-revalidate')
 
   // Connect to MongoDB and get the database

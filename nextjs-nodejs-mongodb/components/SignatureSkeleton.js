@@ -1,7 +1,7 @@
 // Signature Skeleton Component
 // ----
-// This file holds the functional component for the signature skeleton in the guestbook.
-// This component shows a skeleton of the Signature component before data loads.
+// This file holds the functional component for the signature skeleton in the guestbook
+// This component shows a skeleton of the Signature component before data loads
 
 function SignatureSkeleton({ ...props }) {
   return (
