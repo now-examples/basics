@@ -63,7 +63,7 @@ module.exports = (req, res) => {
 
 #### Obtaining a FaunaDB key secret
 
-In order to run the code above, you will need to provide a valid FaunaDB key secret. To do so, first create a free Fauna Cloud account by [signing up](https://dashboard.fauna.com/accounts/register). After submitting the form, you will be redirected to the [FaunaDB Cloud Dashboard](https://dashboard.fauna.com). There, follow the steps for creating a new Database. Once the Database is created, issue a new DB Key for it. The key secret will be displayed as result– make sure to copy and save it somewhere safe, since the secret won't be displayed again.
+In order to run the code above, you will need to provide a valid FaunaDB key secret. To do so, first create a free Fauna Cloud account by [signing up](https://dashboard.fauna.com/accounts/register). After submitting the form, you will be redirected to the [FaunaDB Cloud Dashboard](https://dashboard.fauna.com). There, follow the steps for creating a new Database. Once the Database is created, issue a new Server Key for it. The key secret will be displayed as result– make sure to copy and save it somewhere safe, since the secret won't be displayed again.
 
 ### Deploy with Now
 
