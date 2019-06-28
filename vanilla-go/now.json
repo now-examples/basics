@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "name": "my-go-project",
+  "name": "my-vanilla-go-project",
+  "alias": "vanilla-go.now-examples.now.sh",
   "builds": [
     { "src": "www/**/*", "use": "@now/static" },
     { "src": "api/**/*.go", "use": "@now/go" }
