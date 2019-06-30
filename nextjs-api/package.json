@@ -1,7 +1,8 @@
 {
-  "name": "monorepo",
+  "name": "next-api",
   "license": "MIT",
   "scripts": {
+    "dev": "next",
     "build": "next build"
   },
   "dependencies": {
