@@ -1,5 +1,5 @@
 import Time from '../components/time'
-import { sharedText } from '../shared/text'
+import { sharedText } from '../utils/text'
 import 'isomorphic-unfetch'
 
 const langs = [
