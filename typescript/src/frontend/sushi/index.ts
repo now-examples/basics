@@ -5,13 +5,19 @@ import url from "url";
 import { Sushi } from "../../../types";
 import layout from "../layout";
 
-const handler = async (req: IncomingMessage, res: ServerResponse) => {
+export default async (req: IncomingMessage, res: ServerResponse) => {
   const { type } = url.parse(req.url || "", true).query;
   res.writeHead(200, { "Content-Type": "text/html" });
 
   try {
-    const sushiResponse = await fetch.default("https://typescript-sushi.now.sh/api/get-sushi?type=" + type);
-    const { description, pictureURL, title }: Sushi = await sushiResponse.json();
+    const sushiResponse = await fetch.default(
+      "https://typescript-sushi.now.sh/api/get-sushi?type=" + type
+    );
+    const {
+      description,
+      pictureURL,
+      title
+    }: Sushi = await sushiResponse.json();
 
     res.end(
       layout(`<h1>${title}</h1>
@@ -24,7 +30,7 @@ const handler = async (req: IncomingMessage, res: ServerResponse) => {
     </div>
   </div>
   
-  <a href="/" class="button" role="button">Back</a>`),
+  <a href="/" class="button" role="button">Back</a>`)
     );
   } catch (e) {
     res.end(
@@ -36,13 +42,7 @@ const handler = async (req: IncomingMessage, res: ServerResponse) => {
     <div>
         <p>We don't know what you mean by \`${type}\`. <a href="/">Go back to the start page</a> to see available choices.</p>
     </div>
-  </div>`),
+  </div>`)
     );
   }
 };
-
-if (!process.env.IS_NOW) {
-  createServer(handler).listen(3000);
-}
-
-export default handler;
