@@ -28,7 +28,7 @@ You will need to add a couple of [secrets](https://zeit.co/docs/v2/deployments/e
 $ now secrets add flaskex-db-uri 'cockroachdb://username:password@cockroachdb.example.com/database' 
 ```
 
-This should point to a load-balancer in front of your CockroachDB cluster. If you have a multi-region cluster, you should use a latency-based global load-balancer, or use the `NOW_REGION` environment variable to route to the appropriate CockroachDB nodes.
+This should point to a load balancer in front of your CockroachDB cluster. If you have a multi-region cluster, you can use a latency-based load-balancer, or use the `NOW_REGION` environment variable to route to the appropriate CockroachDB nodes.
 
 ```shell
 $ now secrets add flaskex-secret-key '_5#y2LF4Q8z*Uz]' 
