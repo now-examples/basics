@@ -3,13 +3,14 @@
   "name": "now-examples",
   "public": true,
   "builds": [
+    { "src": "charge/package.json", "use": "@now/static-build" },
     {
-      "src": "create-react-app/package.json",
+      "src": "create-elm-app/package.json",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     },
     {
-      "src": "create-elm-app/package.json",
+      "src": "create-react-app/package.json",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     },
@@ -19,13 +20,22 @@
       "use": "@now/static-build",
       "config": { "distDir": "public" }
     },
-    { "src": "nextjs/package.json", "use": "@now/next" },
-
+    { "src": "gridsome/package.json", "use": "@now/static-build" },
+    { "src": "jekyll/package.json", "use": "@now/static-build" },
+    { "src": "nextjs-bash/package.json", "use": "@now/next" },
+    { "src": "nextjs-go/package.json", "use": "@now/next" },
+    { "src": "nextjs-node/package.json", "use": "@now/next" },
+    { "src": "nextjs-php/package.json", "use": "@now/next" },
+    { "src": "nextjs-python/package.json", "use": "@now/next" },
+    { "src": "nextjs-ruby/package.json", "use": "@now/next" },
+    { "src": "nextjs-rust/package.json", "use": "@now/next" },
+    { "src": "nuxt/package.json", "use": "@now/static-build" },
     {
       "src": "umijs/package.json",
       "use": "@now/static-build",
       "config": { "distDir": "dist" }
     },
-    { "src": "vue/package.json", "use": "@now/static-build" }
+    { "src": "vue/package.json", "use": "@now/static-build" },
+    { "src": "vuepress/package.json", "use": "@now/static-build" }
   ]
 }
