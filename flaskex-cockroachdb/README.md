@@ -2,7 +2,7 @@
 
 [Demo](https://flaskex-cockroachdb.now-examples.now.sh)
 
-This directory is a serverless example of [Flaskex](https://github.com/anfederico/Flaskex), ready to deploy on [ZEIT Now](https://zeit.co/now).
+This directory is a serverless example of [Flaskex](https://github.com/anfederico/Flaskex), ready to deploy on [ZEIT Now](https://zeit.co/now). It is a [CockroachDB](https://www.cockroachlabs.com/)-specific fork of the [Flaskex with Postgres on Zeit](https://github.com/zeit/now-examples/tree/master/flaskex-postgresql) example that makes it easy to pair global lambdas with global backends.
 
 ## Features
 - Encrypted user authorizaton
