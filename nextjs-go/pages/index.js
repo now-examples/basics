@@ -16,7 +16,7 @@ function Index() {
       <Head>
         <title>Next.js + Go API</title>
       </Head>
-      <h1>Static Next.js + Go API</h1>
+      <h1>Next.js + Go API</h1>
       <h2>
         Deployed with{' '}
         <a

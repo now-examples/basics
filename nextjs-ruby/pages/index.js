@@ -16,7 +16,7 @@ function Index() {
       <Head>
         <title>Next.js + Ruby API</title>
       </Head>
-      <h1>Static Next.js + Ruby API</h1>
+      <h1>Next.js + Ruby API</h1>
       <h2>
         Deployed with{' '}
         <a
@@ -30,7 +30,7 @@ function Index() {
       </h2>
       <p>
         <a
-          href="https://github.com/zeit/now-examples/blob/master/nextjs-node"
+          href="https://github.com/zeit/now-examples/blob/master/nextjs-ruby"
           target="_blank"
           rel="noreferrer noopener"
         >

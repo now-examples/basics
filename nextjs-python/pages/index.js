@@ -16,7 +16,7 @@ function Index() {
       <Head>
         <title>Next.js + Python API</title>
       </Head>
-      <h1>Static Next.js + Python API</h1>
+      <h1>Next.js + Python API</h1>
       <h2>
         Deployed with{' '}
         <a
@@ -30,7 +30,7 @@ function Index() {
       </h2>
       <p>
         <a
-          href="https://github.com/zeit/now-examples/blob/master/nextjs-node"
+          href="https://github.com/zeit/now-examples/blob/master/nextjs-python"
           target="_blank"
           rel="noreferrer noopener"
         >
