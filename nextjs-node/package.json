@@ -1,12 +1,12 @@
 {
-  "name": "next-api",
+  "name": "nextjs-node-api",
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build"
+    "build": "next build",
+    "now-build": "next build"
   },
   "dependencies": {
-    "isomorphic-unfetch": "3.0.0",
     "next": "^8.1.1-canary.63",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"

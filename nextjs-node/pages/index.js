@@ -1,171 +1,102 @@
-import Time from '../components/time'
-import { sharedText } from '../utils/text'
-import 'isomorphic-unfetch'
+import { useEffect, useState } from 'react';
+import Head from 'next/head';
 
-const langs = [
-  { name: 'Go', path: 'go', ext: '.go' },
-  { name: 'Python', path: 'python', ext: '.py' },
-  { name: 'Bash', path: 'bash', ext: '.sh' },
-  { name: 'Node.js', path: 'node', ext: '.js' }
-]
-
-const Page = () => <div className="container">
-    <div className="logo">
-      <svg width={40} height={36}>
-        <path
-          d="M20 .1L.1 35.8h39.7L20 0zm-1.7 7.2l14.5 26.4H3.6L18.3 7.3z"
-          fill="#fff"
-          fillRule="nonzero"
-        />
-      </svg>
-    </div>
-    <div className="clocks">
-      {langs.map(({name, path, ext}) =>
-        <a href={`https://zeit.co/now-examples/monorepo/4csp3st7w/source?f=src/${path}/index${ext}`} target="_blank" title={name} key={path}>
-          <Time
-            name={name}
-            path={path}
-          />
+function Index() {
+  const [date, setDate] = useState([]);
+  useEffect(() => {
+    async function getDate() {
+      const res = await fetch('/api/date.js');
+      const newDate = await res.json();
+      setDate(newDate);
+    }
+    getDate();
+  }, []);
+  return (
+    <main>
+      <Head>
+        <title>Next.js + Node API</title>
+      </Head>
+      <h1>Static Next.js + Node.js API</h1>
+      <h2>
+        Deployed with{' '}
+        <a
+          href="https://zeit.co/docs"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          ZEIT Now
         </a>
-      )}
-    </div>
-    <div className="intro">
-      <hr/>
-      <h2>What is this?</h2>
-      <p>We built this deployment to showcase the power and flexibility of <a href="https://zeit.co/blog/now-2" target="_blank">Now 2.0</a>. It's organized as a monorepo that combines multiple technologies. {sharedText()}</p>
-      <p>The entrypoint to this deployment is a Next.js application, compiled to serverless functions that server-render on-demand.</p>
-      <p>Thanks to our <a href="https://zeit.co/docs/v2/deployments/builders/overview" title="builders" target="_blank">builders</a>, you are not limited to just static or dynamic, Go or Node.js. The possibilities are endless now.</p>
-    </div>
-    <style jsx global>{`
-      * {
-        box-sizing: border-box;
-      }
-      html, body {
-        height: 100%;
-      }
-      body {
-        margin: 0;
-        color: white;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing:grayscale;
-        background: radial-gradient(circle, #333, #333 1px, #000 1px, #000);
-        background-size: 28px 28px;
-        background-position: center;
-        font-size: 18px;
-        line-height: 1.6;
-        font-weight: 400;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-      strong {
-        color: white;
-        font-weight: 600;
-      }
-      code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-        font-size: 0.9em;
-      }
-      code::before,
-      code::after {
-        content: '\`';
-      }
-      ::selection{ background: #f81ce5; color: white; }
-      ::-moz-selection{ background: #f81ce5; color: white; }
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        width: 1080px;
-        min-height: 100vh;
-        margin: auto;
-        padding: 30px 20px;
-      }
-      .logo {
-        margin: 30px 0 20px;
-      }
-      .intro {
-        text-align: left;
-        max-width: 640px;
-      }
-      .intro a {
-        margin-right: .15em;
-        border-bottom: 1px solid;
-      }
-      h2 {
-        font-size: 30px;
-      }
-      hr {
-        display: none;
-        border: none;
-        border-bottom: 1px solid #666;
-        width: 100px;
-        margin: 30px 0;
-      }
-      .clocks {
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 -10px;
-        padding: 40px 0;
-        max-height: 500px;
-      }
-      .clocks a {
-        position: relative;
-        flex: 1 0 25%;
-        text-align: center;
-        padding: 10px;
-        margin: 20px 0;
-        font-size: 17px;
-        transition: all .1s ease;
-      }
-      .clocks a:hover {
-        box-shadow: 0 0 0 1px #666;
-      }
-      .clock span {
-        font-weight: 700;
-      }
-      .clock time {
-        display: block;
-        height: 3.2em;
-        font-weight: 700;
-        color: #fff;
-        animation: pulse 1s forwards;
-      }
-      @keyframes pulse {
-        from {
-          color: #fff;
+        !
+      </h2>
+      <p>
+        <a
+          href="https://github.com/zeit/now-examples/blob/master/nextjs-node"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          This project
+        </a>{' '}
+        is a <a href="https://nextjs.org/">Next.js</a> app with two directories,{' '}
+        <code>/pages</code> for static content and <code>/api</code> which
+        contains a serverless <a href="https://nodejs.org/en/">Node.js</a>{' '}
+        function. See{' '}
+        <a href="/api/date.js">
+          <code>api/date.js</code> for the Date API with Node.js
+        </a>
+        .
+      </p>
+      <br />
+      <h2>The date according to Node.js is:</h2>
+      <p>{date ? date.date : 'Loading date...'}</p>
+      <style jsx>{`
+        main {
+          align-content: center;
+          box-sizing: border-box;
+          display: grid;
+          font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
+            'Helvetica', 'Arial', sans-serif;
+          hyphens: auto;
+          line-height: 1.65;
+          margin: 0 auto;
+          max-width: 680px;
+          min-height: 100vh;
+          padding: 72px 0;
+          text-align: center;
         }
-        to {
-          color: #bbb;
+        h1 {
+          font-size: 45px;
         }
-      }
-      @media screen and (max-width: 960px) {
-        .clocks a {
-          flex: 1 0 50%;
-          font-size: 20px;
+        h2 {
+          margin-top: 1.5em;
         }
-      }
-      @media screen and (max-width: 480px) {
-        .clocks a {
-          flex: 1 0 100%;
+        p {
+          font-size: 16px;
         }
-        .clocks {
-          max-height: unset;
+        a {
+          border-bottom: 1px solid white;
+          color: #0076ff;
+          cursor: pointer;
+          text-decoration: none;
+          transition: all 0.2s ease;
         }
-        hr {
-          display: block;
+        a:hover {
+          border-bottom: 1px solid #0076ff;
         }
-      }
-    `}</style>
-  </div>
+        code,
+        pre {
+          color: #d400ff;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+          font-size: 0.92em;
+        }
+        code:before,
+        code:after {
+          content: '\`';
+        }
+      `}</style>
+    </main>
+  );
+}
 
-export default Page
+export default Index;
