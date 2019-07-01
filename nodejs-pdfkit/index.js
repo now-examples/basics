@@ -1,10 +1,7 @@
 const PDFDocument = require("pdfkit");
-const { parse } = require("url");
 
 module.exports = (req, res) => {
-  const {
-    query: { text }
-  } = parse(req.url, true);
+  const { text } = req.query
 
   const doc = new PDFDocument();
   doc
