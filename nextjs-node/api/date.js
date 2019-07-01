@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.status(200).json({ date: new Date().toString() });
+  res.status(200).send({ date: new Date().toString() });
 };

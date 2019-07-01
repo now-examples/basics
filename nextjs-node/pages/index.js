@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 function Index() {
-  const [date, setDate] = useState([]);
+  const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
       const res = await fetch('/api/date.js');
