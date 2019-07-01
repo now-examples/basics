@@ -49,7 +49,7 @@ This starter project includes:
 - A `/signup.py` file that responds to the `/signup` route.
 - A `/settings.py` file that responds to the `/settings` route.
 - A `/logout.py` file that responds to the `/logout` route.
-- A `requirements.txt` file that installs dependencies such as Flask, SQLAlchemy, bcrypt, psycopg2-binary (PostgreSQL driver)
+- A `requirements.txt` file that installs dependencies such as Flask, SQLAlchemy, bcrypt, psycopg2-binary
 
 ## Resources
 
