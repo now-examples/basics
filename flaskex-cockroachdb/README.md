@@ -30,6 +30,9 @@ $ now secrets add flaskex-db-uri 'cockroachdb://username:password@cockroachdb.ex
 
 This should point to a load balancer in front of your CockroachDB cluster. If you have a multi-region cluster, you can use a latency-based load-balancer, or use the `NOW_REGION` environment variable to route to the appropriate CockroachDB nodes.
 
+| Warning: This example uses `sslmode=require`. For production apps, you should copy an `sslrootcert` to local storage and use `sslmode=verify-full`. See [these docs](https://www.postgresql.org/docs/9.1/libpq-ssl.html) for details on the different connection options.|
+|---|
+
 ```shell
 $ now secrets add flaskex-secret-key '_5#y2LF4Q8z*Uz]' 
 ```
