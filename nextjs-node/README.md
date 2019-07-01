@@ -1,6 +1,6 @@
 # Next.js with an API
 
-This example shows a [Next.js](https://nextjs.org/) app (located in `package.json`) powered by a Node.js API
+This example shows a [Next.js](https://nextjs.org/) app (located in `package.json`) powered by a Node.js API.
 
 In order to deploy, run:
 

@@ -1,3 +1,4 @@
 module.exports = (req, res) => {
-  res.status(200).send({ date: new Date().toString() });
+  const date = new Date().toString();
+  res.status(200).send(date);
 };

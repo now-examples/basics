@@ -6,7 +6,7 @@ function Index() {
   useEffect(() => {
     async function getDate() {
       const res = await fetch('/api/date.js');
-      const newDate = await res.json();
+      const newDate = await res.text();
       setDate(newDate);
     }
     getDate();
@@ -47,7 +47,7 @@ function Index() {
       </p>
       <br />
       <h2>The date according to Node.js is:</h2>
-      <p>{date ? date.date : 'Loading date...'}</p>
+      <p>{date ? date : 'Loading date...'}</p>
       <style jsx>{`
         main {
           align-content: center;
