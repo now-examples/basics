@@ -5,8 +5,8 @@
   "scripts": {
     "start": "elm-app start",
     "now-dev": "elm-app start",
-    "build": "NODE_ENV=production elm-app build",
-    "now-build": "NODE_ENV=production elm-app build",
+    "build": "NODE_ENV=production elm-app build && mv build dist",
+    "now-build": "NODE_ENV=production elm-app build && mv build dist",
     "test": "elm-format --validate . && elm-test"
   },
   "author": "Author",
