@@ -1,6 +1,6 @@
-# Next.js with an API
+# Next.js with a Rust API
 
-This example shows a [Next.js](https://nextjs.org/) app (located in `package.json`) powered by a Node.js API
+This example shows a [Next.js](https://nextjs.org/) app (located in `package.json`) powered by a Rust API.
 
 In order to deploy, run:
 

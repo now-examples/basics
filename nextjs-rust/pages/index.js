@@ -5,8 +5,8 @@ function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date.js');
-      const newDate = await res.json();
+      const res = await fetch('/api/date.rs');
+      const newDate = await res.text();
       setDate(newDate);
     }
     getDate();
@@ -14,9 +14,9 @@ function Index() {
   return (
     <main>
       <Head>
-        <title>Next.js + Node API</title>
+        <title>Next.js + Rust API</title>
       </Head>
-      <h1>Static Next.js + Node.js API</h1>
+      <h1>Static Next.js + Rust API</h1>
       <h2>
         Deployed with{' '}
         <a
@@ -38,16 +38,16 @@ function Index() {
         </a>{' '}
         is a <a href="https://nextjs.org/">Next.js</a> app with two directories,{' '}
         <code>/pages</code> for static content and <code>/api</code> which
-        contains a serverless <a href="https://nodejs.org/en/">Node.js</a>{' '}
+        contains a serverless <a href="https://www.rust-lang.org/">Rust</a>{' '}
         function. See{' '}
         <a href="/api/date.js">
-          <code>api/date.js</code> for the Date API with Node.js
+          <code>api/date.js</code> for the Date API with Rust
         </a>
         .
       </p>
       <br />
-      <h2>The date according to Node.js is:</h2>
-      <p>{date ? date.date : 'Loading date...'}</p>
+      <h2>The date according to Rust is:</h2>
+      <p>{date ? date : 'Loading date...'}</p>
       <style jsx>{`
         main {
           align-content: center;
