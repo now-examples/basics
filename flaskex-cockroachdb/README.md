@@ -1,6 +1,6 @@
-# Flaskex with PostgreSQL on ZEIT Now
+# Flaskex with CockroachDB on ZEIT Now
 
-[Demo](https://flaskex-postgresql.now-examples.now.sh)
+[Demo](https://flaskex-cockroachdb.now-examples.now.sh)
 
 This directory is a serverless example of [Flaskex](https://github.com/anfederico/Flaskex), ready to deploy on [ZEIT Now](https://zeit.co/now).
 
@@ -15,20 +15,18 @@ This directory is a serverless example of [Flaskex](https://github.com/anfederic
 To get started with this project yourself, use the following command from [Now CLI](https://zeit.co/docs/v2/getting-started/installation#now-cli):
 
 ```shell
-$ now init flaskex-postgresql
+$ now init flaskex-cockroachdb
 ```
 
-> Alternatively, create a project, and Git repository, with this example template [using the ZEIT dashboard](https://zeit.co/new/flaskex-postgresql).
+> Alternatively, create a project, and Git repository, with this example template [using the ZEIT dashboard](https://zeit.co/new/flaskex-cockroachdb).
 
 Once initialized locally, you will see several `.py` files which each correspond to a route in defined in the `now.json` configuration file. Each `.py` file is an input to the [Python Builder](https://zeit.co/docs/v2/deployments/official-builders/python-now-python) which emits a corresponding [Lambda](https://zeit.co/docs/v2/deployments/concepts/lambdas/) for each file.
 
 You will need to add a couple of [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets) before deploying.
 
 ```shell
-$ now secrets add flaskex-db-uri 'postgresql+pg8000://username:password@pgsql.example.com/database' 
+$ now secrets add flaskex-db-uri 'cockroachdb://username:password@cockroachdb.example.com/database' 
 ```
-
-This example uses `postgresql` but you can use any [engine](https://docs.sqlalchemy.org/en/13/core/engines.html) supported by sqlalchemy.
 
 ```shell
 $ now secrets add flaskex-secret-key '_5#y2LF4Q8z*Uz]' 
@@ -51,8 +49,7 @@ This starter project includes:
 - A `/signup.py` file that responds to the `/signup` route.
 - A `/settings.py` file that responds to the `/settings` route.
 - A `/logout.py` file that responds to the `/logout` route.
-- A `requirements.txt` file that installs dependencies such as Flask, SQLAlchemy, bcrypt, pg8000 (PostgreSQL driver)
-- A generated `Pipfile.lock` that ensures exact versions of dependencies to avoid the risk of automatically upgrading packages that depend upon each other and breaking your project dependency tree.
+- A `requirements.txt` file that installs dependencies such as Flask, SQLAlchemy, bcrypt, psycopg2-binary (PostgreSQL driver)
 
 ## Resources
 
