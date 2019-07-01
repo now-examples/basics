@@ -7,18 +7,18 @@
     {
       "src": "create-elm-app/package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "build" }
+      "config": { "distDir": "dist" }
     },
     {
       "src": "create-react-app/package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "build" }
+      "config": { "distDir": "dist" }
     },
     { "src": "docz/package.json", "use": "@now/static-build" },
     {
       "src": "gatsby/package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "public" }
+      "config": { "distDir": "dist" }
     },
     { "src": "gridsome/package.json", "use": "@now/static-build" },
     { "src": "jekyll/package.json", "use": "@now/static-build" },
