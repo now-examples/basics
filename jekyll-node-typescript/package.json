@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "build": "chmod +x ./build.sh && ./build.sh && mv _site dist"
+    },
+    "devDependencies": {
+        "@now/node": "^0.11.0"
+    }
+}

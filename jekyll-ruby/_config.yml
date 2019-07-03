@@ -8,3 +8,4 @@ baseurl: '/posts' # the subpath of your site, e.g. /blog/
 # Build settings
 markdown: kramdown
 permalink: /:year/:title:output_ext
+exclude: ['api', 'node_modules']
