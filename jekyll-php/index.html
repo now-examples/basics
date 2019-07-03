@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<main>
+  <h1>Jekyll + PHP API</h1>
+  <h2>
+    Deployed with
+    <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener">
+      ZEIT Now
+    </a>
+    !
+  </h2>
+  <p>
+    <a
+      href="https://github.com/zeit/now-examples/blob/master/jekyll-php"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      This project
+    </a>
+    is a <a href="https://jekyllrb.com">Jekyll</a> site with four directories,
+    <code>_includes</code> and <code>_layouts</code> for Jekyll templating,
+    <code>/assets</code> for static content and <code>/api</code>
+    which contains a serverless
+    <a href="https://php.net/">PHP</a>
+    function. See
+    <a href="/api/date.php">
+      <code>api/date.php</code> for the Date API with PHP
+    </a>
+    .
+  </p>
+  <br />
+  <h2>The date according to PHP is:</h2>
+  <p class="date">Loading date...</p>
+  <script>
+    function main() {
+      return fetch('/api/date.php')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(date) {
+          document.querySelector('.date').textContent = date;
+        });
+    }
+    main();
+  </script>
+</main>
