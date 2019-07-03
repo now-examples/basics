@@ -5,7 +5,7 @@ function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date.go');
+      const res = await fetch('/api/date');
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -39,8 +39,8 @@ function Index() {
         is a <a href="https://nextjs.org/">Next.js</a> app with two directories,{' '}
         <code>/pages</code> for static content and <code>/api</code> which
         contains a serverless <a href="https://golang.org/">Go</a> function. See{' '}
-        <a href="/api/date.go">
-          <code>api/date.go</code> for the Date API with Go.
+        <a href="/api/date">
+          <code>api/date</code> for the Date API with Go.
         </a>
         .
       </p>

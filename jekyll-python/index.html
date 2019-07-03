@@ -25,9 +25,7 @@ layout: default
     which contains a serverless
     <a href="https://www.python.org/">Python</a>
     function. See
-    <a href="/api/date.py">
-      <code>api/date.py</code> for the Date API with Python
-    </a>
+    <a href="/api/date"> <code>api/date</code> for the Date API with Python </a>
     .
   </p>
   <br />
@@ -35,7 +33,7 @@ layout: default
   <p class="date">Loading date...</p>
   <script>
     function main() {
-      return fetch('/api/date.py')
+      return fetch('/api/date')
         .then(function(response) {
           return response.text();
         })

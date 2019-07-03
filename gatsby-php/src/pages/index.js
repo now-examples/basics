@@ -6,7 +6,7 @@ function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date.php');
+      const res = await fetch('/api/date');
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -41,8 +41,8 @@ function Index() {
         directories, <code>/src</code> for static content and <code>/api</code>{' '}
         which contains a serverless <a href="https://php.net/">PHP</a> function.
         See{' '}
-        <a href="/api/date.php">
-          <code>api/date.php</code> for the Date API with PHP
+        <a href="/api/date">
+          <code>api/date</code> for the Date API with PHP
         </a>
         .
       </p>

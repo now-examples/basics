@@ -1,6 +1,6 @@
-# VuePress with a Node.js API
+# VuePress with a Node.js (TypeScript) API
 
-This example shows a [VuePress](https://vuepress.vuejs.org/) app (located in `package.json`) powered by a Node.js API.
+This example shows a [VuePress](https://vuepress.vuejs.org/) app (located in `package.json`) powered by a Node.js (TypeScript) API.
 
 In order to deploy, run:
 

@@ -5,7 +5,7 @@ const App: React.SFC<RouterTypes> = () => {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date.rb');
+      const res = await fetch('/api/date');
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -37,8 +37,8 @@ const App: React.SFC<RouterTypes> = () => {
         <code>/pages</code> for content and components, and <code>/api</code>{' '}
         which contains a serverless{' '}
         <a href="https://www.ruby-lang.org/en/">Ruby</a> function. See{' '}
-        <a href="/api/date.rb">
-          <code>api/date.rb</code> for the Date API with Ruby
+        <a href="/api/date">
+          <code>api/date</code> for the Date API with Ruby
         </a>
         .
       </p>

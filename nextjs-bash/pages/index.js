@@ -5,7 +5,7 @@ function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date.sh');
+      const res = await fetch('/api/date');
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -41,8 +41,8 @@ function Index() {
         contains a serverless{' '}
         <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a>{' '}
         function. See{' '}
-        <a href="/api/date.sh">
-          <code>api/date.sh</code> for the Date API with Bash
+        <a href="/api/date">
+          <code>api/date</code> for the Date API with Bash
         </a>
         .
       </p>

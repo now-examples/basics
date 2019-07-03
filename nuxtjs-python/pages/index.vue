@@ -21,8 +21,8 @@
       which contains a serverless
       <a href="https://www.python.org/">Python</a>
       function. See
-      <a href="/api/date.py">
-        <code>api/date.py</code> for the Date API with Python
+      <a href="/api/date">
+        <code>api/date</code> for the Date API with Python
       </a>.
     </p>
     <br />
@@ -38,7 +38,7 @@ export default {
     date: String
   },
   mounted() {
-    return fetch("/api/date.py")
+    return fetch("/api/date")
       .then(response => response.text())
       .then(date => (this.date = date));
   },

@@ -21,8 +21,8 @@
       which contains a serverless
       <a href="https://php.net/">PHP</a>
       function. See
-      <a href="/api/date.php">
-        <code>api/date.php</code> for the Date API with PHP
+      <a href="/api/date">
+        <code>api/date</code> for the Date API with PHP
       </a>.
     </p>
     <br />
@@ -41,7 +41,7 @@ export default {
     date: String
   },
   mounted() {
-    return fetch("/api/date.php")
+    return fetch("/api/date")
       .then(response => response.text())
       .then(date => (this.date = date));
   }

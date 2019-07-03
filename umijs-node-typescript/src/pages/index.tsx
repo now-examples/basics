@@ -33,13 +33,10 @@ const App: React.SFC<RouterTypes> = () => {
         >
           This project
         </a>{' '}
-        is a <a href="https://nodejs.org/en/">UmiJS</a> app with two
-        directories, <code>/pages</code> for content and components, and{' '}
-        <code>/api</code> which contains a serverless{' '}
-        <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">
-          Node.js (TypeScript)
-        </a>{' '}
-        function. See{' '}
+        is a <a href="https://umijs.org/">UmiJS</a> app with two directories,{' '}
+        <code>/pages</code> for content and components, and <code>/api</code>{' '}
+        which contains a serverless{' '}
+        <a href="https://nodejs.org/en/">Node.js (TypeScript)</a> function. See{' '}
         <a href="/api/date">
           <code>api/date</code> for the Date API with Node.js (TypeScript)
         </a>

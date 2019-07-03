@@ -23,8 +23,8 @@
         href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"
       >Bash</a>
       function. See
-      <a href="/api/date.sh">
-        <code>api/date.sh</code> for the Date API with Bash
+      <a href="/api/date">
+        <code>api/date</code> for the Date API with Bash
       </a>.
     </p>
     <br />
@@ -43,7 +43,7 @@ export default {
     date: String
   },
   mounted() {
-    return fetch("/api/date.sh")
+    return fetch("/api/date")
       .then(response => response.text())
       .then(date => (this.date = date));
   }
