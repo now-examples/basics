@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>VuePress + Node.js API</h1>
+    <h1>VuePress + Node.js (TypeScript) API</h1>
     <h2>
       Deployed with
       <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener">ZEIT Now</a>
@@ -8,7 +8,7 @@
     </h2>
     <p>
       <a
-        href="https://github.com/zeit/now-examples/blob/master/vuepress-node"
+        href="https://github.com/zeit/now-examples/blob/master/vuepress-node-typescript"
         target="_blank"
         rel="noreferrer noopener"
       >This project</a> is a
@@ -19,14 +19,14 @@
       <code>/src</code> for components and content, and
       <code>/api</code>
       which contains a serverless
-      <a href="https://nodejs.org/en/">Node.js</a>
+      <a href="https://nodejs.org/en/">Node.js (TypeScript)</a>
       function. See
       <a href="/api/date">
-        <code>api/date</code> for the Date API with Node.js
+        <code>api/date</code> for the Date API with Node.js (TypeScript)
       </a>.
     </p>
     <br />
-    <h2>The date according to Node.js is:</h2>
+    <h2>The date according to Node.js (TypeScript) is:</h2>
     <p>{{date}}</p>
   </main>
 </template>

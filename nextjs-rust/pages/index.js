@@ -5,7 +5,7 @@ function Index() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date.rs');
+      const res = await fetch('/api/date');
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -40,8 +40,8 @@ function Index() {
         <code>/pages</code> for static content and <code>/api</code> which
         contains a serverless <a href="https://www.rust-lang.org/">Rust</a>{' '}
         function. See{' '}
-        <a href="/api/date.js">
-          <code>api/date.js</code> for the Date API with Rust
+        <a href="/api/date">
+          <code>api/date</code> for the Date API with Rust
         </a>
         .
       </p>

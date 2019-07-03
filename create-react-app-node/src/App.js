@@ -6,7 +6,7 @@ function App() {
   const [date, setDate] = useState(null);
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date.js');
+      const res = await fetch('/api/date');
       const newDate = await res.text();
       setDate(newDate);
     }
@@ -42,8 +42,8 @@ function App() {
         <code>/src</code> for components and content, and <code>/api</code>{' '}
         which contains a serverless <a href="https://nodejs.org/en/">Node.js</a>{' '}
         function. See{' '}
-        <a href="/api/date.js">
-          <code>api/date.js</code> for the Date API with Node.js
+        <a href="/api/date">
+          <code>api/date</code> for the Date API with Node.js
         </a>
         .
       </p>

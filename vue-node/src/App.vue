@@ -21,8 +21,8 @@
       which contains a serverless
       <a href="https://nodejs.org/en/">Node.js</a>
       function. See
-      <a href="/api/date.js">
-        <code>api/date.js</code> for the Date API with Node.js
+      <a href="/api/date">
+        <code>api/date</code> for the Date API with Node.js
       </a>.
     </p>
     <br />
@@ -38,7 +38,7 @@ export default {
     date: String
   },
   mounted() {
-    return fetch("/api/date.js")
+    return fetch("/api/date")
       .then(response => response.text())
       .then(date => (this.date = date));
   }

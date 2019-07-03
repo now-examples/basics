@@ -13,6 +13,7 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@now/node": "^0.11.0",
     "@vue/cli-plugin-babel": "^3.1.1",
     "@vue/cli-service": "^3.1.1",
     "vue-template-compiler": "^2.5.17"

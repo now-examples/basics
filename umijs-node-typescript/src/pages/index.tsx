@@ -13,7 +13,7 @@ const App: React.SFC<RouterTypes> = () => {
   }, []);
   return (
     <main>
-      <h1>UmiJS + Node.js API</h1>
+      <h1>UmiJS + Node.js (TypeScript) API</h1>
       <h2>
         Deployed with{' '}
         <a
@@ -27,7 +27,7 @@ const App: React.SFC<RouterTypes> = () => {
       </h2>
       <p>
         <a
-          href="https://github.com/zeit/now-examples/blob/master/umijs-node"
+          href="https://github.com/zeit/now-examples/blob/master/umijs-node-typescript"
           target="_blank"
           rel="noreferrer noopener"
         >
@@ -36,15 +36,17 @@ const App: React.SFC<RouterTypes> = () => {
         is a <a href="https://nodejs.org/en/">UmiJS</a> app with two
         directories, <code>/pages</code> for content and components, and{' '}
         <code>/api</code> which contains a serverless{' '}
-        <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Node.js</a>{' '}
+        <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">
+          Node.js (TypeScript)
+        </a>{' '}
         function. See{' '}
         <a href="/api/date">
-          <code>api/date</code> for the Date API with Node.js
+          <code>api/date</code> for the Date API with Node.js (TypeScript)
         </a>
         .
       </p>
       <br />
-      <h2>The date according to Node.js is:</h2>
+      <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
     </main>
   );
