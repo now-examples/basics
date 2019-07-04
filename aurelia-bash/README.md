@@ -1,4 +1,4 @@
-# Aurela with a Bash API
+# Aurelia with a Bash API
 
 This example shows a [Aurelia](https://aurelia.io/) project (located in `package.json`) powered by a Bash API.
 

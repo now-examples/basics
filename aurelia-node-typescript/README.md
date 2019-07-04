@@ -1,4 +1,4 @@
-# Aurela with a Node.js (TypeScript) API
+# Aurelia with a Node.js (TypeScript) API
 
 This example shows a [Aurelia](https://aurelia.io/) project (located in `package.json`) powered by a Node.js (TypeScript) API.
 

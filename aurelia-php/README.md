@@ -1,4 +1,4 @@
-# Aurela with a PHP API
+# Aurelia with a PHP API
 
 This example shows a [Aurelia](https://aurelia.io/) project (located in `package.json`) powered by a PHP API.
 

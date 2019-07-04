@@ -1,4 +1,4 @@
-# Aurela with a Python API
+# Aurelia with a Python API
 
 This example shows a [Aurelia](https://aurelia.io/) project (located in `package.json`) powered by a Python API.
 

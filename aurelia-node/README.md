@@ -1,4 +1,4 @@
-# Aurela with a Node.js API
+# Aurelia with a Node.js API
 
 This example shows a [Aurelia](https://aurelia.io/) project (located in `package.json`) powered by a Node.js API.
 
