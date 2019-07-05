@@ -1,0 +1,13 @@
+{
+  "name": "hugo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "msweeneydev <mail@msweeneydev.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "chmod +x ./build.sh && ./build.sh && mv public dist"
+  },
+  "devDependencies": {
+    "@now/node": "^0.11.0"
+  }
+}
