@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-node-api",
+  "name": "nextjs",
   "license": "MIT",
   "scripts": {
     "dev": "next",
