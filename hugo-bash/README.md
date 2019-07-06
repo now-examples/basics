@@ -1,4 +1,4 @@
-# Hugo with a Rust API
+# Hugo with a Bash API
 
 This example shows a [Hugo](https://gohugo.io/) app (located in `package.json`) powered by a Bash API.
 
