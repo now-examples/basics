@@ -1,8 +1,6 @@
 {
-    "scripts": {
-        "build": "chmod +x ./build.sh && ./build.sh && mv _site dist"
-    },
-    "devDependencies": {
-        "@now/node": "^0.11.0"
-    }
+  "scripts": {
+    "install": "yum install ruby23-devel.x86_64 && gem install jekyll bundler && bundle install",
+    "build": "jekyll build && mv _site dist"
+  }
 }
