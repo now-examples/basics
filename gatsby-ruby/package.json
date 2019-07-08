@@ -15,9 +15,9 @@
   },
   "scripts": {
     "dev": "gatsby develop -p $PORT",
-    "build": "gatsby build && mv public dist",
+    "build": "gatsby build",
     "now-dev": "gatsby develop -p $PORT",
-    "now-build": "gatsby build && mv public dist",
+    "now-build": "gatsby build",
     "start": "npm run dev"
   }
 }
