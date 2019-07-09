@@ -4,6 +4,9 @@ node_modules
 vendor
 target
 yarn-error.log
-
+yarn.lock
+package-lock.json
+bootstrap
+.import-cache
 .DS_Store
 **/.now
