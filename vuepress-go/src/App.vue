@@ -3,8 +3,7 @@
     <h1>VuePress + Go API</h1>
     <h2>
       Deployed with
-      <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener">ZEIT Now</a>
-      !
+      <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener">ZEIT Now</a>!
     </h2>
     <p>
       <a
