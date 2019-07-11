@@ -28,7 +28,7 @@ An issue can be raised by clicking the 'Issues' tab at the top of the repository
 
 ## Contributing Content
 
-All examples feature a frontend that consumes a serverless function found in the `/api` directory. Examples are kept organized and easy to find by listing them in order of frontend framework, followed by the technology used for the serverless function.
+Most examples feature a frontend that consumes a serverless function found in the `/api` directory. Examples are kept organized and easy to find by listing them in order of frontend framework or static generator, followed by the technology used for the serverless function if applicable.
 
 When contributing a new framework, we kindly ask that you follow the steps below:
 
@@ -36,9 +36,15 @@ When contributing a new framework, we kindly ask that you follow the steps below
 - Add a README.md file using the same format as existing examples
 - Test the example with `now dev` to ensure it is working correctly
 
+When contributing a new static site generator, we kindly ask that you follow the steps below:
+
+- Add an example that uses the default theme or template of the generator
+- Add a README.md file using the same format as existing examples
+- Test the example with `now dev` to ensure it is working correctly
+
 When contributing an example, please fork this repository and then add your example before submitting a pull request. If you are not sure how to do this then please take a look at the [Forking Workflow](#forking-workflow) below.
 
-The simplest and easiest way to add an example is to focus first on the framework you are looking to add, using the markup and CSS from an existing example. Once complete, copy an `/api` directory from one of the existing examples and include a request to fetch the data. You can then test your example locally by [using `now dev`](https://zeit.co/docs/v2/development/basics/) to provide a reproduction of the ZEIT Now serverless environment. Finally, simply add the name of the language used in the serverless function to your example and submit a pull request.
+The simplest and easiest way to add an example is to focus first on the framework or static generator you are looking to add, using the markup and CSS from an existing example if it's a framework, else the default theme or template from the static generator. Once complete, copy an `/api` directory from one of the existing examples if applicable and include a request to fetch the data. You can then test your example locally by [using `now dev`](https://zeit.co/docs/v2/development/basics/) to provide a reproduction of the ZEIT Now serverless environment. Finally, if the example requires a serverless function, simply add the name of the language used to your example and submit a pull request.
 
 We appreciate all contributions and don't expect anyone to submit a frontend example for each individual language that could be used in a serverless function. This is something we will happily do for you once the pull request is merged. Of course, if you'd like to do that then please do!
 
