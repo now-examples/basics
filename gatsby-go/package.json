@@ -11,10 +11,6 @@
     "react-helmet": "^5.2.0"
   },
   "scripts": {
-    "dev": "gatsby develop -p $PORT",
-    "build": "gatsby build",
-    "now-dev": "gatsby develop -p $PORT",
-    "now-build": "gatsby build",
-    "start": "npm run dev"
+    "build": "gatsby build"
   }
 }
