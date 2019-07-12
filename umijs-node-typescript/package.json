@@ -13,8 +13,7 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
-    "test": "umi test",
-    "now-build": "umi build"
+    "test": "umi test"
   },
   "devDependencies": {
     "@now/node": "^0.11.0",
