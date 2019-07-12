@@ -46,7 +46,7 @@ When contributing an example, please fork this repository and then add your exam
 
 The simplest and easiest way to add an example is to focus first on the framework or static generator you are looking to add, using the markup and CSS from an existing example if it's a framework, else the default theme or template from the static generator. Once complete, copy an `/api` directory from one of the existing examples if applicable and include a request to fetch the data. You can then test your example locally by [using `now dev`](https://zeit.co/docs/v2/development/basics/) to provide a reproduction of the ZEIT Now serverless environment. Finally, if the example requires a serverless function, simply add the name of the language used to your example and submit a pull request.
 
-We appreciate all contributions and don't expect anyone to submit a frontend example for each individual language that could be used in a serverless function. This is something we will happily do for you once the pull request is merged. Of course, if you'd like to do that then please do!
+We appreciate all contributions and don't expect anyone to submit a frontend example for each individual language that could be used in a serverless function. This is something we will happily do for you once the pull request is merged. Of course, if you'd like to do that then please do!s
 
 ## Forking Workflow
 
@@ -126,6 +126,4 @@ All you need to do is make the changes on the same branch locally, commit and pu
 
 ## Documentation
 
-The content for the examples section is not contained within this repository. To contribute an example, please head over to the [now-examples](https://github.com/zeit/now-examples) repository where you will find all the relevant information to do so.
-
-This repository contains only examples to be used with the Now platform.
+This repository contains only examples to be used with the Now platform. The [ZEIT Now Documentation](https://github.com/zeit/docs) is a separate repository. If you would like to contribute to the documentation , please read the [contributing guidelines](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to find more information on doing so.

@@ -12,7 +12,6 @@ ZEIT Now is a cloud platform for serverless deployment. It enables developers to
 
 This repository consists of multiple examples, created for use with the [ZEIT Now](https://zeit.co/now) platform. Examples are listed by framework then technology used in the `/api` folder. In addition to this, it also contains:
 
-- `now.json` - a single [configuration file](https://zeit.co/docs/v2/deployments/configuration/) at the root that is used to provide Now with instructions on building and deploying every example in the Now Examples repository
 - [Code of Conduct](https://github.com/zeit/now-examples/blob/master/CODE_OF_CONDUCT.md) - our Code of Conduct, adapted from the [Contributor Covenant](http://contributor-covenant.org)
 - [Contributing Guidelines](https://github.com/zeit/now-examples/blob/master/CONTRIBUTING.md) - a guide on how to contribute to the Now Examples repository
 
