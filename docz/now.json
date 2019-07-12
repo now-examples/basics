@@ -1,5 +1,0 @@
-{
-  "version": 2,
-  "name": "docz-test",
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
-}
