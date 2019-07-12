@@ -11,7 +11,7 @@
       "dest": "www/index.html"
     },
     {
-      "src": "/(.+)",
+      "src": "/api/(.+)",
       "dest": "api/index.js"
     }
   ]
