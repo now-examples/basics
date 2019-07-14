@@ -3,7 +3,10 @@
   "version": 2,
   "public": true,
   "builds": [
-    { "src": "app.py", "use": "@now/python", "config": { "maxLambdaSize": "15mb" } },
+    {
+      "src": "app.py",
+      "use": "@now/python"
+    },
     { "src": "css/**", "use": "@now/static" }
   ],
   "routes": [
