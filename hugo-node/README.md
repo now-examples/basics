@@ -1,6 +1,6 @@
-# Hugo with a Node.js API
+# Hugo with a Rust API
 
-This example shows a [Node.js](https://gohugo.io/) app (located in `package.json`) powered by a Node.js API.
+This example shows a [Node.js](https://gohugo.io/) app (located in `package.json`) powered by a Rust API.
 
 In order to deploy, run:
 

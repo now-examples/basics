@@ -17,6 +17,7 @@
     "hexo-server": "^0.3.3"
   },
   "scripts": {
+    "dev": "hexo server -p $PORT",
     "build": "hexo deploy"
   },
   "devDependencies": {
