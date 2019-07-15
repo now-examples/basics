@@ -11,6 +11,7 @@
     "react-helmet": "^5.2.0"
   },
   "scripts": {
+    "dev": "gatsby develop -p $PORT",
     "build": "gatsby build"
   }
 }

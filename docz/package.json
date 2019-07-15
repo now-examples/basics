@@ -2,6 +2,7 @@
   "name": "my-docz-project",
   "version": "1.0.0",
   "scripts": {
+    "dev": "docz dev",
     "build": "docz build"
   },
   "devDependencies": {

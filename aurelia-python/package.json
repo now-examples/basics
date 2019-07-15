@@ -58,8 +58,8 @@
     "webpack-dev-server": "^3.1.9"
   },
   "scripts": {
-    "build": "au build",
-    "start": "au run",
+    "build": "au build --env prod",
+    "start": "au run --port $PORT",
     "test": "au test"
   },
   "engines": {

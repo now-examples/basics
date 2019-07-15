@@ -11,7 +11,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "start": "umi dev",
+    "start": "PORT=$PORT umi dev",
     "build": "umi build",
     "test": "umi test"
   },

@@ -2,11 +2,9 @@
   "name": "gridsome",
   "private": true,
   "scripts": {
+    "dev": "gridsome develop -p $PORT",
     "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "now-build": "yarn build",
-    "now-dev": "gridsome develop -p $PORT"
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "gridsome": "^0.3.0"
