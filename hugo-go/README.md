@@ -1,6 +1,6 @@
 # Hugo with a Go API
 
-This example shows a [Hugo](https://gohugo.io/) app (located in `package.json`) powered by a Go API.
+This example shows a [Node.js](https://gohugo.io/) app (located in `package.json`) powered by a Go API.
 
 In order to deploy, run:
 
