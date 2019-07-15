@@ -10,16 +10,20 @@ In this example we will be deploying a simple "Hello World" example with Next.js
 import Link from "next/link";
 import Header from "../components/header";
 
-export default () => (
-  <main>
-    <Header />
-    <section>
-      <Link href="/about">
-        <a>Go to About Me</a>
-      </Link>
-    </section>
-  </main>
-);
+function Index() {
+  return (
+    <main>
+      <Header />
+      <section>
+        <Link href="/about">
+          <a>Go to About page</a>
+        </Link>
+      </section>
+    </main>
+  );
+}
+
+export default Index;
 ```
 
 - Now lets create an `about.js` file inside the `pages` folder with the following code:
@@ -45,7 +49,7 @@ class AboutPage extends Component {
             <strong>{this.props.isServer ? "server" : "client"} side</strong>.
           </p>
           <p>
-            You can reload to see how the page change.
+            You can reload to see how the page changes.
           </p>
           <Link href="/">
             <a>Go to Home</a>
@@ -62,14 +66,18 @@ export default AboutPage;
 - As you might noticed we have a component that is shared by both `index.js` and `about.js` files, let's create that one now. Create a folder named `components` with a file named `header.js` in it and add the following code:
 
 ```jsx
-export default () => (
-  <header>
-    <h1>Next.js Example</h1>
-  </header>
-);
+function Header() {
+  return (
+    <header>
+      <h1>Next.js Example on Now 2.0</h1>
+    </header>
+  );
+}
+
+export default Header;
 ```
 
-- Finally in order for Next.js to be deployed we could either have a `next.config.js` or a `package.json`, for this example we are just going to create a `next.config.js` with the following code:
+- To enable [**serverless mode**](https://nextjs.org/docs#serverless-deployment) in Next.js, add the `serverless` build `target` in `next.config.js`:
 
 ```js
 module.exports = {
@@ -87,19 +95,27 @@ By adding the `version` key to the `now.json` file, we can specify which Now Pla
 
 We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
 
-In this case we are going to use `@now/next` to build and deploy our Next.js application selecting the `next.config.js` as our entry point. We will also define a name for our project (optional).
+In this case we are going to use `@now/next` to build and deploy our Next.js application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
 
 ```json
 {
     "version": 2,
     "name": "nextjs",
     "builds": [
-        { "src": "next.config.js", "use": "@now/next" }
+        { "src": "package.json", "use": "@now/next" }
     ]
 }
 ```
 
 Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
+
+We use the [`.nowignore` file](https://zeit.co/guides/prevent-uploading-sourcepaths-with-nowignore/) to prevent source paths from being uploaded to Now.
+
+```
+README.md
+.next
+node_modules
+```
 
 We are now ready to deploy the app.
 
