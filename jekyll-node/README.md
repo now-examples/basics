@@ -1,6 +1,6 @@
 # Jekyll with a Node.js API
 
-This example shows a [Jekyll](https://jekyllrb.com) app (located in `package.json`) powered by a Node.js API.
+This example shows a [Jekyll](https://jekyllrb.com) site (located in `package.json`) powered by a Node.js API.
 
 In order to deploy, run:
 

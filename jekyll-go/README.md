@@ -1,6 +1,6 @@
 # Jekyll with a Go API
 
-This example shows a [Jekyll](https://jekyllrb.com) app (located in `package.json`) powered by a Go API.
+This example shows a [Jekyll](https://jekyllrb.com) site (located in `package.json`) powered by a Go API.
 
 In order to deploy, run:
 

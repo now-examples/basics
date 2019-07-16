@@ -1,6 +1,6 @@
 # Hexo with a Node.js (TypeScript) API
 
-This example shows a [Hexo](https://hexo.io/) app (located in `package.json`) powered by a Node.js (TypeScript) API.
+This example shows a [Hexo](https://hexo.io/) site (located in `package.json`) powered by a Node.js (TypeScript) API.
 
 In order to deploy, run:
 

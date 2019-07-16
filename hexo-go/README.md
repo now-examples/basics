@@ -1,6 +1,6 @@
 # Hexo with a Go API
 
-This example shows a [Hexo](https://hexo.io/) app (located in `package.json`) powered by a Go API.
+This example shows a [Hexo](https://hexo.io/) site (located in `package.json`) powered by a Go API.
 
 In order to deploy, run:
 

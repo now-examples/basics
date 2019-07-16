@@ -1,6 +1,6 @@
 # Hexo with a PHP API
 
-This example shows a [Hexo](https://hexo.io/) app (located in `package.json`) powered by a PHP API.
+This example shows a [Hexo](https://hexo.io/) site (located in `package.json`) powered by a PHP API.
 
 In order to deploy, run:
 

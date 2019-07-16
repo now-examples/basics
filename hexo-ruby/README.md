@@ -1,6 +1,6 @@
 # Hexo with a Ruby API
 
-This example shows a [Hexo](https://hexo.io/) app (located in `package.json`) powered by a Ruby API.
+This example shows a [Hexo](https://hexo.io/) site (located in `package.json`) powered by a Ruby API.
 
 In order to deploy, run:
 

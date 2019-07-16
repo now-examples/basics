@@ -1,6 +1,6 @@
 # Hugo with a PHP API
 
-This example shows a [Hugo](https://gohugo.io/) app (located in `package.json`) powered by a PHP API.
+This example shows a [Hugo](https://gohugo.io/) site (located in `package.json`) powered by a PHP API.
 
 In order to deploy, run:
 

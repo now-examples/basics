@@ -1,6 +1,6 @@
 # Hugo with a Python API
 
-This example shows a [Hugo](https://gohugo.io/) app (located in `package.json`) powered by a Python API.
+This example shows a [Hugo](https://gohugo.io/) site (located in `package.json`) powered by a Python API.
 
 In order to deploy, run:
 

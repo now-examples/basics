@@ -1,6 +1,6 @@
 # Jekyll with a Rust API
 
-This example shows a [Jekyll](https://jekyllrb.com) app (located in `package.json`) powered by a Rust API.
+This example shows a [Jekyll](https://jekyllrb.com) site (located in `package.json`) powered by a Rust API.
 
 In order to deploy, run:
 

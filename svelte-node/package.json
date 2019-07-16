@@ -17,7 +17,6 @@
   "scripts": {
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
-    "start": "sirv public --single --port $PORT",
-    "start:dev": "sirv public --single --dev --port $PORT"
+    "dev": "sirv public --single --port $PORT"
   }
 }

@@ -1,6 +1,6 @@
 # Hugo with a Node.js (TypeScript) API
 
-This example shows a [Hugo](https://gohugo.io/) app (located in `package.json`) powered by a Node.js (TypeScript) API.
+This example shows a [Hugo](https://gohugo.io/) site (located in `package.json`) powered by a Node.js (TypeScript) API.
 
 In order to deploy, run:
 

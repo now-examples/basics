@@ -7,8 +7,9 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
+    "dev": "preact watch --port $PORT",
     "build": "preact build",
-    "serve": "PORT=$PORT preact build && preact serve",
+    "serve": "preact build && preact serve",
     "test": "jest"
   },
   "devDependencies": {
