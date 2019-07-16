@@ -21,13 +21,13 @@
     "example": "Docusauras",
     "path": "/docusauras",
     "demo": "https://docusauras-node.now-examples.now.sh",
-    "description": "A static Docusauras site that makes it easy to maintin OSS projects."
+    "description": "A static Docusauras site that makes it easy to maintin OSS documentation."
   },
   {
     "example": "Docz",
     "path": "/docz",
     "demo": "https://docz-node.now-examples.now.sh",
-    "description": "A static Docz site that can be expanded to documentation with ease."
+    "description": "A static Docz site that can be expanded upon to create documentation with ease."
   },
   {
     "example": "Gatsby",
@@ -69,7 +69,7 @@
     "example": "Nuxt.js",
     "path": "/nuxtjs-node",
     "demo": "https://nuxtjs-node.now-examples.now.sh",
-    "description": "A Nuxt.js app with a Node.js API."
+    "description": "A Nuxt.js app that makes use of a Node.js API deployed alongisde."
   },
   {
     "example": "Polymer",
