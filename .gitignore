@@ -1,12 +1,5 @@
-main.dwarf
-node_modules
-.bundle
-vendor
-target
-yarn-error.log
-yarn.lock
-package-lock.json
-bootstrap
-.import-cache
-.DS_Store
+build/
+node_modules/
+.DS_STORE
+**/yarn.lock
 **/.now

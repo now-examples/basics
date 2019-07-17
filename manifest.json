@@ -1,110 +1,134 @@
 [
   {
     "example": "Angular",
-    "path": "/angular-node",
-    "demo": "https://angular-node.now-examples.now.sh",
-    "description": "An Angular app, created with the Angular CLI, backed by a Node.js API."
+    "path": "/angular",
+    "demo": "https://angular.now-examples.now.sh",
+    "description": "An Angular app, created with the Angular CLI"
   },
   {
     "example": "Aurelia",
-    "path": "/aurelia-node",
-    "demo": "https://aurelia-node.now-examples.now.sh",
-    "description": "An Aurelia app, created with the Aurelia CLI, backed by a Node.js API."
+    "path": "/aurelia",
+    "demo": "https://aurelia.now-examples.now.sh",
+    "description": "An Aurelia app, created with the Aurelia CLI."
+  },
+  {
+    "example": "Elm",
+    "path": "/create-elm-app",
+    "demo": "https://elm.now-examples.now.sh",
+    "description": "An Elm app, bootstrapped with create-elm-app."
   },
   {
     "example": "React",
-    "path": "/create-react-app-node",
-    "demo": "https://react-node.now-examples.now.sh",
-    "description": "A React app, bootstrapped with create-react-app, backed by a Node.js API."
+    "path": "/create-react-app",
+    "demo": "https://react.now-examples.now.sh",
+    "description": "A React app, bootstrapped with create-react-app."
+  },
+  {
+    "example": "React-Go",
+    "path": "/create-react-app-go",
+    "demo": "https://react-go.now-examples.now.sh",
+    "description": "A React app, bootstrapped with create-react-app, backed by a Go API."
   },
   {
     "example": "Docusauras",
     "path": "/docusauras",
-    "demo": "https://docusauras-node.now-examples.now.sh",
+    "demo": "https://docusauras.now-examples.now.sh",
     "description": "A static Docusauras site that makes it easy to maintin OSS documentation."
   },
   {
     "example": "Docz",
     "path": "/docz",
-    "demo": "https://docz-node.now-examples.now.sh",
+    "demo": "https://docz.now-examples.now.sh",
     "description": "A static Docz site that can be expanded upon to create documentation with ease."
   },
   {
     "example": "Gatsby",
-    "path": "/gatsby-node",
-    "demo": "https://gatsby-node.now-examples.now.sh",
-    "description": "A Gatsby app, using the default stater theme, with a Node.js API."
+    "path": "/gatsby",
+    "demo": "https://gatsby.now-examples.now.sh",
+    "description": "A Gatsby app, using the default stater theme."
+  },
+  {
+    "example": "Gatsby-Node-TypeScript",
+    "path": "/gatsby-node-typescript",
+    "demo": "https://gatsby-node-typescript.now-examples.now.sh",
+    "description": "A Gatsby app, using the default stater theme, with a Node.js (TypeScript) API."
   },
   {
     "example": "Gridsome",
-    "path": "/gridsome-node",
-    "demo": "https://gridsome-node.now-examples.now.sh",
-    "description": "A Gridsome app, created with the Gridsome CLI, backed by a Node.js API."
+    "path": "/gridsome",
+    "demo": "https://gridsome.now-examples.now.sh",
+    "description": "A Gridsome app, created with the Gridsome CLI."
   },
   {
     "example": "Hexo",
-    "path": "/hexo-node",
-    "demo": "https://hexo-node.now-examples.now.sh",
-    "description": "A Hexo site, created with the Hexo CLI, backed by a Node.js API."
+    "path": "/hexo",
+    "demo": "https://hexo.now-examples.now.sh",
+    "description": "A Hexo site, created with the Hexo CLI."
   },
   {
     "example": "Hugo",
-    "path": "/hugo-node",
-    "demo": "https://hugo-node.now-examples.now.sh",
-    "description": "A Hugo site, created with the Hugo CLI, backed by a Node.js API."
+    "path": "/hugo",
+    "demo": "https://hugo.now-examples.now.sh",
+    "description": "A Hugo site, created with the Hugo CLI."
   },
   {
     "example": "Jekyll",
-    "path": "/jekyll-node",
-    "demo": "https://jekyll-node.now-examples.now.sh",
-    "description": "A Jekyll site, created with the Jekyll CLI, backed by a Node.js API."
+    "path": "/jekyll",
+    "demo": "https://jekyll.now-examples.now.sh",
+    "description": "A Jekyll site, created with the Jekyll CLI."
   },
   {
     "example": "Next.js",
-    "path": "/nextjs-node",
-    "demo": "https://nextjs-node.now-examples.now.sh",
-    "description": "A Next.js app with a Node.js API to get you up and running."
+    "path": "/nextjs",
+    "demo": "https://nextjs.now-examples.now.sh",
+    "description": "A Next.js app to get you up and running."
   },
   {
     "example": "Nuxt.js",
-    "path": "/nuxtjs-node",
-    "demo": "https://nuxtjs-node.now-examples.now.sh",
-    "description": "A Nuxt.js app that makes use of a Node.js API deployed alongisde."
+    "path": "/nuxtjs",
+    "demo": "https://nuxtjs.now-examples.now.sh",
+    "description": "A Nuxt.js app, bootstrappd with create-nuxt-app."
   },
   {
     "example": "Polymer",
-    "path": "/polymer-node",
-    "demo": "https://polymer-node.now-examples.now.sh",
-    "description": "A Polymer app, created with the Polymer CLI, backed by a Node.js API."
+    "path": "/polymer",
+    "demo": "https://polymer.now-examples.now.sh",
+    "description": "A Polymer app, created with the Polymer CLI."
   },
   {
     "example": "Preact",
-    "path": "/preact-node",
-    "demo": "https://preact-node.now-examples.now.sh",
-    "description": "A Preact app, created with the Preact CLI, backed by a Node.js API."
+    "path": "/preact",
+    "demo": "https://preact.now-examples.now.sh",
+    "description": "A Preact app, created with the Preact CLI."
   },
   {
     "example": "Svelte",
+    "path": "/svelte",
+    "demo": "https://svelte.now-examples.now.sh",
+    "description": "A Svelte app, using the Svelte template."
+  },
+  {
+    "example": "Svelte-Node",
     "path": "/svelte-node",
     "demo": "https://svelte-node.now-examples.now.sh",
     "description": "A Svelte app, using the Svelte template, backed by a Node.js API."
   },
   {
     "example": "UmiJS",
-    "path": "/umijs-node",
-    "demo": "https://umijs-node.now-examples.now.sh",
-    "description": "An UmiJS app, creatd using the Umi CLI, backed by a Node.js API."
+    "path": "/umijs",
+    "demo": "https://umijs.now-examples.now.sh",
+    "description": "An UmiJS app, creatd using the Umi CLI."
   },
   {
     "example": "Vue.js",
-    "path": "/vue-node",
-    "demo": "https://vue-node.now-examples.now.sh",
-    "description": "A Vue.js app, created with the Vue CLI, backed by a Node.js API."
+    "path": "/vue",
+    "demo": "https://vue.now-examples.now.sh",
+    "description": "A Vue.js app, created with the Vue CLI."
   },
   {
     "example": "VuePress",
-    "path": "/vuepress-node",
-    "demo": "https://vuepress-node.now-examples.now.sh",
-    "description": "A VuePress app, created with the VuePress CLI, backd by a Node.js API."
+    "path": "/vuepress",
+    "demo": "https://vuepress.now-examples.now.sh",
+    "description": "A VuePress app, created with the VuePress CLI."
   }
 ]
