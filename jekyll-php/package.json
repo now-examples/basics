@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "install": "yum install ruby23-devel.x86_64 && gem install jekyll bundler && bundle install",
+    "install": "if [ $NOW_REGION == 'dev1' ]; then bundle install; else yum install ruby23-devel.x86_64 && gem install jekyll bundler && bundle install; fi",
+    "dev": "bundle exec jekyll serve --port $PORT",
     "build": "jekyll build && mv _site dist"
   }
 }
