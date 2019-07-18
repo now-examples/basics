@@ -1,15 +1,19 @@
-# Docz with a Bash API
+# Docz Example
 
-This example shows a [Docz](https://www.docz.site/) site (located in `package.json`).
+This directory is a brief example of a [Docz](https://www.docz.site/) site that can be deployed to ZEIT Now with zero configuration.
 
-In order to deploy, run:
+## Initializing this Example
 
+To get started with Docz on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+
+```shell
+$ now init docz
 ```
-now
-```
 
-When editing a file, you can run the following command to spawn a local development server:
+## Deploying this Example
 
-```
-now dev
+Once initialized, you can deploy the Docz example with just a single command:
+
+```shell
+$ now
 ```

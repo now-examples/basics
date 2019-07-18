@@ -1,27 +1,19 @@
-# Angular
+# Angular Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to ZEIT Now with zero configuration.
 
-## Development server
+## Initializing this Example
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To get started with Angular on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
-## Code scaffolding
+```shell
+$ now init angular
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Deploying this Example
 
-## Build
+Once initialized, you can deploy the Angular example with just a single command:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```shell
+$ now
+```

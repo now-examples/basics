@@ -1,15 +1,19 @@
-# Docusauras with a Bash API
+# Docusauras Example
 
-This example shows a [Docusauras](https://docusaurus.io/) site (located in `package.json`).
+This directory is a brief example of a [Docusauras](https://docusaurus.io/) site that can be deployed to ZEIT Now with zero configuration.
 
-In order to deploy, run:
+## Initializing this Example
 
+To get started with Docusauras on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+
+```shell
+$ now init docusauras
 ```
-now
-```
 
-When editing a file, you can run the following command to spawn a local development server:
+## Deploying this Example
 
-```
-now dev
+Once initialized, you can deploy the Docusauras example with just a single command:
+
+```shell
+$ now
 ```

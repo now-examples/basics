@@ -1,22 +1,19 @@
-# nuxtjs
+# Nuxt.js Example
 
-> My astonishing Nuxt.js project
+This directory is a brief example of a [Nuxt.js](https://nuxtjs.org) app that can be deployed to ZEIT Now with zero configuration.
 
-## Build Setup
+## Initializing this Example
 
-``` bash
-# install dependencies
-$ yarn install
+To get started with Nuxt.js on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```shell
+$ now init nuxtjs
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Deploying this Example
+
+Once initialized, you can deploy the Nuxt.js example with just a single command:
+
+```shell
+$ now
+```

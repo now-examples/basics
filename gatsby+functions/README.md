@@ -1,15 +1,19 @@
-# Gatsby with a Node.js (TypeScript) API
+# Gatsby Example
 
-This example shows a [Gatsby](https://www.gatsbyjs.org/) app (located in `package.json`) powered by a Node.js (TypeScript) API.
+This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app with serverless functions that can be deployed to ZEIT Now with zero configuration.
 
-In order to deploy, run:
+## Initializing this Example
 
+To get started with Gatsby on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+
+```shell
+$ now init gatsby+functions
 ```
-now
-```
 
-When editing a file, you can run the following command to spawn a local development server:
+## Deploying this Example
 
-```
-now dev
+Once initialized, you can deploy the Gatsby example with just a single command:
+
+```shell
+$ now
 ```

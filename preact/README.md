@@ -1,22 +1,19 @@
-# preact
+# Preact Example
 
-## CLI Commands
+This directory is a brief example of a [Preact](https://preactjs.com/) app that can be deployed to ZEIT Now with zero configuration.
 
-``` bash
-# install dependencies
-npm install
+## Initializing this Example
 
-# serve with hot reload at localhost:8080
-npm run dev
+To get started with Preact on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
-
-# run tests with jest and preact-render-spy 
-npm run test
+```shell
+$ now init preact
 ```
 
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+## Deploying this Example
+
+Once initialized, you can deploy the Preact example with just a single command:
+
+```shell
+$ now
+```

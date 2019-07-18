@@ -1,14 +1,19 @@
-# Default starter for Gridsome
+# Gridsome Example
 
-This is the project you get when you run `gridsome create new-project`.
+This directory is a brief example of a [Gridsome](https://gridsome.org/) app that can be deployed to ZEIT Now with zero configuration.
 
-### 1. Install Gridsome CLI tool if you don't have
+## Initializing this Example
 
-`npm install --global @gridsome/cli`
+To get started with Gridsome on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
-### 2. Create a Gridsome project
+```shell
+$ now init gridsome
+```
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## Deploying this Example
+
+Once initialized, you can deploy the Gridsome example with just a single command:
+
+```shell
+$ now
+```

@@ -1,27 +1,19 @@
-# `aurelia`
+# Aurelia Example
 
-This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
+This directory is a brief example of an [Aurelia](https://aurelia.io/) app that can be deployed to ZEIT Now with zero configuration.
 
-For more information, go to https://aurelia.io/docs/cli/webpack
+## Initializing this Example
 
-## Run dev app
+To get started with Aurelia on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
-Run `au run`, then open `http://localhost:8080`
+```shell
+$ now init aurelia
+```
 
-To open browser automatically, do `au run --open`.
+## Deploying this Example
 
-To change dev server port, do `au run --port 8888`.
+Once initialized, you can deploy the Aurelia example with just a single command:
 
-To enable Webpack Bundle Analyzer, do `au run --analyze`.
-
-To enable hot module reload, do `au run --hmr`.
-
-## Build for production
-
-Run `au build --env prod`.
-
-## Unit tests
-
-Run `au test` (or `au jest`).
-
-To run in watch mode, `au test --watch` or `au jest --watch`.
+```shell
+$ now
+```

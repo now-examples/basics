@@ -12,6 +12,12 @@
     "description": "An Aurelia app, created with the Aurelia CLI."
   },
   {
+    "example": "Charge.js",
+    "path": "/charge",
+    "demo": "https://charge.now-examples.now.sh",
+    "description": "A Charge app to get you up and running."
+  },
+  {
     "example": "Elm",
     "path": "/create-elm-app",
     "demo": "https://elm.now-examples.now.sh",
