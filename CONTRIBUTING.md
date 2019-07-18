@@ -22,31 +22,23 @@ Our Code of Conduct is adapted from the [Contributor Covenant](http://contributo
 
 ## Reporting Issues
 
-If you have found a bug, spelling mistake, or anything related to an example that you feel is an issue that should be reported, please create a new issue here on GitHub. For issues relating to documents, please [create an issue in the documentation repository](https://github.com/zeit/docs/issues/new).
+If you have found a bug, spelling mistake, or anything related to an example that you feel could be improved, please create a new issue here on GitHub. For issues relating to documentation, please [create an issue in the documentation repository](https://github.com/zeit/docs/issues/new).
 
 An issue can be raised by clicking the 'Issues' tab at the top of the repository, followed by the Green 'New issue' button. When submitting an issue, please thoroughly and concisely describe the problem you are experiencing, or improvement you feel could be made, so that we may easily understand and resolve the issue in a timely manner.
 
 ## Contributing Content
 
-Most examples feature a frontend that consumes a serverless function found in the `/api` directory. Examples are kept organized and easy to find by listing them in order of frontend framework or static generator, followed by the technology used for the serverless function if applicable.
+All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide with zero configuration required. We welcome contributions of new examples that use the 'hello world' template of the particular framework or static site you want to add.
 
-When contributing a new framework, we kindly ask that you follow the steps below:
-
-- Create an example that uses the same markup, CSS and `/api` directories as existing examples
-- Add a README.md file using the same format as existing examples
-- Test the example with `now dev` to ensure it is working correctly
-
-When contributing a new static site generator, we kindly ask that you follow the steps below:
+When contributing a new example, we kindly ask that you follow the steps below:
 
 - Add an example that uses the default theme or template of the generator
 - Add a README.md file using the same format as existing examples
-- Test the example with `now dev` to ensure it is working correctly
+- Test the example by deploying it with `now` to ensure it is working correctly
 
 When contributing an example, please fork this repository and then add your example before submitting a pull request. If you are not sure how to do this then please take a look at the [Forking Workflow](#forking-workflow) below.
 
-The simplest and easiest way to add an example is to focus first on the framework or static generator you are looking to add, using the markup and CSS from an existing example if it's a framework, else the default theme or template from the static generator. Once complete, copy an `/api` directory from one of the existing examples if applicable and include a request to fetch the data. You can then test your example locally by [using `now dev`](https://zeit.co/docs/v2/development/basics/) to provide a reproduction of the ZEIT Now serverless environment. Finally, if the example requires a serverless function, simply add the name of the language used to your example and submit a pull request.
-
-We appreciate all contributions and don't expect anyone to submit a frontend example for each individual language that could be used in a serverless function. This is something we will happily do for you once the pull request is merged. Of course, if you'd like to do that then please do!s
+We appreciate all contributions and are more than happy to provide assistance wherever it is needed. You can get help with your contribution either by discussing it on a pull request or by reaching out to us in the [ZEIT Spectrum](https://spectrum.chat/zeit).
 
 ## Forking Workflow
 
@@ -106,7 +98,7 @@ The rest of this section relates to other scenarios you may encounter whilst con
 
 ### Master Branch out of Sync
 
-This is a very common situation and happens when changes are made to the official repository, meaning your fork is suddenly out of date. The only time you need to consider this is before you create a new branch, this means that whenever you start working on changes, your branch will always be up to date as of that moment.
+This is very common and happens when changes are made to the official repository, meaning your fork is suddenly out of date. The only time you need to consider this is before you create a new branch, this means that whenever you start working on changes, your branch will always be up to date as of that moment.
 
 When pulling changes from the official repository, it is always a good idea to do so from your master branch. Providing you've followed the advice above about adding a remote upstream, your command should look like this:
 
@@ -126,4 +118,4 @@ All you need to do is make the changes on the same branch locally, commit and pu
 
 ## Documentation
 
-This repository contains only examples to be used with the Now platform. The [ZEIT Now Documentation](https://github.com/zeit/docs) is a separate repository. If you would like to contribute to the documentation , please read the [contributing guidelines](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to find more information on doing so.
+This repository contains only examples to be used with the Now platform. The [ZEIT Now Documentation](https://github.com/zeit/docs) is a separate repository. If you would like to contribute to the documentation, please read the [contributing guidelines](https://github.com/zeit/docs/blob/master/CONTRIBUTING.md) to find more information on doing so.
