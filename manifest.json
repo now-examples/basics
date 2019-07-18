@@ -7,9 +7,9 @@
   },
   {
     "example": "Gatsby",
-    "path": "/gatsby",
-    "demo": "https://gatsby.now-examples.now.sh",
-    "description": "A Gatsby app, using the default stater theme."
+    "path": "/gatsby-functions",
+    "demo": "https://gatsby-functions.now-examples.now.sh",
+    "description": "A Gatsby app, using the default starter theme, backed by serverless functions."
   },
   {
     "example": "Nuxt.js",
@@ -18,40 +18,22 @@
     "description": "A Nuxt.js app, bootstrappd with create-nuxt-app."
   },
   {
-    "example": "React",
-    "path": "/create-react-app",
-    "demo": "https://react.now-examples.now.sh",
-    "description": "A React app, bootstrapped with create-react-app."
+    "example": "Create-React-App",
+    "path": "/create-react-app-functions",
+    "demo": "https://react-functions.now-examples.now.sh",
+    "description": "A React app, bootstrapped with create-react-app, backed by serverless functions."
   },
   {
     "example": "Svelte",
-    "path": "/svelte",
-    "demo": "https://svelte.now-examples.now.sh",
-    "description": "A Svelte app, using the Svelte template."
+    "path": "/svelte-functions",
+    "demo": "https://svelte-functions.now-examples.now.sh",
+    "description": "A Svelte app, using the Svelte template, backed by serverless functions."
   },
   {
     "example": "Vue.js",
     "path": "/vue",
     "demo": "https://vue.now-examples.now.sh",
     "description": "A Vue.js app, created with the Vue CLI."
-  },
-  {
-    "example": "React + Functions",
-    "path": "/create-react-app-go",
-    "demo": "https://react-functions.now-examples.now.sh",
-    "description": "A React app, bootstrapped with create-react-app, backed by serverless functions."
-  },
-  {
-    "example": "Gatsby + Functions",
-    "path": "/gatsby-functions",
-    "demo": "https://gatsby-functions.now-examples.now.sh",
-    "description": "A Gatsby app, using the default starter theme, backed by serverless functions."
-  },
-  {
-    "example": "Svelte + Functions",
-    "path": "/svelte-functions",
-    "demo": "https://svelte-functions.now-examples.now.sh",
-    "description": "A Svelte app, using the Svelte template, backed by serverless functions."
   },
   {
     "example": "Angular",
