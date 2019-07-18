@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "create-next-example-app",
+=======
+  "private": true,
+>>>>>>> master
   "scripts": {
     "dev": "next",
     "build": "next build",

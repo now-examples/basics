@@ -1,9 +1,14 @@
 {
   "name": "gatsby-starter-default",
+<<<<<<< HEAD
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+=======
+  "version": "1.0.0",
+  "private": true,
+>>>>>>> master
   "dependencies": {
     "gatsby": "^2.13.25",
     "gatsby-image": "^2.2.6",
