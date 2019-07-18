@@ -118,5 +118,11 @@
     "path": "/polymer",
     "demo": "https://polymer.now-examples.now.sh",
     "description": "A Polymer app, created with the Polymer CLI."
+  },
+  {
+    "example": "Brunch",
+    "path": "/brunch",
+    "demo": "https://brunch.now-examples.now.sh",
+    "description": "A Brunch app, created with the Brunch CLI."
   }
 ]
