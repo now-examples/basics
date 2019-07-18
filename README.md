@@ -21,7 +21,7 @@ This repository consists of multiple examples, created for use with the [ZEIT No
 
 We recommend familiarizing yourself with the above sections, particularly if you are looking to make a contribution.
 
-## Developing Examples
+## Deploying Examples
 
 To get started using any of these examples as your own project, [install Now](https://zeit.co/download) and use either of the following commands in your terminal:
 
@@ -31,20 +31,10 @@ now init <example>          # Create a new project from a specific <example>
 now init <example> <name>   # Create a new project from a specific <example> with a different folder <name>
 ```
 
-The `now init` command allows you to select any example listed in this repository and creates a copy locally. As you can see above, you are able to supply additional parameters if you know which example you are looking to get started with or want to choose a different folder name for your project.
-
-Once your project is setup you are then able to get started developing immediately with just a single command:
+Deploying your project takes seconds and can be done with **just a single command**:
 
 ```sh
-now dev                    # Runs the project locally in a reproduction of the Now serverless environment
-```
-
-By using `now dev`, you are immediately able to run your project locally in a reproduction of the Now serverless environment. This allows you to develop your application in as close to a production environment as possible, ensuring rapid development and complete confidence in your code.
-
-Deploying your project is just as straightforward, again only requiring a single command:
-
-```sh
-now                        # Deploys the project with Now
+now                         # Deploys the project with Now
 ```
 
 With the `now` command, your project will be built and served by Now, providing you with a URL that can be shared immediately.
