@@ -4,10 +4,10 @@ This directory is a brief example of a [Jekyll](https://jekyllrb.com/) site that
 
 ## Initializing this Example
 
-To get started with Jekyll on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Jekyll on Now, you can use the [Jekyll CLI](https://jekyllrb.com/docs/usage/) to initialize the project:
 
 ```shell
-$ now init jekyll
+$ jekyll new my-blog
 ```
 
 ## Deploying this Example

@@ -4,10 +4,10 @@ This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app w
 
 ## Initializing this Example
 
-To get started with Gatsby on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Gatsby on Now, you can use the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) to initialize the project:
 
 ```shell
-$ now init gatsby+functions
+$ gatsby new gatsby-site
 ```
 
 ## Deploying this Example

@@ -4,10 +4,10 @@ This directory is a brief example of a [Brunch](https://brunch.io/) site that ca
 
 ## Initializing this Example
 
-To get started with Brunch on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Brunch on Now, you can use the [Brunch CLI](https://brunch.io/docs/commands) to initialize the project:
 
 ```shell
-$ now init brunch
+$ brunch new project-name -s es6
 ```
 
 ## Deploying this Example

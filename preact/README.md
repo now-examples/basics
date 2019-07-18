@@ -4,10 +4,10 @@ This directory is a brief example of a [Preact](https://preactjs.com/) app that 
 
 ## Initializing this Example
 
-To get started with Preact on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Preact on Now, you can use the [Preact CLI](https://github.com/preactjs/preact-cli) to initialize the project:
 
 ```shell
-$ now init preact
+$ preact create default my-project
 ```
 
 ## Deploying this Example

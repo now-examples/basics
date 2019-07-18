@@ -4,10 +4,10 @@ This directory is a brief example of a [Svelte](https://svelte.dev/) app with se
 
 ## Initializing this Example
 
-To get started with Svelte on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Svelte on Now, you can use [degit](https://github.com/Rich-Harris/degit) to initialize the project:
 
 ```shell
-$ now init svelte
+$ npx degit sveltejs/template my-svelte-project
 ```
 
 ## Deploying this Example

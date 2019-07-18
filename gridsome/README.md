@@ -4,10 +4,10 @@ This directory is a brief example of a [Gridsome](https://gridsome.org/) app tha
 
 ## Initializing this Example
 
-To get started with Gridsome on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Gridsome on Now, you can use the [Gridsome CLI](https://gridsome.org/docs/gridsome-cli/) to initialize the project:
 
 ```shell
-$ now init gridsome
+$ gridsome create my-website
 ```
 
 ## Deploying this Example

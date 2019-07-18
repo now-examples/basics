@@ -4,10 +4,10 @@ This directory is a brief example of a [React](https://reactjs.org/) app with se
 
 ## Initializing this Example
 
-To get started with React on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with React on Now, you can use the [Create-React-App CLI](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to initialize the project:
 
 ```shell
-$ now init create-react-app+functions
+$ npx create-react-app my-app
 ```
 
 ## Deploying this Example

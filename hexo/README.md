@@ -4,10 +4,10 @@ This directory is a brief example of a [Hexo](https://hexo.io/) site that can be
 
 ## Initializing this Example
 
-To get started with Hexo on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Hexo on Now, you can use the [Hexo CLI](https://hexo.io/docs/index.html#Installation) to initialize the project:
 
 ```shell
-$ now init hexo
+$ hexo init project-name
 ```
 
 ## Deploying this Example

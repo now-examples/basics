@@ -1,13 +1,13 @@
 # Elm Example
 
-This directory is a brief example of a [Elm](https://elm-lang.org/) app that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of an [Elm](https://charge.js.org/) app that can be deployed to ZEIT Now with zero configuration.
 
 ## Initializing this Example
 
-To get started with Elm on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Elm on Now, you can use the [Elm CLI](https://github.com/halfzebra/create-elm-app) to initialize the project:
 
 ```shell
-$ now init elm
+$ create-elm-app my-app
 ```
 
 ## Deploying this Example

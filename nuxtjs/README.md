@@ -4,10 +4,10 @@ This directory is a brief example of a [Nuxt.js](https://nuxtjs.org) app that ca
 
 ## Initializing this Example
 
-To get started with Nuxt.js on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Nuxt.js on Now, you can use the [Create-Nuxt-App CLI](https://www.npmjs.com/package/create-nuxt-app) to initialize the project:
 
 ```shell
-$ now init nuxtjs
+$ npx create-nuxt-app my-app
 ```
 
 ## Deploying this Example

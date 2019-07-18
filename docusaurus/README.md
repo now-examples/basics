@@ -4,10 +4,10 @@ This directory is a brief example of a [Docusauras](https://docusaurus.io/) site
 
 ## Initializing this Example
 
-To get started with Docusauras on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Docusauras on Now, you can use the [Docusauras CLI](https://docusaurus.io/docs/en/installation) to initialize the project:
 
 ```shell
-$ now init docusauras
+$ docusauras-init
 ```
 
 ## Deploying this Example

@@ -4,10 +4,10 @@ This directory is a brief example of a [Hugo](https://gohugo.io/) app that can b
 
 ## Initializing this Example
 
-To get started with Hugo on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Hugo on Now, you can use the [Hugo CLI](https://gohugo.io/commands/) to initialize the project:
 
 ```shell
-$ now init hugo
+$ hugo new site project-name
 ```
 
 ## Deploying this Example

@@ -4,10 +4,10 @@ This directory is a brief example of a [Polymer](https://www.polymer-project.org
 
 ## Initializing this Example
 
-To get started with Polymer on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Polymer on Now, you can use the [Polymer CLI](https://polymer-library.polymer-project.org/3.0/docs/tools/polymer-cli) to initialize the project:
 
 ```shell
-$ now init polymer
+$ polymer init
 ```
 
 ## Deploying this Example

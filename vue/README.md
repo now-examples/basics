@@ -4,10 +4,10 @@ This directory is a brief example of a [Vue.js](https://vuejs.org/) app that can
 
 ## Initializing this Example
 
-To get started with Vue.js on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Vue.js on Now, you can use the [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create) to initialize the project:
 
 ```shell
-$ now init vue
+$ vue create
 ```
 
 ## Deploying this Example

@@ -4,10 +4,10 @@ This directory is a brief example of a [Next.js](https://nextjs.org) app that ca
 
 ## Initializing this Example
 
-To get started with Next.js on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with Next.js on Now, you can use the [Create-Next-App CLI](https://open.segment.com/create-next-app/) to initialize the project:
 
 ```shell
-$ now init nextjs
+$ create-next-app my-app
 ```
 
 ## Deploying this Example

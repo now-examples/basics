@@ -4,10 +4,10 @@ This directory is a brief example of a [UmiJS](https://umijs.org/) app that can 
 
 ## Initializing this Example
 
-To get started with UmiJS on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To get started with UmiJS on Now, you can use the [Umi CLI](https://github.com/umijs/create-umi) to initialize the project:
 
 ```shell
-$ now init umijs
+$ yarn create umi app-name
 ```
 
 ## Deploying this Example
