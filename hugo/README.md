@@ -1,6 +1,6 @@
 # Hugo Example
 
-This directory is a brief example of a [Hugo](https://gohugo.io/) site that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Hugo](https://gohugo.io/) app that can be deployed to ZEIT Now with zero configuration.
 
 ## Initializing this Example
 

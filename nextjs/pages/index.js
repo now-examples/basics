@@ -1,91 +1,102 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
+import { useEffect, useState } from 'react';
+import Head from 'next/head';
 
-const Home = () => (
-  <div>
-    <Head title="Home" />
-    <Nav />
-
-    <div className="hero">
-      <h1 className="title">Welcome to Next!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
+function Index() {
+  const [date, setDate] = useState([]);
+  useEffect(() => {
+    async function getDate() {
+      const res = await fetch('/api/date');
+      const newDate = await res.json();
+      setDate(newDate);
+    }
+    getDate();
+  }, []);
+  return (
+    <main>
+      <Head>
+        <title>Next.js + Node API</title>
+      </Head>
+      <h1>Static Next.js + Node.js API</h1>
+      <h2>
+        Deployed with{' '}
+        <a
+          href="https://zeit.co/docs"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          ZEIT Now
+        </a>
+        !
+      </h2>
+      <p>
+        <a
+          href="https://github.com/zeit/now-examples/blob/master/nextjs-node"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          This project
+        </a>{' '}
+        is a <a href="https://nextjs.org/">Next.js</a> app with two directories,{' '}
+        <code>/static</code> for static content and <code>/pages</code> which
+        contains <code>/api</code>, a serverless{' '}
+        <a href="https://nodejs.org/en/">Node.js</a> function. See{' '}
+        <a href="/api/date.js">
+          <code>api/date.js</code> for the Date API with Node.js
+        </a>
+        .
       </p>
+      <br />
+      <h2>The date according to Node.js is:</h2>
+      <p>{date ? date.date : 'Loading date...'}</p>
+      <style jsx>{`
+        main {
+          align-content: center;
+          box-sizing: border-box;
+          display: grid;
+          font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
+            'Helvetica', 'Arial', sans-serif;
+          hyphens: auto;
+          line-height: 1.65;
+          margin: 0 auto;
+          max-width: 680px;
+          min-height: 100vh;
+          padding: 72px 0;
+          text-align: center;
+        }
+        h1 {
+          font-size: 45px;
+        }
+        h2 {
+          margin-top: 1.5em;
+        }
+        p {
+          font-size: 16px;
+        }
+        a {
+          border-bottom: 1px solid white;
+          color: #0076ff;
+          cursor: pointer;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+        a:hover {
+          border-bottom: 1px solid #0076ff;
+        }
+        code,
+        pre {
+          color: #d400ff;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+          font-size: 0.92em;
+        }
+        code:before,
+        code:after {
+          content: '\`';
+        }
+      `}</style>
+    </main>
+  );
+}
 
-      <div className="row">
-        <Link href="https://github.com/zeit/next.js#getting-started">
-          <a className="card">
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next on Github and in their examples</p>
-          </a>
-        </Link>
-        <Link href="https://open.segment.com/create-next-app">
-          <a className="card">
-            <h3>Examples &rarr;</h3>
-            <p>
-              Find other example boilerplates on the{' '}
-              <code>create-next-app</code> site
-            </p>
-          </a>
-        </Link>
-        <Link href="https://github.com/segmentio/create-next-app">
-          <a className="card">
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it</p>
-          </a>
-        </Link>
-      </div>
-    </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
-)
-
-export default Home
+export default Index;
