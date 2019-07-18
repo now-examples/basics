@@ -24,10 +24,10 @@
     "description": "A React app, bootstrapped with create-react-app."
   },
   {
-    "example": "React-Go",
+    "example": "React+Functions",
     "path": "/create-react-app-go",
-    "demo": "https://react-go.now-examples.now.sh",
-    "description": "A React app, bootstrapped with create-react-app, backed by a Go API."
+    "demo": "https://react-functions.now-examples.now.sh",
+    "description": "A React app, bootstrapped with create-react-app, backed by serverless functions."
   },
   {
     "example": "Docusauras",
@@ -48,10 +48,10 @@
     "description": "A Gatsby app, using the default stater theme."
   },
   {
-    "example": "Gatsby-Node-TypeScript",
-    "path": "/gatsby-node-typescript",
-    "demo": "https://gatsby-node-typescript.now-examples.now.sh",
-    "description": "A Gatsby app, using the default stater theme, with a Node.js (TypeScript) API."
+    "example": "Gatsby+Functions",
+    "path": "/gatsby-functions",
+    "demo": "https://gatsby-functions.now-examples.now.sh",
+    "description": "A Gatsby app, using the default starter theme, backed by serverless functions."
   },
   {
     "example": "Gridsome",
@@ -108,10 +108,10 @@
     "description": "A Svelte app, using the Svelte template."
   },
   {
-    "example": "Svelte-Node",
-    "path": "/svelte-node",
-    "demo": "https://svelte-node.now-examples.now.sh",
-    "description": "A Svelte app, using the Svelte template, backed by a Node.js API."
+    "example": "Svelte+Functions",
+    "path": "/svelte-functions",
+    "demo": "https://svelte-functions.now-examples.now.sh",
+    "description": "A Svelte app, using the Svelte template, backed by serverless functions."
   },
   {
     "example": "UmiJS",
