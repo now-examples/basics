@@ -1,51 +1,9 @@
 [
   {
-    "example": "Angular",
-    "path": "/angular",
-    "demo": "https://angular.now-examples.now.sh",
-    "description": "An Angular app, created with the Angular CLI"
-  },
-  {
-    "example": "Aurelia",
-    "path": "/aurelia",
-    "demo": "https://aurelia.now-examples.now.sh",
-    "description": "An Aurelia app, created with the Aurelia CLI."
-  },
-  {
-    "example": "Charge.js",
-    "path": "/charge",
-    "demo": "https://charge.now-examples.now.sh",
-    "description": "A Charge app to get you up and running."
-  },
-  {
-    "example": "Elm",
-    "path": "/create-elm-app",
-    "demo": "https://elm.now-examples.now.sh",
-    "description": "An Elm app, bootstrapped with create-elm-app."
-  },
-  {
-    "example": "React",
-    "path": "/create-react-app",
-    "demo": "https://react.now-examples.now.sh",
-    "description": "A React app, bootstrapped with create-react-app."
-  },
-  {
-    "example": "React+Functions",
-    "path": "/create-react-app-go",
-    "demo": "https://react-functions.now-examples.now.sh",
-    "description": "A React app, bootstrapped with create-react-app, backed by serverless functions."
-  },
-  {
-    "example": "Docusauras",
-    "path": "/docusauras",
-    "demo": "https://docusauras.now-examples.now.sh",
-    "description": "A static Docusauras site that makes it easy to maintin OSS documentation."
-  },
-  {
-    "example": "Docz",
-    "path": "/docz",
-    "demo": "https://docz.now-examples.now.sh",
-    "description": "A static Docz site that can be expanded upon to create documentation with ease."
+    "example": "Next.js",
+    "path": "/nextjs",
+    "demo": "https://nextjs.now-examples.now.sh",
+    "description": "A Next.js app to get you up and running."
   },
   {
     "example": "Gatsby",
@@ -54,58 +12,16 @@
     "description": "A Gatsby app, using the default stater theme."
   },
   {
-    "example": "Gatsby+Functions",
-    "path": "/gatsby-functions",
-    "demo": "https://gatsby-functions.now-examples.now.sh",
-    "description": "A Gatsby app, using the default starter theme, backed by serverless functions."
-  },
-  {
-    "example": "Gridsome",
-    "path": "/gridsome",
-    "demo": "https://gridsome.now-examples.now.sh",
-    "description": "A Gridsome app, created with the Gridsome CLI."
-  },
-  {
-    "example": "Hexo",
-    "path": "/hexo",
-    "demo": "https://hexo.now-examples.now.sh",
-    "description": "A Hexo site, created with the Hexo CLI."
-  },
-  {
-    "example": "Hugo",
-    "path": "/hugo",
-    "demo": "https://hugo.now-examples.now.sh",
-    "description": "A Hugo site, created with the Hugo CLI."
-  },
-  {
-    "example": "Jekyll",
-    "path": "/jekyll",
-    "demo": "https://jekyll.now-examples.now.sh",
-    "description": "A Jekyll site, created with the Jekyll CLI."
-  },
-  {
-    "example": "Next.js",
-    "path": "/nextjs",
-    "demo": "https://nextjs.now-examples.now.sh",
-    "description": "A Next.js app to get you up and running."
-  },
-  {
     "example": "Nuxt.js",
     "path": "/nuxtjs",
     "demo": "https://nuxtjs.now-examples.now.sh",
     "description": "A Nuxt.js app, bootstrappd with create-nuxt-app."
   },
   {
-    "example": "Polymer",
-    "path": "/polymer",
-    "demo": "https://polymer.now-examples.now.sh",
-    "description": "A Polymer app, created with the Polymer CLI."
-  },
-  {
-    "example": "Preact",
-    "path": "/preact",
-    "demo": "https://preact.now-examples.now.sh",
-    "description": "A Preact app, created with the Preact CLI."
+    "example": "React",
+    "path": "/create-react-app",
+    "demo": "https://react.now-examples.now.sh",
+    "description": "A React app, bootstrapped with create-react-app."
   },
   {
     "example": "Svelte",
@@ -114,10 +30,40 @@
     "description": "A Svelte app, using the Svelte template."
   },
   {
-    "example": "Svelte+Functions",
+    "example": "Vue.js",
+    "path": "/vue",
+    "demo": "https://vue.now-examples.now.sh",
+    "description": "A Vue.js app, created with the Vue CLI."
+  },
+  {
+    "example": "React + Functions",
+    "path": "/create-react-app-go",
+    "demo": "https://react-functions.now-examples.now.sh",
+    "description": "A React app, bootstrapped with create-react-app, backed by serverless functions."
+  },
+  {
+    "example": "Gatsby + Functions",
+    "path": "/gatsby-functions",
+    "demo": "https://gatsby-functions.now-examples.now.sh",
+    "description": "A Gatsby app, using the default starter theme, backed by serverless functions."
+  },
+  {
+    "example": "Svelte + Functions",
     "path": "/svelte-functions",
     "demo": "https://svelte-functions.now-examples.now.sh",
     "description": "A Svelte app, using the Svelte template, backed by serverless functions."
+  },
+  {
+    "example": "Angular",
+    "path": "/angular",
+    "demo": "https://angular.now-examples.now.sh",
+    "description": "An Angular app, created with the Angular CLI"
+  },
+  {
+    "example": "Hugo",
+    "path": "/hugo",
+    "demo": "https://hugo.now-examples.now.sh",
+    "description": "A Hugo site, created with the Hugo CLI."
   },
   {
     "example": "UmiJS",
@@ -126,15 +72,69 @@
     "description": "An UmiJS app, creatd using the Umi CLI."
   },
   {
-    "example": "Vue.js",
-    "path": "/vue",
-    "demo": "https://vue.now-examples.now.sh",
-    "description": "A Vue.js app, created with the Vue CLI."
+    "example": "Preact",
+    "path": "/preact",
+    "demo": "https://preact.now-examples.now.sh",
+    "description": "A Preact app, created with the Preact CLI."
+  },
+  {
+    "example": "Docz",
+    "path": "/docz",
+    "demo": "https://docz.now-examples.now.sh",
+    "description": "A static Docz site that can be expanded upon to create documentation with ease."
+  },
+  {
+    "example": "Gridsome",
+    "path": "/gridsome",
+    "demo": "https://gridsome.now-examples.now.sh",
+    "description": "A Gridsome app, created with the Gridsome CLI."
+  },
+  {
+    "example": "Elm",
+    "path": "/elm",
+    "demo": "https://elm.now-examples.now.sh",
+    "description": "An Elm app, bootstrapped with create-elm-app."
+  },
+  {
+    "example": "Aurelia",
+    "path": "/aurelia",
+    "demo": "https://aurelia.now-examples.now.sh",
+    "description": "An Aurelia app, created with the Aurelia CLI."
+  },
+  {
+    "example": "Docusauras",
+    "path": "/docusauras",
+    "demo": "https://docusauras.now-examples.now.sh",
+    "description": "A static Docusauras site that makes it easy to maintin OSS documentation."
   },
   {
     "example": "VuePress",
     "path": "/vuepress",
     "demo": "https://vuepress.now-examples.now.sh",
     "description": "A VuePress app, created with the VuePress CLI."
+  },
+  {
+    "example": "Charge.js",
+    "path": "/charge",
+    "demo": "https://charge.now-examples.now.sh",
+    "description": "A Charge app to get you up and running."
+  },
+  {
+    "example": "Jekyll",
+    "path": "/jekyll",
+    "demo": "https://jekyll.now-examples.now.sh",
+    "description": "A Jekyll site, created with the Jekyll CLI."
+  },
+  {
+    "example": "Hexo",
+    "path": "/hexo",
+    "demo": "https://hexo.now-examples.now.sh",
+    "description": "A Hexo site, created with the Hexo CLI."
+  },
+  {
+    "example": "Polymer",
+    "path": "/polymer",
+    "demo": "https://polymer.now-examples.now.sh",
+    "description": "A Polymer app, created with the Polymer CLI."
   }
 ]
