@@ -78,12 +78,6 @@
     "description": "A Gridsome app, created with the Gridsome CLI."
   },
   {
-    "example": "Elm",
-    "path": "/elm",
-    "demo": "https://elm.now-examples.now.sh",
-    "description": "An Elm app, bootstrapped with create-elm-app."
-  },
-  {
     "example": "Aurelia",
     "path": "/aurelia",
     "demo": "https://aurelia.now-examples.now.sh",
