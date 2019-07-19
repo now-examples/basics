@@ -7,7 +7,7 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production && mv public dist"
+    "build": "brunch build --production"
   },
   "dependencies": {},
   "devDependencies": {
