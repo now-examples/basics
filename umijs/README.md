@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [UmiJS](https://umijs.org/) app that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with UmiJS on Now, you can use the [Umi CLI](https://github.com/umijs/create-umi) to initialize the project:
 

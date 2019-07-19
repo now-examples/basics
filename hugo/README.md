@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Hugo](https://gohugo.io/) app that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Hugo on Now, you can use the [Hugo CLI](https://gohugo.io/commands/) to initialize the project:
 

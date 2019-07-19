@@ -2,7 +2,7 @@
 
 This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Angular on Now, you can use the [Angular CLI](https://cli.angular.io/) to initialize the project:
 

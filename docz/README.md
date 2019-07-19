@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Docz](https://www.docz.site/) site that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Docz on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 

@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Hexo](https://hexo.io/) site that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Hexo on Now, you can use the [Hexo CLI](https://hexo.io/docs/index.html#Installation) to initialize the project:
 

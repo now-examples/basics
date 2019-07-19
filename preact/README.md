@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Preact](https://preactjs.com/) app that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Preact on Now, you can use the [Preact CLI](https://github.com/preactjs/preact-cli) to initialize the project:
 

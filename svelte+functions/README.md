@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Svelte](https://svelte.dev/) app with serverless functions that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Svelte on Now, you can use [degit](https://github.com/Rich-Harris/degit) to initialize the project:
 

@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Jekyll](https://jekyllrb.com/) site that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Jekyll on Now, you can use the [Jekyll CLI](https://jekyllrb.com/docs/usage/) to initialize the project:
 

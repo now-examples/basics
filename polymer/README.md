@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Polymer](https://www.polymer-project.org/) app that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example 
 
 To get started with Polymer on Now, you can use the [Polymer CLI](https://polymer-library.polymer-project.org/3.0/docs/tools/polymer-cli) to initialize the project:
 

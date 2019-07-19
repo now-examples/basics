@@ -2,7 +2,7 @@
 
 This directory is a brief example of a [Docusauras](https://docusaurus.io/) site that can be deployed to ZEIT Now with zero configuration.
 
-## Initializing this Example
+## How we created this example
 
 To get started with Docusauras on Now, you can use the [Docusauras CLI](https://docusaurus.io/docs/en/installation) to initialize the project:
 
