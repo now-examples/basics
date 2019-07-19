@@ -56,7 +56,7 @@
   {
     "example": "Vanilla",
     "path": "/vanilla+functions",
-    "demo": "https://vanilla-function.now-examples.now.sh",
+    "demo": "https://vanilla-functions.now-examples.now.sh",
     "description": "An vanilla site, backed by serverless function."
   },
   {
