@@ -16,7 +16,7 @@ function Index() {
       <Head>
         <title>Next.js + Node API</title>
       </Head>
-      <h1>Static Next.js + Node.js API</h1>
+      <h1>Next.js + Node.js API</h1>
       <h2>
         Deployed with{' '}
         <a
@@ -30,7 +30,7 @@ function Index() {
       </h2>
       <p>
         <a
-          href="https://github.com/zeit/now-examples/blob/master/nextjs-node"
+          href="https://github.com/zeit/now-examples/blob/master/nextjs"
           target="_blank"
           rel="noreferrer noopener"
         >
@@ -38,9 +38,9 @@ function Index() {
         </a>{' '}
         is a <a href="https://nextjs.org/">Next.js</a> app with two directories,{' '}
         <code>/static</code> for static content and <code>/pages</code> which
-        contains <code>/api</code>, a serverless{' '}
+        contains content and <code>/api</code>, a serverless{' '}
         <a href="https://nodejs.org/en/">Node.js</a> function. See{' '}
-        <a href="/api/date.js">
+        <a href="/pages/api/date.js">
           <code>api/date.js</code> for the Date API with Node.js
         </a>
         .

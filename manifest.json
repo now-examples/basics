@@ -3,11 +3,11 @@
     "example": "Next.js",
     "path": "/nextjs",
     "demo": "https://nextjs.now-examples.now.sh",
-    "description": "A Next.js app to get you up and running."
+    "description": "A Next.js app, backed by serverless functions."
   },
   {
     "example": "Gatsby",
-    "path": "/gatsby-functions",
+    "path": "/gatsby+functions",
     "demo": "https://gatsby-functions.now-examples.now.sh",
     "description": "A Gatsby app, using the default starter theme, backed by serverless functions."
   },
@@ -19,13 +19,13 @@
   },
   {
     "example": "Create-React-App",
-    "path": "/create-react-app-functions",
+    "path": "/create-react-app+functions",
     "demo": "https://react-functions.now-examples.now.sh",
     "description": "A React app, bootstrapped with create-react-app, backed by serverless functions."
   },
   {
     "example": "Svelte",
-    "path": "/svelte-functions",
+    "path": "/svelte+functions",
     "demo": "https://svelte-functions.now-examples.now.sh",
     "description": "A Svelte app, using the Svelte template, backed by serverless functions."
   },
@@ -52,6 +52,12 @@
     "path": "/umijs",
     "demo": "https://umijs.now-examples.now.sh",
     "description": "An UmiJS app, creatd using the Umi CLI."
+  },
+  {
+    "example": "Vanilla",
+    "path": "/vanilla+functions",
+    "demo": "https://vanilla-function.now-examples.now.sh",
+    "description": "An vanilla site, backed by serverless function."
   },
   {
     "example": "Preact",
