@@ -4,7 +4,7 @@ This directory is a brief example of an [Ember](https://emberjs.com/) app that c
 
 ## How we created this example
 
-To get started with Brunch on Now, you can use the [Ember CLI](https://ember-cli.com/) to initialize the project:
+To get started with Ember on Now, you can use the [Ember CLI](https://ember-cli.com/) to initialize the project:
 
 ```shell
 $ npx ember new ember-project
@@ -12,7 +12,7 @@ $ npx ember new ember-project
 
 ## Deploying this Example
 
-Once initialized, you can deploy the Brunch example with just a single command:
+Once initialized, you can deploy the Ember example with just a single command:
 
 ```shell
 $ now
