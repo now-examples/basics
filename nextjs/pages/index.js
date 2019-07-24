@@ -26,10 +26,10 @@ const Home = () => {
           To get started, edit <code>pages/index.js</code> and save to reload.
         </p>
 
-        <div className="row">
+        <div className="row date">
           <p>{date
             ? <>The date is <b>{date.date}</b></>
-            : 'Loading date...'}</p>
+            : null}</p>
         </div>
 
         <div className="row">
@@ -79,6 +79,9 @@ const Home = () => {
           display: flex;
           flex-direction: row;
           justify-content: space-around;
+        }
+        .date {
+          height: 24px;
         }
         .card {
           padding: 18px 18px 24px;
