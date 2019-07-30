@@ -87,6 +87,7 @@ const Home = () => {
           display: flex;
           align-items: center;
           justify-content: center;
+          padding: 0 16px;
         }
         .date p {
           text-align: center;
@@ -97,7 +98,7 @@ const Home = () => {
           100%{background-position:0% 50%}
         }
         .date .loading {
-          width: 450px;
+          width: 250px;
           max-width: 100%;
           height: 24px;
           border-radius: 4px;
