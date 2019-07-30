@@ -23,12 +23,12 @@ const Home = () => {
       <div className="hero">
         <h1 className="title">Welcome to Next!</h1>
         <p className="description">
-          To get started, edit <code>pages/index.js</code> and save to reload.
+          To get started, edit the <code>pages/index.js</code> or <code>pages/api/date.js</code> files, then save to reload.
         </p>
 
         <div className="row date">
-          <p>The date is:&nbsp; {date
-            ? <b>{date.date}</b>
+          <p>{date
+            ? <>The date is: <b>{date.date}</b></>
             : <span className="loading"></span>}</p>
         </div>
 
@@ -80,11 +80,16 @@ const Home = () => {
           flex-direction: row;
           justify-content: space-around;
         }
-        .date p {
+        .date {
           height: 24px;
+          max-width: calc(100% - 32px)
+          text-align: center;
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+        .date p {
+          text-align: center;
         }
         @keyframes Loading { 
           0%{background-position:0% 50%}
@@ -92,7 +97,8 @@ const Home = () => {
           100%{background-position:0% 50%}
         }
         .date .loading {
-          width: 400px;
+          width: 450px;
+          max-width: 100%;
           height: 24px;
           border-radius: 4px;
           display: inline-block;
