@@ -27,9 +27,9 @@ const Home = () => {
         </p>
 
         <div className="row date">
-          <p>{date
-            ? <>The date is <b>{date.date}</b></>
-            : null}</p>
+          <p>The date is:&nbsp; {date
+            ? <b>{date.date}</b>
+            : <span className="loading"></span>}</p>
         </div>
 
         <div className="row">
@@ -80,8 +80,25 @@ const Home = () => {
           flex-direction: row;
           justify-content: space-around;
         }
-        .date {
+        .date p {
           height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @keyframes Loading { 
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+        }
+        .date .loading {
+          width: 400px;
+          height: 24px;
+          border-radius: 4px;
+          display: inline-block;
+          background: linear-gradient(270deg, #D1D1D1, #EAEAEA);
+          background-size: 200% 200%;
+          animation: Loading 2s ease infinite;
         }
         .card {
           padding: 18px 18px 24px;
