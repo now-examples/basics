@@ -93,7 +93,7 @@ const Home = () => {
           text-align: center;
         }
         .date span {
-          width: 168px;
+          width: 176px;
           text-align: center;
         }
         @keyframes Loading { 
