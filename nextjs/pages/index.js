@@ -26,11 +26,11 @@ const Home = () => {
           To get started, edit the <code>pages/index.js</code> or <code>pages/api/date.js</code> files, then save to reload.
         </p>
 
-        <div className="row date">
-          <p>{date
-            ? <>The date is: <b>{date.date}</b></>
-            : <span className="loading"></span>}</p>
-        </div>
+        <p className="row date">
+          The date is:&nbsp; {date
+            ? <span><b>{date.date}</b></span>
+            : <span className="loading"></span>}
+        </p>
 
         <div className="row">
           <Link href="https://github.com/zeit/next.js#getting-started">
@@ -92,13 +92,16 @@ const Home = () => {
         .date p {
           text-align: center;
         }
+        .date span {
+          width: 168px;
+          text-align: center;
+        }
         @keyframes Loading { 
           0%{background-position:0% 50%}
           50%{background-position:100% 50%}
           100%{background-position:0% 50%}
         }
         .date .loading {
-          width: 250px;
           max-width: 100%;
           height: 24px;
           border-radius: 4px;
