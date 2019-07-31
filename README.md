@@ -41,7 +41,7 @@ With the `now` command, your project will be built and served by Now, providing 
 
 ## New Examples
 
-We are continuously improving our examples based on best practices and feedback from the community.
+We are continuously improving our examples based on best practices and feedback from the community. As a result, it is possible that example names will change and on occasion deprecated in favor of an improved implementation.
 
 For example, the previous `nodejs` example showed a static frontend with a Node.js API. This is illustrated now in the `svelte-functions` example. Below is a table that lists some of the most popular previous examples and the equivalent replacement:
 
