@@ -15,7 +15,7 @@
     "example": "Nuxt.js",
     "path": "/nuxtjs",
     "demo": "https://nuxtjs.now-examples.now.sh",
-    "description": "A Nuxt.js app, bootstrappd with create-nuxt-app."
+    "description": "A Nuxt.js app, bootstrapped with create-nuxt-app."
   },
   {
     "example": "Create-React-App",
