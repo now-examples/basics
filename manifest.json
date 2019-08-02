@@ -78,6 +78,12 @@
     "description": "A static Docz site that can be expanded upon to create documentation with ease."
   },
   {
+    "example": "mdx-deck",
+    "path": "/mdx-deck",
+    "demo": "https://mdx-deck.now-examples.now.sh",
+    "description": "An mdx-deck presentation template that includes a theme."
+  },
+  {
     "example": "Gridsome",
     "path": "/gridsome",
     "demo": "https://gridsome.now-examples.now.sh",
