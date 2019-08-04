@@ -35,6 +35,12 @@ export default {
   modules: [
   ],
   /*
+  ** Generate configuration
+  */
+  generate: {
+    dir: 'public'
+  },
+  /*
   ** Build configuration
   */
   build: {
