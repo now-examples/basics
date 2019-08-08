@@ -1,13 +1,12 @@
 {
-  "name": "gridsome",
+  "name": "gridsomee",
   "private": true,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "now-build": "yarn build"
+    "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.3.0"
+    "gridsome": "^0.6.0"
   }
 }

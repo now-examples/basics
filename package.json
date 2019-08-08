@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "now-build": "node build-api.js"
+    "build": "node build-api.js"
   },
   "devDependencies": {
     "fs-extra": "^7.0.1",
