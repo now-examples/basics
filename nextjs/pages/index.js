@@ -33,25 +33,25 @@ const Home = () => {
         </p>
 
         <div className="row">
-          <Link href="https://github.com/zeit/next.js#getting-started">
+          <Link href="https://nextjs.org/learn/basics/getting-started">
             <a className="card">
               <h3>Getting Started &rarr;</h3>
-              <p>Learn more about Next on Github and in their examples</p>
+              <p>Learn more about Next on the Next.js website</p>
             </a>
           </Link>
-          <Link href="https://open.segment.com/create-next-app">
+          <Link href="https://github.com/zeit/next.js/tree/master/examples/">
             <a className="card">
               <h3>Examples &rarr;</h3>
               <p>
-                Find other example boilerplates on the{' '}
-                <code>create-next-app</code> site
+                Find other examples on the{' '}
+                <code>Next.js</code> Github
               </p>
             </a>
           </Link>
-          <Link href="https://github.com/segmentio/create-next-app">
+          <Link href="https://zeit.co/guides/deploying-nextjs-with-now/">
             <a className="card">
-              <h3>Create Next App &rarr;</h3>
-              <p>Was this tool helpful? Let us know how we can improve it</p>
+              <h3>Deploy with Now &rarr;</h3>
+              <p>Learn how to get your Next.js deployed with a single command</p>
             </a>
           </Link>
         </div>
