@@ -28,7 +28,7 @@ An issue can be raised by clicking the 'Issues' tab at the top of the repository
 
 ## Contributing Content
 
-All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide with zero configuration required. We welcome contributions of new examples that use the 'hello world' template of the particular framework or static site you want to add.
+All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide and zero configuration required. We welcome contributions of new examples that use the 'hello world' template of the particular framework or static site you want to add.
 
 When contributing a new example, we kindly ask that you follow the steps below:
 

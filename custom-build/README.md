@@ -1,18 +1,24 @@
 # Custom Build Example
 
-This directory is a brief example of using a custom build script that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of using a Custom Build script that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example
+## Deploy Your Own
 
-To get started with using the Custom Build example on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+Deploy your own Custom Built project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/custom-build)
+
+### How We Created This Example
+
+To get started deploying a Custom Built project with ZEIT Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
 ```shell
 $ now init custom-build
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Custom Build example with just a single command:
+You can deploy your new Custom Built project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now

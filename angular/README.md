@@ -1,18 +1,24 @@
 # Angular Example
 
-This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example 
+## Deploy Your Own
 
-To get started with Angular on Now, you can use the [Angular CLI](https://cli.angular.io/) to initialize the project:
+Deploy your own Angular project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/angular)
+
+### How We Created This Example
+
+To get started with Angular, you can use the [Angular CLI](https://cli.angular.io/) to initialize the project:
 
 ```shell
 $ ng new
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Angular example with just a single command:
+You can deploy your new Angular project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now

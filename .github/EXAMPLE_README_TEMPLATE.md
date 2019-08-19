@@ -1,6 +1,6 @@
 # [Name] Example
 
-This directory is a brief example of a [Name](site-link) site that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Name](site-link) site that can be deployed with ZEIT Now and zero configuration.
 
 ## How we created this example
 

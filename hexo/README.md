@@ -1,18 +1,24 @@
 # Hexo Example
 
-This directory is a brief example of a [Hexo](https://hexo.io/) site that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Hexo](https://hexo.io/) site that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example 
+## Deploy Your Own
 
-To get started with Hexo on Now, you can use the [Hexo CLI](https://hexo.io/docs/index.html#Installation) to initialize the project:
+Deploy your own Hexo project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/hexo)
+
+### How We Created This Example
+
+To get started with Hexo for deployment with ZEIT Now, you can use the [Hexo CLI](https://hexo.io/docs/index.html#Installation) to initialize the project:
 
 ```shell
 $ hexo init project-name
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Hexo example with just a single command:
+You can deploy your new Hexo project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now

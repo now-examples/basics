@@ -1,18 +1,24 @@
 # Gatsby Example
 
-This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example 
+## Deploy Your Own
 
-To get started with Gatsby on Now, you can use the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) to initialize the project:
+Deploy your own Gatsby project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/gatsby)
+
+### How We Created This Example
+
+To get started with Gatsby for deployment with ZEIT Now, you can use the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) to initialize the project:
 
 ```shell
 $ gatsby new gatsby-site
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Gatsby example with just a single command:
+You can deploy your new Gatsby project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now

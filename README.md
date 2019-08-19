@@ -2,9 +2,9 @@
 
 This is the public list of examples for **ZEIT Now**.
 
-All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide with zero configuration required.
+All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide and zero configuration required.
 
-The `+functions` examples feature an `/api` directory as well, highlighting how to use serverless functions on top of a framework, again with zero configuration required.
+The `+functions` examples feature an `/api` directory as well, highlighting how to use serverless functions on top of a framework, again and zero configuration required.
 
 ## What is ZEIT Now?
 
@@ -55,7 +55,7 @@ For example, the previous `nodejs` example showed a static frontend with a Node.
 
 ## Migrating and Upgrading
 
-If you have an existing project you would like to deploy with ZEIT Now, we recommend reading our guide on [migrating to Now with zero configuration](https://zeit.co/guides/migrate-to-zeit-now/). By combining the guide with this repository, you will quickly be able to understand how to deploy your application.
+If you have an existing project you would like to deploy with ZEIT Now, we recommend reading our guide on [migrating to Now and zero configuration](https://zeit.co/guides/migrate-to-zeit-now/). By combining the guide with this repository, you will quickly be able to understand how to deploy your application.
 
 If you would like to upgrade a project to take advantage of zero configuration, you may find the [upgrade guide](https://zeit.co/guides/upgrade-to-zero-configuration/) useful. The upgrade guide covers how to remove configuration from existing projects along with how to use the `/api` directory.
 

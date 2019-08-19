@@ -1,18 +1,24 @@
-# Docusauras Example
+# Docusaurus Example
 
-This directory is a brief example of a [Docusauras](https://docusaurus.io/) site that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Docusaurus](https://docusaurus.io/) site that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example
+## Deploy Your Own
 
-To get started with Docusauras on Now, you can use the [Docusauras CLI](https://docusaurus.io/docs/en/installation) to initialize the project:
+Deploy your own Docusaurus project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/docusaurus)
+
+### How We Created This Example
+
+To get started with Docusauras for deployment with ZEIT Now, you can use the [Docusauras CLI](https://docusaurus.io/docs/en/installation) to initialize the project:
 
 ```shell
 $ docusauras-init
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Docusauras example with just a single command:
+You can deploy your new Docusauras project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now

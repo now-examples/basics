@@ -1,18 +1,24 @@
 # AMP Example
 
-This directory is a brief example of a [AMP](https://amp.dev/) site that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of an [AMP](https://amp.dev/) site that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example
+## Deploy Your Own
 
-To get started with AMP on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+Deploy your own AMP project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/amp)
+
+### How We Created This Example
+
+To get started deploying AMP with ZEIT Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
 ```shell
 $ now init amp
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-You can deploy the AMP example with just a single command:
+You can deploy your new AMP project with a single command from your terminal using Now CLI:
 
 ```shell
 $ now

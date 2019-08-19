@@ -1,18 +1,24 @@
 # Preact Example
 
-This directory is a brief example of a [Preact](https://preactjs.com/) app that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Preact](https://preactjs.com/) app that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example 
+## Deploy Your Own
 
-To get started with Preact on Now, you can use the [Preact CLI](https://github.com/preactjs/preact-cli) to initialize the project:
+Deploy your own Preact project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/preact)
+
+### How We Created This Example
+
+To get started with Preact for deployment with ZEIT Now, you can use the [Preact CLI](https://github.com/preactjs/preact-cli) to initialize the project:
 
 ```shell
 $ preact create default my-project
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Preact example with just a single command:
+You can deploy your new Preact project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now

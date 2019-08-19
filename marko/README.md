@@ -1,8 +1,14 @@
 # Marko.js Example
 
-This directory is a brief example of a [Marko.js](https://markojs.com/) app that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Marko.js](https://markojs.com/) app that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example
+## Deploy Your Own
+
+Deploy your own Marko.js project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/marko)
+
+### How We Created This Example
 
 To get started with Marko.js on Now, you can use the [Marko CLI](https://github.com/marko-js/cli) to initialize the project:
 
@@ -12,9 +18,9 @@ $ marko create my-project
 
 > The only change made is to add `&& mv dist public` to the build script in the `package.json` file.
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Marko.js example with just a single command:
+You can deploy your new Marko.js project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now

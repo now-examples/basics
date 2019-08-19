@@ -1,18 +1,24 @@
 # Brunch Example
 
-This directory is a brief example of a [Brunch](https://brunch.io/) site that can be deployed to ZEIT Now with zero configuration.
+This directory is a brief example of a [Brunch](https://brunch.io/) site that can be deployed with ZEIT Now and zero configuration.
 
-## How we created this example 
+## Deploy Your Own
 
-To get started with Brunch on Now, you can use the [Brunch CLI](https://brunch.io/docs/commands) to initialize the project:
+Deploy your own Angular project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/brunch)
+
+### How We Created This Example
+
+To get started deploying Brunch with ZEIT Now, you can use the [Brunch CLI](https://brunch.io/docs/commands) to initialize the project:
 
 ```shell
 $ brunch new project-name -s es6
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Brunch example with just a single command:
+You can deploy your new Brunch project with a single command from your terminal using [Now CLI](/download):
 
 ```shell
 $ now
