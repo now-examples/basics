@@ -110,13 +110,11 @@
   }
 
   function updateColor(e) {
-    console.log("changing color");
     pushDrawData();
     current.color = e.target.className.split(" ")[1];
   }
 
   function onDrawingEvent({ x0, x1, y0, y1, color }) {
-    console.log("on drawing event ...");
     let w = canvas.width;
     let h = canvas.height;
     drawLine(x0 * w, x1 * w, y0 * h, y1 * h, color);
@@ -135,7 +133,8 @@
       },
       body: JSON.stringify(data)
     });
-    const text = await res.text();
-    console.log(text);
+    if (!res.ok) {
+      console.error("event not sent");
+    }
   }
 })();
