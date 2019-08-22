@@ -7,7 +7,7 @@ This directory is a realtime serverless whiteboard powered by Pusher. The fronte
 To get started with a realtime whiteboard on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
 
 ```shell
-$ now init pusher-whiteboard
+$ now init vanilla-pusher-functions
 ```
 
 ## Deploying this example
