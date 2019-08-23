@@ -10,7 +10,7 @@ To get started with a realtime whiteboard on Now, you can use the [Now CLI](http
 $ now init vanilla-pusher-functions
 ```
 
-## Deploying this example
+## Deploying This Example
 
 Once initialized, you can deploy the example with just a single command:
 
