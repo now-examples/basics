@@ -1,3 +1,5 @@
+![Next.js Logo](../.github/images/next.svg)
+
 # Next.js Example
 
 This directory is a brief example of a [Next.js](https://nextjs.org) app that can be deployed with ZEIT Now and zero configuration.
