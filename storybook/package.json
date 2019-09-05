@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "build-storybook -c .storybook -o public",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "dev": "start-storybook --port $PORT"
   }
 }

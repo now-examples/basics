@@ -3,7 +3,8 @@
   "description": "TODO",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
+    "start": "sapper dev",
+    "dev": "sapper dev --port $PORT",
     "build": "sapper export",
     "cy:run": "cypress run",
     "cy:open": "cypress open",

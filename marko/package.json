@@ -23,6 +23,7 @@
     "format": "prettier src/**/*.{js,css,less} --write && marko-prettyprint src",
     "lint": "eslint src",
     "serve": "NODE_ENV=production marko-starter serve-static",
+    "dev": "NODE_ENV=production marko-starter serve-static --port $PORT",
     "start": "marko-starter server",
     "test": "npm run lint"
   },

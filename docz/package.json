@@ -2,7 +2,7 @@
   "name": "my-docz-project",
   "version": "1.0.0",
   "scripts": {
-    "dev": "docz dev",
+    "dev": "docz dev --port=$PORT",
     "build": "docz build"
   },
   "devDependencies": {

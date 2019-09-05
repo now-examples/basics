@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --inline --watch --hot --colors -d --port 3000",
+    "dev": "webpack-dev-server --inline --watch --hot --colors -d --port $PORT",
     "build": "webpack -p -d --progress --colors"
   },
   "keywords": [
