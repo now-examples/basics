@@ -10,6 +10,21 @@ To get started with Jekyll on Now, you can use the [Jekyll CLI](https://jekyllrb
 $ jekyll new my-blog
 ```
 
+## How to configure
+
+Add a `package.json` file with the following:
+
+```json
+{
+  "private": true,
+  "scripts": {
+    "build": "jekyll build && mv _site public"
+  }
+}
+```
+
+This instructs ZEIT Now to build the jekyll website and move the output to the public directory.
+
 ## Deploying this Example
 
 Once initialized, you can deploy the Jekyll example with just a single command:
