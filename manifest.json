@@ -178,5 +178,11 @@
     "path": "/brunch",
     "demo": "https://brunch.now-examples.now.sh",
     "description": "A Brunch app, created with the Brunch CLI."
+  },
+  {
+    "example": "Saber",
+    "path": "/saber",
+    "demo": "https://saber.now-examples.now.sh",
+    "description": "A Saber site, created with npm init."
   }
 ]
