@@ -10,7 +10,7 @@ To get started with Jekyll on Now, you can use the [Jekyll CLI](https://jekyllrb
 $ jekyll new my-blog
 ```
 
-## How to configure
+## How to Configure
 
 Add a `package.json` file with the following:
 
