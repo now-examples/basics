@@ -23,7 +23,7 @@ Add a `package.json` file with the following:
 }
 ```
 
-This instructs ZEIT Now to build the jekyll website and move the output to the public directory.
+This instructs ZEIT Now to build the Jekyll website and move the output to the public directory.
 
 ## Deploying this Example
 
