@@ -25,7 +25,7 @@ Once initialized locally, you will see several `.py` files which each correspond
 You will need to add a couple of [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets) before deploying.
 
 ```shell
-$ now secrets add flaskex-db-uri 'cockroachdb://username:password@cockroachdb.example.com/database' 
+$ now secrets add flaskex-db-uri 'postgres://cockroach:<password>@example.cockroachlabs.cloud:26257/flask?sslmode=require' 
 ```
 
 This should point to a load balancer in front of your CockroachDB cluster. If you have a multi-region cluster, you can use a latency-based load-balancer, or use the `NOW_REGION` environment variable to route to the appropriate CockroachDB nodes.

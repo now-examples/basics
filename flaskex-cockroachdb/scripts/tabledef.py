@@ -13,7 +13,10 @@ def db_connect():
     Performs database connection using database settings from settings.py.
     Returns sqlalchemy engine instance
     """
-    return create_engine(os.environ['DATABASE_URI'])
+
+    conn_string = os.environ["DATABASE_URI"].replace("postgres://", "cockroachdb://")
+    conn_string = conn_string.replace("postgresql://", "cockroachdb://")
+    return create_engine(conn_string)
 
 def generate_uuid():
     return str(uuid.uuid4())
