@@ -8,6 +8,8 @@ Deploy your own Hugo project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/hugo)
 
+*Live Example: https://hugo.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Hugo for deployment with ZEIT Now, you can use the [Hugo CLI](https://gohugo.io/commands/) to initialize the project:

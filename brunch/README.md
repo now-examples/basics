@@ -8,6 +8,8 @@ Deploy your own Angular project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/brunch)
 
+*Live Example: https://brunch.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started deploying Brunch with ZEIT Now, you can use the [Brunch CLI](https://brunch.io/docs/commands) to initialize the project:

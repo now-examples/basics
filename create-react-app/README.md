@@ -8,6 +8,8 @@ Deploy your own React project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/create-react-app)
 
+*Live Example: https://create-react-app.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with React, you can use the [Create-React-App CLI](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to initialize the project:

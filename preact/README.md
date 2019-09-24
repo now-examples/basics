@@ -8,6 +8,8 @@ Deploy your own Preact project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/preact)
 
+*Live Example: https://preact.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Preact for deployment with ZEIT Now, you can use the [Preact CLI](https://github.com/preactjs/preact-cli) to initialize the project:

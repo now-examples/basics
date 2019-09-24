@@ -8,6 +8,8 @@ Deploy your own mdx-deck project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/mdx-deck)
 
+*Live Example: https://mdx-deck.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with mdx-deck for deployment with ZEIT Now, you can use the [npm init](https://docs.npmjs.com/cli/init) command to initialize the project:

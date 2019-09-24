@@ -8,6 +8,8 @@ Deploy your own UmiJS project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/umijs)
 
+*Live Example: https://umijs.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with UmiJS deployed with ZEIT Now, you can use the [Umi CLI](https://github.com/umijs/create-umi) to initialize the project:

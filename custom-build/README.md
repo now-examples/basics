@@ -8,6 +8,8 @@ Deploy your own Custom Built project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/custom-build)
 
+*Live Example: https://custom-build.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started deploying a Custom Built project with ZEIT Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:

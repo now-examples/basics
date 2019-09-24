@@ -8,6 +8,8 @@ Deploy your own Svelte project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/svelte)
 
+*Live Example: https://svelte.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Svelte deployed with ZEIT Now, you can use [degit](https://github.com/Rich-Harris/degit) to initialize the project:

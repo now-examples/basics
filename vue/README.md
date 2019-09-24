@@ -8,6 +8,8 @@ Deploy your own Vue.js project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/vue)
 
+*Live Example: https://vue.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Vue.js deployed with ZEIT Now, you can use the [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create) to initialize the project:

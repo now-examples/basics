@@ -8,6 +8,8 @@ Deploy your own Gatsby project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/gatsby)
 
+*Live Example: https://gatsby.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Gatsby for deployment with ZEIT Now, you can use the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) to initialize the project:

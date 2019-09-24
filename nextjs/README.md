@@ -10,6 +10,8 @@ Deploy your own Next.js project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/nextjs)
 
+*Live Example: https://nextjs.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Next.js deployed with ZEIT Now, you can use [npm create](https://www.npmjs.com/package/create-next-app) to initialize the project:

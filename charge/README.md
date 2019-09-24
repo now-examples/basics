@@ -8,6 +8,8 @@ Deploy your own Charge.js project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/charge)
 
+*Live Example: https://charge.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Charge.js, you can use [Now CLI](https://zeit.co/download) to initialize the project:

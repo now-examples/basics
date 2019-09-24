@@ -8,6 +8,7 @@ Deploy your own Metalsmith project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/metalsmith)
 
+*Live Example: https://metalsmith.now-examples.now.sh*
 
 ### How We Created This Example
 

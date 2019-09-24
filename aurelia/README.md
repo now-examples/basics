@@ -9,6 +9,8 @@ Deploy your own Aurelia project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/aurelia)
 
+*Live Example: https://aurelia.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started deploying Aurelia with ZEIT Now, you can use the [Aurelia CLI](https://aurelia.io/docs/cli/basics/) to initialize the project:

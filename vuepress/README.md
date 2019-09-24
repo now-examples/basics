@@ -8,6 +8,8 @@ Deploy your own VuePress project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/vuepress)
 
+*Live Example: https://vuepress.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with VuePress deployed with ZEIT Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:

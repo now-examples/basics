@@ -8,6 +8,8 @@ Deploy your own vanilla website, along with Serverless Functions, with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/vanilla-functions)
 
+*Live Example: https://vanilla-functions.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with a vanilla website, along with [Serverless Functions](https://zeit.co/docs/v2/serverless-functions/introduction), with ZEIT Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:

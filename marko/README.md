@@ -8,6 +8,8 @@ Deploy your own Marko.js project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/marko)
 
+*Live Example: https://marko.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Marko.js on Now, you can use the [Marko CLI](https://github.com/marko-js/cli) to initialize the project:

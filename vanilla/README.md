@@ -8,6 +8,8 @@ Deploy your own vanilla website with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/vanilla)
 
+*Live Example: https://vanilla.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with a vanilla website deployed with ZEIT Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:

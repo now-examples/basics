@@ -8,6 +8,8 @@ Deploy your own Angular project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/angular)
 
+*Live Example: https://angular.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Angular, you can use the [Angular CLI](https://cli.angular.io/) to initialize the project:

@@ -8,6 +8,8 @@ Deploy your own Nuxt.js project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/nuxtjs)
 
+*Live Example: https://nuxtjs.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Nuxt.js deployed with ZEIT Now, you can use the [Create-Nuxt-App CLI](https://www.npmjs.com/package/create-nuxt-app) to initialize the project:

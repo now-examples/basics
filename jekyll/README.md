@@ -8,6 +8,8 @@ Deploy your own Jekyll project with ZEIT Now.
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/jekyll)
 
+*Live Example: https://jekyll.now-examples.now.sh*
+
 ### How We Created This Example
 
 To get started with Jekyll for deployment with ZEIT Now, you can use the [Jekyll CLI](https://jekyllrb.com/docs/usage/) to initialize the project:
