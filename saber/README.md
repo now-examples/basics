@@ -2,7 +2,15 @@
 
 This directory is a brief example of a [Saber](https://saber.land) site that can be deployed to ZEIT Now with zero configuration.
 
-## How we created this example
+## Deploy Your Own
+
+Deploy your own Saber project with ZEIT Now.
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now-examples/tree/master/saber)
+
+*Live Example: https://saber.now-examples.now.sh*
+
+### How We Created This Example
 
 To get started with Saber on Now, you can use [`npm init`](https://docs.npmjs.com/cli/init) to initialize the project:
 
@@ -10,9 +18,9 @@ To get started with Saber on Now, you can use [`npm init`](https://docs.npmjs.co
 $ npm init site my-saber-site
 ```
 
-## Deploying this Example
+### Deploying From Your Terminal
 
-Once initialized, you can deploy the Saber example with just a single command:
+You can deploy your new Saber project with a single command from your terminal using Now CLI:
 
 ```shell
 $ now
