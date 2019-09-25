@@ -2,9 +2,9 @@
 
 This is the public list of examples for **ZEIT Now**.
 
-All of these ready to deploy examples feature a frontend framework or static site, created using the CLI tools they provide and zero configuration required.
+All of these ready to deploy examples feature a frontend framework or static site, created with zero configuration using the CLI tools they provide.
 
-The `+functions` examples feature an `/api` directory as well, highlighting how to use serverless functions on top of a framework, again and zero configuration required.
+The `+functions` examples feature an `/api` directory as well, highlighting how to use serverless functions on top of a framework, again with zero configuration required.
 
 ## What is ZEIT Now?
 
