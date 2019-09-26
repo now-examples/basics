@@ -184,5 +184,11 @@
     "path": "/saber",
     "demo": "https://saber.now-examples.now.sh",
     "description": "A Saber site, created with npm init."
+  },
+  {
+    "example": "Eleventy",
+    "path": "/eleventy",
+    "demo": "https://eleventy.now-examples.now.sh",
+    "description": "An Eleventy site, created with npm init."
   }
 ]
