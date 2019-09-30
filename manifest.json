@@ -196,5 +196,11 @@
     "path": "/zola",
     "demo": "https://zola.now-examples.now.sh",
     "description": "A Zola site, created with the Zola CLI."
+  },
+  {
+    "example": "Pelican",
+    "path": "/pelican",
+    "demo": "https://pelican.now-examples.now.sh",
+    "description": "A Pelican site, created with the Pelican CLI."
   }
 ]
