@@ -1,7 +1,8 @@
 {
   "name": "pelican",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "A Pelican project, ready for deployment with ZEIT Now.",
   "main": "index.js",
   "scripts": {
     "build": "pelican ./ -o public -s publishconf.py"
