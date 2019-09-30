@@ -1,0 +1,16 @@
+{
+  "name": "mkdocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "mkdocs serve -a localhost:$PORT",
+    "build": "mkdocs build -d public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

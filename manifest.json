@@ -202,5 +202,11 @@
     "path": "/pelican",
     "demo": "https://pelican.now-examples.now.sh",
     "description": "A Pelican site, created with the Pelican CLI."
+  },
+  {
+    "example": "MkDocs",
+    "path": "/mkdocs",
+    "demo": "https://mkdocs.now-examples.now.sh",
+    "description": "A MkDocs site, created with the MkDocs CLI."
   }
 ]
