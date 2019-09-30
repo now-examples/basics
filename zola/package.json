@@ -1,0 +1,12 @@
+{
+  "name": "my_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "zola build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

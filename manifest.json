@@ -190,5 +190,11 @@
     "path": "/eleventy",
     "demo": "https://eleventy.now-examples.now.sh",
     "description": "An Eleventy site, created with npm init."
+  },
+  {
+    "example": "Zola",
+    "path": "/zola",
+    "demo": "https://zola.now-examples.now.sh",
+    "description": "A Zola site, created with the Zola CLI."
   }
 ]
