@@ -210,6 +210,12 @@
     "description": "A MkDocs site, created with the MkDocs CLI."
   },
   {
+    "example": "Middleman",
+    "path": "/middleman",
+    "demo": "https://middleman.now-examples.now.sh",
+    "description": "A Middleman app, created with the Middleman CLI."
+  },
+  {
     "example": "Assemble",
     "path": "/assemble",
     "demo": "https://assemble.now-examples.now.sh",
