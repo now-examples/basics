@@ -208,5 +208,11 @@
     "path": "/mkdocs",
     "demo": "https://mkdocs.now-examples.now.sh",
     "description": "A MkDocs site, created with the MkDocs CLI."
+  },
+  {
+    "example": "Assemble",
+    "path": "/assemble",
+    "demo": "https://assemble.now-examples.now.sh",
+    "description": "An Assemble site, created from the Assemble quickstart."
   }
 ]
