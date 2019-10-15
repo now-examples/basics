@@ -220,5 +220,17 @@
     "path": "/assemble",
     "demo": "https://assemble.now-examples.now.sh",
     "description": "An Assemble site, created from the Assemble quickstart."
+  },
+  {
+    "example": "Ionic React",
+    "path": "/ionic-react",
+    "demo": "https://ionic-react.now-examples.now.sh",
+    "description": "An Ionic React site, created with the Ionic CLI"
+  },
+  {
+    "example": "Stencil",
+    "path": "/stencil",
+    "demo": "https://stencil.now-examples.now.sh",
+    "description": "A Stencil site, created with the Stencil CLI"
   }
 ]
