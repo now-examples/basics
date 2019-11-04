@@ -1,4 +1,4 @@
-![Next.js Logo](../.github/images/next.svg)
+![Next.js Logo](../.github/images/nextjs.svg)
 
 # Next.js Example
 
