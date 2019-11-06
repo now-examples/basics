@@ -174,7 +174,8 @@
     "example": "Mithril.js",
     "path": "/mithril",
     "demo": "https://mithril.now-examples.now.sh",
-    "description": "A Mithril app to get you up and running."
+    "description": "A Mithril app to get you up and running.",
+    "icon": "/.github/images/mithriljs.svg"
   },
   {
     "example": "Metalsmith",
@@ -186,7 +187,8 @@
     "example": "HyperApp",
     "path": "/hyperapp",
     "demo": "https://hyperapp.now-examples.now.sh",
-    "description": "A HyperApp app to get you up and running."
+    "description": "A HyperApp app to get you up and running.",
+    "icon": "/.github/images/hyperapp.svg"
   },
   {
     "example": "Polymer",
@@ -199,7 +201,8 @@
     "example": "Brunch",
     "path": "/brunch",
     "demo": "https://brunch.now-examples.now.sh",
-    "description": "A Brunch app, created with the Brunch CLI."
+    "description": "A Brunch app, created with the Brunch CLI.",
+    "icon": "/.github/images/brunch.svg"
   },
   {
     "example": "Saber",
@@ -219,7 +222,8 @@
     "example": "Zola",
     "path": "/zola",
     "demo": "https://zola.now-examples.now.sh",
-    "description": "A Zola site, created with the Zola CLI."
+    "description": "A Zola site, created with the Zola CLI.",
+    "icon": "/.github/images/zola.svg"
   },
   {
     "example": "Pelican",
@@ -231,7 +235,8 @@
     "example": "MkDocs",
     "path": "/mkdocs",
     "demo": "https://mkdocs.now-examples.now.sh",
-    "description": "A MkDocs site, created with the MkDocs CLI."
+    "description": "A MkDocs site, created with the MkDocs CLI.",
+    "icon": "/.github/images/mkdocs.svg"
   },
   {
     "example": "Middleman",
@@ -255,6 +260,7 @@
     "example": "Stencil",
     "path": "/stencil",
     "demo": "https://stencil.now-examples.now.sh",
-    "description": "A Stencil site, created with the Stencil CLI"
+    "description": "A Stencil site, created with the Stencil CLI",
+    "icon": "/.github/images/stencil.svg"
   }
 ]
