@@ -17,7 +17,8 @@
     "example": "Nuxt.js",
     "path": "/nuxtjs",
     "demo": "https://nuxtjs.now-examples.now.sh",
-    "description": "A Nuxt.js app, bootstrapped with create-nuxt-app."
+    "description": "A Nuxt.js app, bootstrapped with create-nuxt-app.",
+    "icon": "/.github/images/nuxt.svg"
   },
   {
     "example": "Create-React-App",
@@ -51,13 +52,15 @@
     "example": "Hugo",
     "path": "/hugo",
     "demo": "https://hugo.now-examples.now.sh",
-    "description": "A Hugo site, created with the Hugo CLI."
+    "description": "A Hugo site, created with the Hugo CLI.",
+    "icon": "/.github/images/hugo.svg"
   },
   {
     "example": "Sapper",
     "path": "/sapper",
     "demo": "https://sapper.now-examples.now.sh",
-    "description": "A Sapper app, using the Sapper template."
+    "description": "A Sapper app, using the Sapper template.",
+    "icon": "/.github/images/svelte.svg"
   },
   {
     "example": "UmiJS",
@@ -70,13 +73,15 @@
     "example": "Vanilla",
     "path": "/vanilla-functions",
     "demo": "https://vanilla-functions.now-examples.now.sh",
-    "description": "A vanilla site, backed by serverless function."
+    "description": "A vanilla site, backed by serverless function.",
+    "icon": "/.github/images/vanilla.svg"
   },
   {
     "example": "Storybook",
     "path": "/storybook",
     "demo": "https://storybook.now-examples.now.sh",
-    "description": "A Storybook app, using the React demo template."
+    "description": "A Storybook app, using the React demo template.",
+    "icon": "/.github/images/storybook.svg"
   },
   {
     "example": "Preact",
@@ -89,7 +94,8 @@
     "example": "Docz",
     "path": "/docz",
     "demo": "https://docz.now-examples.now.sh",
-    "description": "A static Docz site that can be expanded upon to create documentation with ease."
+    "description": "A static Docz site that can be expanded upon to create documentation with ease.",
+    "icon": "/.github/images/docz.svg"
   },
   {
     "example": "mdx-deck",
@@ -108,7 +114,8 @@
     "example": "Aurelia",
     "path": "/aurelia",
     "demo": "https://aurelia.now-examples.now.sh",
-    "description": "An Aurelia app, created with the Aurelia CLI."
+    "description": "An Aurelia app, created with the Aurelia CLI.",
+    "icon": "/.github/images/aurelia.svg"
   },
   {
     "example": "Ember",
@@ -134,7 +141,8 @@
     "example": "Charge.js",
     "path": "/charge",
     "demo": "https://charge.now-examples.now.sh",
-    "description": "A Charge app to get you up and running."
+    "description": "A Charge app to get you up and running.",
+    "icon": "/.github/images/chargejs.svg"
   },
   {
     "example": "Riot.js",
@@ -146,7 +154,8 @@
     "example": "Jekyll",
     "path": "/jekyll",
     "demo": "https://jekyll.now-examples.now.sh",
-    "description": "A Jekyll site, created with the Jekyll CLI."
+    "description": "A Jekyll site, created with the Jekyll CLI.",
+    "icon": "/.github/images/jekyll.svg"
   },
   {
     "example": "Marko.js",
