@@ -77,7 +77,7 @@
     "demo": "https://umijs.now-examples.now.sh",
     "description": "An UmiJS app, created using the Umi CLI.",
     "icon": "/.github/images/umi.svg",
-    "tagline": "UmiJS is an extensible enterprise-level react application framework."
+    "tagline": "UmiJS is an extensible enterprise-level React application framework."
   },
   {
     "example": "Vanilla",
@@ -85,7 +85,7 @@
     "demo": "https://vanilla-functions.now-examples.now.sh",
     "description": "A vanilla site, backed by serverless function.",
     "icon": "/.github/images/vanilla.svg",
-    "tagline": "Love the original way of doing websites?"
+    "tagline": "Love the original way of making websites?"
   },
   {
     "example": "Storybook",
@@ -155,7 +155,7 @@
     "path": "/vuepress",
     "demo": "https://vuepress.now-examples.now.sh",
     "description": "A VuePress app, created with the VuePress CLI.",
-    "tagline": "VuePress is the performant way to do static sites with Vue."
+    "tagline": "VuePress is the performant way to create static sites with Vue.js."
   },
   {
     "example": "Charge.js",
