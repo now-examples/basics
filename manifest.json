@@ -21,7 +21,7 @@
     "demo": "https://nuxtjs.now-examples.now.sh",
     "description": "A Nuxt.js app, bootstrapped with create-nuxt-app.",
     "icon": "/.github/images/nuxt.svg",
-    "tagline": "Want SSR with Vue.js? Nuxt.js is the answer."
+    "tagline": "Nuxt.js is the web comprehensive framework that lets you dream big with Vue.js."
   },
   {
     "example": "Create-React-App",
