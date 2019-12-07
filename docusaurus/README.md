@@ -4,6 +4,8 @@
 
 This directory is a brief example of a [Docusaurus](https://docusaurus.io/) site that can be deployed with ZEIT Now and zero configuration.
 
+> Note that your `docs` directory has to be within the `website` directory, ideally following the directory structure in this example. You will also have to specify a `customDocsPath` value in `siteConfig.js`. Take a look at the `siteConfig.js` file here for reference.
+
 ## Deploy Your Own
 
 Deploy your own Docusaurus project with ZEIT Now.
